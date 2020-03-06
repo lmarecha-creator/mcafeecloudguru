@@ -1,0 +1,89 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: "LabSetupTimerFunction which schedules script execution to setup the lab environment correctly"
+Resources:
+  LambdaRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName:
+        Fn::Sub: Role-LabSetupTimerFunction
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action:
+            - sts:AssumeRole
+            Effect: Allow
+            Principal:
+              Service:
+              - lambda.amazonaws.com
+        Version: 2012-10-17
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AWSLambdaExecute
+        - arn:aws:iam::aws:policy/AmazonS3FullAccess
+        - arn:aws:iam::aws:policy/AdministratorAccess
+      Path: /
+
+  ScheduledRule:
+    Type: AWS::Events::Rule
+    Properties:
+      Description: "Runs a lambda to configure lab environment"
+      Name: LabSetupTimerTrigger
+      ScheduleExpression: "rate(2 minutes)"
+      State: "ENABLED"
+      Targets:
+        - Arn: !GetAtt LambdaFunction.Arn
+          Id: "ScheduledRule"
+
+  CwEventPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !GetAtt LambdaFunction.Arn
+      Action: lambda:InvokeFunction
+      Principal: events.amazonaws.com
+      SourceArn: !GetAtt ScheduledRule.Arn
+
+  LambdaFunction:
+      Type: AWS::Lambda::Function
+      Properties:
+        FunctionName: LabSetupTimerFunction
+        Description: Python Function to execute scripts to setup the lab environment
+        Handler: index.handler
+        Runtime: python3.6
+        Timeout: 120
+        MemorySize: 256
+        Role: !GetAtt LambdaRole.Arn
+        Environment:
+          Variables:
+            URL: "https://rsa.sesummit20.net/labfiles/lab-infrastructure/"
+            SCRIPTLIST: "rsa_lab_timer_execute.txt"
+            CACERTS: "/etc/pki/ca-trust/extracted/openssl/ca-bundle.trust.crt"
+        Code:
+          ZipFile: |
+            import urllib3
+            import os
+            import logging
+            import boto3
+
+            l = logging.getLogger()
+            l.setLevel(logging.INFO)
+            def handler(e,c):
+                u = os.environ.get('URL')
+                h = urllib3.PoolManager(cert_reqs='CERT_REQUIRED', ca_certs=os.environ.get('CACERTS'))
+                r = h.request('GET', u + os.environ.get('SCRIPTLIST'))
+                if not r.status == 200:
+                    l.info("Could not download script list file")
+                    exit(1)
+                sl = r.data.decode('utf-8').split("\n")
+                for s in sl:
+                    l.info("Downloading source from '{}'".format(s))
+                    try:
+                        src = h.request('GET', u + s).data.decode('utf-8')
+                    except Exception as e:
+                        l.exception("Could not download file")
+                        continue
+                    l.info("Downloaded source from '{}' with '{}' bytes".format(s, len(src)))
+                    l.info("Executing script in file '{}'".format(s))
+                    try:
+                        exec(src, globals(), locals())
+                    except Exception as e:
+                        l.exception("Could not execute script in file")
+                        continue
+                    l.info("Fininshed executing script in file '{}'".format(s))
