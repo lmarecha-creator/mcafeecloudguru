@@ -1,4 +1,4 @@
-name: branches build and deploy, for all branches except master to a different bucket
+name: branch build and deploy
 
 on:
   push:
