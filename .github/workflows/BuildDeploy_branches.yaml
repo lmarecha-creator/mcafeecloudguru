@@ -1,9 +1,9 @@
-name: master branch build and deploy 
+name: branches build and deploy, for all branches except master
 
 on:
   push:
-    branches:
-      - test
+    branches-ignore:
+      - master
 
 jobs:
   build:
@@ -20,7 +20,7 @@ jobs:
     - uses: actions/checkout@v1
       with:
         submodules: true
-        ref: master
+        ref: ${GITHUB_REF##*/}
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
@@ -38,19 +38,19 @@ jobs:
         HUGO_PARAMS_listTodo: true
 
     - name: Deploy content to S3 Bucket
-      run: aws s3 sync public/ s3://${S3_BUCKET_NAME}/master/ --delete --cache-control "max-age=3600, public"
+      run: aws s3 sync public/ s3://${S3_BUCKET_NAME}/branches/${GITHUB_REF##*/} --delete --cache-control "max-age=3600, public"
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
     - name: Deploy cloud formation templates to S3 Bucket
-      run: aws s3 sync templates/ s3://${S3_BUCKET_NAME}/master/templates/ --delete --cache-control "max-age=3600, public"
+      run: aws s3 sync templates/ s3://${S3_BUCKET_NAME}/branches/${GITHUB_REF##*/}/templates/ --delete --cache-control "max-age=3600, public"
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}  
         
     - name: Invalidate Cloudfront Cache
-      run: aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_ID} --paths /\*
+      run: aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_ID} --paths /branches/${GITHUB_REF##*/}/\*
       env:
         CLOUDFRONT_ID: ${{ secrets.CLOUDFRONT_ID }}
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
