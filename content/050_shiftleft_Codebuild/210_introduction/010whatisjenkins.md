@@ -11,6 +11,9 @@ tags:
 ## Introducing CodeBuild
 
 AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy. With CodeBuild, you don’t need to provision, manage, and scale your own build servers. CodeBuild scales continuously and processes multiple builds concurrently, so your builds are not left waiting in a queue. You can get started quickly by using prepackaged build environments, or you can create custom build environments that use your own build tools. With CodeBuild, you are charged by the minute for the compute resources you use.
+
+Here’s a reference architecture that puts these components together to deliver a continuous deployment pipeline of Docker applications onto ECS:
+
 ![What_is_Jenkins](/images/mfe/CICD-Jenkins.png?classes=border,shadow)
 
 As shown above, once code is checked into a repository (such as AWS CodeCommit) it is ready to be built by Jenkins.  This build can be triggered automatically, on a schedule, or manually as part of a project.  Each project in Jenkins contains a series of build steps and triggers.  For example, a simple containerized application might look like this:
