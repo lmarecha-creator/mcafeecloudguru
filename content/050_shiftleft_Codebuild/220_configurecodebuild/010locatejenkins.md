@@ -37,6 +37,7 @@ Upload the shift-left-aws-mvision.yaml cloud formation and select Next. The user
 
 
 11-  Navigate to the AWS Lambda page, select the lambda function invoke-code-build-<<account_id>>. The user will be navigated to the lambda function.
+
 12-  In the Configuration tab, click on Add trigger. The user will be navigated to the Add trigger page as shown below.
 
 ![Lambda](/images/mfe/Lambda.png?classes=border,shadow)
