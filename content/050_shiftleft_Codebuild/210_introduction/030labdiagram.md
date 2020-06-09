@@ -8,6 +8,6 @@ tags:
   
 ---
 
-![lab-diag](/images/mfe/lab-diag.png?classes=border,shadow)
+![codebuild-lab-diagram](/images/mfe/codebuild-lab-diagram.png?classes=border,shadow)
 
 #### Now that we've discussed how AWS CodeBuild and McAfee MVISION Cloud work together, let's get started!  Please continue to the next section of the lab.
