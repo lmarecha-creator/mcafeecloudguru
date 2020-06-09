@@ -8,7 +8,7 @@ tags:
   
 ---
 
-## Introducing Jenkins
+## Introducing CodeBuild
 
 AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy. With CodeBuild, you don’t need to provision, manage, and scale your own build servers. CodeBuild scales continuously and processes multiple builds concurrently, so your builds are not left waiting in a queue. You can get started quickly by using prepackaged build environments, or you can create custom build environments that use your own build tools. With CodeBuild, you are charged by the minute for the compute resources you use.
 ![What_is_Jenkins](/images/mfe/CICD-Jenkins.png?classes=border,shadow)
