@@ -22,3 +22,4 @@ This is a fully cloud-hosted lab environment. You do not need any additional sof
 + Jenkins Service
 + For CI/CD DevOps Code Deployment 
 + AWS CodeCommit
++ AWS CodeBuild
