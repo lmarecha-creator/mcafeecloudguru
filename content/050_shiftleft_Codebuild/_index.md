@@ -1,5 +1,5 @@
 ---
-title: "Shift-Left Lab-Codebuild"
+title: "Shift-Left Lab-AWS CodeBuild"
 chapter: false
 weight: 40
 tags:
