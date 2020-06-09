@@ -11,11 +11,12 @@ tags:
 When logged in to your AWS account, navigate to services and type cloudformtion:
 
 ![CF](/images/mfe/CF.png?classes=border,shadow)
-You will find two EC2 t2.micro instances created in this region.  One will have a name that refers to Cloud9 (Amazon's web-based Integrated Development Environmen) and one other without a name.  The one without a name is your Jenkins instance, which you can verify by the name of the security group (which will refer to Jenkins).
 
-**Locate and record the public IP address for you Jenkins instance (it will be different from the IP address below):**
+Please follow the below steps for integrating AWS Ci/CD tools with McAfee MVISION Shift left inline
 
-![Jenkins' IP Address](/images/mfe/findjenkins2.png?classes=border,shadow)
+Navigate to AWS Cloudformation page and select Create stack -> With new resources (standard). The user will be navigated to Create stack page as shown below.
+
+![CF2](/images/mfe/CF2.png?classes=border,shadow)
 
 ## Connect to Jenkins
 
