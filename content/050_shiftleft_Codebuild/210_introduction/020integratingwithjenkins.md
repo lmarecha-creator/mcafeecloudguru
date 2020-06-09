@@ -18,7 +18,7 @@ When enables as part of a project, AWS CodeBuild calls an MVISION Cloud API to c
 
 The project now has a new build step:
 
-  1.  Build triggered by code update, timer, or by clicking the "build now" button
+  1.  Build triggered by code update in codecommit repository
   2.  The latest source code is pulled from the code repository (AWS CodeCommit)
   3.  <b><span style="color:red">Infrastructure-as-Code (CloudFormation templates) are checked by MVISION Cloud</span></b>
   4.  Execute build scripts, compile code and test code
@@ -30,8 +30,7 @@ The project now has a new build step:
 
 If non-compliant infrastructure templates are identified, developers receive immediate feedback on the problem:
 
-![Build failed by violation](/images/mfe/failedbuild.png?classes=border,shadow)
+![codebuild-violation](/images/mfe/codebuild-violation.png?classes=border,shadow)
 
-![Chuck Norris owns you](/images/mfe/chucknorris.png?classes=border,shadow)
 
 #### Continue to the next section for a summary of our lab environment and CI/CD pipeline. 
