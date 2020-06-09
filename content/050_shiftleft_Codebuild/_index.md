@@ -8,7 +8,7 @@ tags:
   - shiftleft
   
 ---
-![ShiftLeft](/images/mfe/AWScodebuild.png?classes=border,shadow)
+![AWScodebuild](/images/mfe/AWScodebuild.png?classes=border,shadow)
 
 ## What is "Shift-Left"?
 
