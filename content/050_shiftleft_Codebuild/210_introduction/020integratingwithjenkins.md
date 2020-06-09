@@ -18,7 +18,7 @@ When enables as part of a project, AWS CodeBuild calls an MVISION Cloud API to c
 
 The project now has a new build step:
 
-  1.  Build triggered by code update in codecommit repository
+  1.  Build triggered by code update in AWS CodeCommit repository
   2.  The latest source code is pulled from the code repository (AWS CodeCommit)
   3.  <b><span style="color:red">Infrastructure-as-Code (CloudFormation templates) are checked by MVISION Cloud</span></b>
   4.  Execute build scripts, compile code and test code
