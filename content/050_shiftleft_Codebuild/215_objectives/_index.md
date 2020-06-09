@@ -11,11 +11,9 @@ tags:
 
 
 
-1. **Set up Jenkins** - We'll start off by learning and setting up some basic Jenkins and and project settings.
+1. **Set up CodeBuild & CodeCommit** - We'll start off by learning and setting up CodeBuild and CodeCommit from cloudformation template
 
-2. **Configure the MVISION Cloud Plugin** - Next we will configure the MVISION Cloud plugin so that Jenkins can add security checks as a step in CI/CD pipeline.
-
-3. **Set Infrastructure Security Policy** - Then we will configure a few policies in MVISION Cloud to control what kind of security or best practices must be present in infrastructure deployed to AWS.
+2. **Set Infrastructure Security Policy** - Then we will configure a few policies in MVISION Cloud to control what kind of security or best practices must be present in infrastructure deployed to AWS.
 
 4. **Put your developer hat on** - Now comes the fun part!  You'll run into trouble trying to deploy insecure infrastructure-as-code (CloudFormation) templates.  Test your skills to see if you can solve the problems at three different levels!
 
