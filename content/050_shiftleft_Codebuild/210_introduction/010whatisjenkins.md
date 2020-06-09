@@ -16,7 +16,7 @@ Here’s a reference architecture that puts these components together to deliver
 
 ![codebuild](/images/mfe/codebuild.png?classes=border,shadow)
 
-As shown above, once code is checked into a repository (such as AWS CodeCommit) it is ready to be built by Jenkins.  This build can be triggered automatically, on a schedule, or manually as part of a project.  Each project in Jenkins contains a series of build steps and triggers.  For example, a simple containerized application might look like this:
+As shown above, once code is checked into a repository (such as Github or AWS CodeCommit) it is ready to be built by Jenkins.  This build can be triggered automatically, on a schedule, or manually as part of a project.  Each project in Jenkins contains a series of build steps and triggers.  For example, a simple containerized application might look like this:
 
   1.  Build triggered by code update, timer, or by clicking the "build now" button
   2.  The latest source code is pulled from the code repository (AWS CodeCommit)
