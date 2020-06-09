@@ -7,8 +7,6 @@ tags:
   - mfesesummit2020
   
 ---
-In this section, we will locate and connect to a basic installation of Jenkins which as been preinstalled in your AWS lab environment.
-
 
 When logged in to your AWS account, navigate to services and type cloudformtion:
 
