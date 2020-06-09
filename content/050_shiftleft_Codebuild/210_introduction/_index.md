@@ -16,4 +16,4 @@ This section of the lab will introduce you to key concepts and lab architecture 
 
 ![AWSCodeBuild](/images/mfe/AWScodeBuild.png?classes=border,shadow)
 
-#### Move on to the next section to learn more about Jenkins.
+#### Move on to the next section to learn more about CodeBuild.
