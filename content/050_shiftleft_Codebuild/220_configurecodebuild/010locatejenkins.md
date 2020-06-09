@@ -1,5 +1,5 @@
 ---
-title: "Locate and connect to your Jenkins Instance"
+title: "Connect to your AWS account"
 date: 2018-08-07T08:30:11-07:00
 weight: 10
 draft: false
