@@ -14,22 +14,22 @@ When logged in to your AWS account, navigate to services and type cloudformtion:
 
 Please follow the below steps for integrating AWS Ci/CD tools with McAfee MVISION Shift left inline
 
-1. Navigate to AWS Cloudformation page and select Create stack -> With new resources (standard). The user will be navigated to Create stack page as shown below.
+1- Navigate to AWS Cloudformation page and select Create stack -> With new resources (standard). The user will be navigated to Create stack page as shown below.
 
 ![CF2](/images/mfe/CF2.png?classes=border,shadow)
 
-Upload the shift-left-aws-mvision.yaml cloud formation and select Next. The user will be navigated to Specify stack details page as shown below.
+2- Upload the shift-left-aws-mvision.yaml cloud formation and select Next. The user will be navigated to Specify stack details page as shown below.
 
 ![CF3](/images/mfe/CF3.png?classes=border,shadow)
 
-3. Enter the stack name and Click Next. The user will be navigated to the Configure stack options page.
-4. Click Next and the user will be navigated to the review page.
-5. In the review page, select the checkbox against I acknowledge that AWS CloudFormation might create IAM resources with custom names and click Create Stack.
-6. Make sure the stack creation is complete with status CREATE_COMPLETE.
-7. Download the buildspec.yml
-8. Navigate to the AWS CodeCommit page, select the repo shift-left-repo. Inside the repo select Add file --> Upload file and upload the file download from step7, provide Author Name, Email address and click Commit changes.
-9. Once the file is committed, navigate to the AWS Systems Manager. The user will be navigated to the AWS Systems Manager page. Select the Parameter Store from the left menu.
-10. Click Create parameter, the user will be navigated to the Parameter details page as shown below. Populate the below values. Make sure the parameters are created in the same region as the repository and code build. Use Type 'SecureString'.
+3-  Enter the stack name and Click Next. The user will be navigated to the Configure stack options page.
+4-  Click Next and the user will be navigated to the review page.
+5-  In the review page, select the checkbox against I acknowledge that AWS CloudFormation might create IAM resources with custom names and click Create Stack.
+6-  Make sure the stack creation is complete with status CREATE_COMPLETE.
+7-  Download the buildspec.yml
+8-  Navigate to the AWS CodeCommit page, select the repo shift-left-repo. Inside the repo select Add file --> Upload file and upload the file download from step7, provide Author Name, Email address and click Commit changes.
+9-  Once the file is committed, navigate to the AWS Systems Manager. The user will be navigated to the AWS Systems Manager page. Select the Parameter Store from the left menu.
+10-  Click Create parameter, the user will be navigated to the Parameter details page as shown below. Populate the below values. Make sure the parameters are created in the same region as the repository and code build. Use Type 'SecureString'.
  - Name with /codebuild/mvision_username and enter the MVISION username in the value text area and click Create Parameter.
  - Name with /codebuild/mvision_password and enter the MVISION password in the value text area and click Create Parameter.
 
@@ -46,3 +46,5 @@ Upload the shift-left-aws-mvision.yaml cloud formation and select Next. The user
 
 
 ![Lambda2](/images/mfe/Lambda2.png?classes=border,shadow)
+
+14- The CodeCommit trigger will add to the lambda as shown below.
