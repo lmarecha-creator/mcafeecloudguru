@@ -8,12 +8,12 @@ tags:
   
 ---
 
-## Introduction to Jenkins and the MVISION Cloud Plugin
+## Introduction to AWS CodeBuild and the MVISION Cloud
 
-MVISION Cloud integrates with a popular Continuous Integration (CI) tool called Jenkins via a plugin which inspects infrastucture-as-code resources to ensure that they follow security policies defined within MVISION Cloud.
+MVISION Cloud integrates with a popular Continuous Integration (CI) AWS CodeBuild via a plugin which inspects infrastucture-as-code resources to ensure that they follow security policies defined within MVISION Cloud.
 
-This section of the lab will introduce you to key concepts and lab architecture as well as get you connected to the Jenkins instance pre-created for you in your AWS environment.
+This section of the lab will introduce you to key concepts and lab architecture as well as get you connected to AWS CodeBuild instance pre-created for you in your AWS environment.
 
-![Jenkins](/images/mfe/jenkins.png?classes=border,shadow)
+![AWSCodebuild](/images/mfe/AWSCodebuild.png?classes=border,shadow)
 
-#### Move on to the next section to learn more about Jenkins.
+#### Move on to the next section to learn more about CodeBuild.
