@@ -14,6 +14,6 @@ MVISION Cloud integrates with a popular Continuous Integration (CI) AWS CodeBuil
 
 This section of the lab will introduce you to key concepts and lab architecture as well as get you connected to AWS CodeBuild instance pre-created for you in your AWS environment.
 
-![AWSCodeBuild](/images/mfe/AWScodeBuild.png?classes=border,shadow)
+![AWSCodebuild](/images/mfe/AWSCodebuild.png?classes=border,shadow)
 
 #### Move on to the next section to learn more about CodeBuild.
