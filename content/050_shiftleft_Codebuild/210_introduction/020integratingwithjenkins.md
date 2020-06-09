@@ -1,5 +1,5 @@
 ---
-title: "About the MVISION Cloud Plugin"
+title: "About the MVISION Cloud & AWS CodeBuild Integration"
 date: 2018-08-07T08:30:11-07:00
 weight: 20
 draft: false
@@ -8,13 +8,13 @@ tags:
   
 ---
 
-## About the MVISION Cloud Plugin for Jenkins
+## About Shift Left Inline integration with AWS CodeCommit and CodeBuild
 
-Jenkins supports hundreds of plugins that do everything from enhance its ability to provide management metrics, utilize various code repositories, enable deployment to IaaS, and even provide Chuck Norris "facts."  Similarly, MVISION Cloud is enabled through the use of a Jenkins plugin.
+McAfee MVISION Cloud provides a security solution to evaluate the DevOps templates both in offline and inline mode. Using inline mode, you can integrate your repository and CI/CD tools with Shift left inline APIs which MVISION provides to check for the security vulnerabilities present in the DevOps template file. Currently, the MVISION cloud supports the evaluation of DevOps templates of AWS and Azure including terraform support for both AWS & Azure. In this illustration, we've integrated shift left with Bitbucket's own CI/CD tool, Bitbucket pipelines.
 
-When enables as part of a project, Jenkins calls an MVISION Cloud API to check any infrastructure-as-code (such as a CloudFormation template) for compliance with policies enabled in the MVISION Cloud Dashboard.  If any deviations are present, Jenkins will stop the build and output a discription of the problem (such leaving wide SSH open) to the build/console log.
+When enables as part of a project, AWS CodeBuild calls an MVISION Cloud API to check any infrastructure-as-code (such as a CloudFormation template) for compliance with policies enabled in the MVISION Cloud Dashboard.  If any deviations are present, CodeBuild will stop the build and output a discription of the problem (such leaving wide SSH open) to the build/console log.
 
-![Jenkins with MVISION Cloud](/images/mfe/JenkinswithMVISION.png?classes=border,shadow)
+![MVC-codebuild](/images/mfe/MVC-codebuild.png?classes=border,shadow)
 
 The project now has a new build step:
 
