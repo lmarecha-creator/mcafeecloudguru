@@ -48,3 +48,5 @@ Please follow the below steps for integrating AWS Ci/CD tools with McAfee MVISIO
 ![Lambda2](/images/mfe/Lambda2.png?classes=border,shadow)
 
 14- The CodeCommit trigger will add to the lambda as shown below.
+
+![Lambda3](/images/mfe/Lambda3.png?classes=border,shadow)
