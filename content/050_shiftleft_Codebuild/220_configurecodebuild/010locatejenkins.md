@@ -18,7 +18,7 @@ Please follow the below steps for integrating AWS Ci/CD tools with McAfee MVISIO
 
 ![CF2](/images/mfe/CF2.png?classes=border,shadow)
 
-2. Upload the shift-left-aws-mvision.yaml cloud formation and select Next. The user will be navigated to Specify stack details page as shown below.
+Upload the shift-left-aws-mvision.yaml cloud formation and select Next. The user will be navigated to Specify stack details page as shown below.
 
 ![CF3](/images/mfe/CF3.png?classes=border,shadow)
 
