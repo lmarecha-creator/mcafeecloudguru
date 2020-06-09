@@ -22,19 +22,17 @@ Upload the shift-left-aws-mvision.yaml cloud formation and select Next. The user
 
 ![CF3](/images/mfe/CF3.png?classes=border,shadow)
 
-{{% notice Important %}}
-Ensure you are not using HTTPS, some browsers will default to this.  If you wish to secure your Jenkins instance later by following the instructions [from the Jenkins Wiki.](https://wiki.jenkins.io/pages/viewpage.action?pageId=135468777)
-{{% /notice %}}
+Enter the stack name and Click Next. The user will be navigated to the Configure stack options page.
+Click Next and the user will be navigated to the review page.
+In the review page, select the checkbox against I acknowledge that AWS CloudFormation might create IAM resources with custom names and click Create Stack.
+Make sure the stack creation is complete with status CREATE_COMPLETE.
+Download the buildspec.yml
+Navigate to the AWS CodeCommit page, select the repo shift-left-repo. Inside the repo select Add file --> Upload file and upload the file download from step7, provide Author Name, Email address and click Commit changes.
+Once the file is committed, navigate to the AWS Systems Manager. The user will be navigated to the AWS Systems Manager page. Select the Parameter Store from the left menu.
+Click Create parameter, the user will be navigated to the Parameter details page as shown below. Populate the below values. Make sure the parameters are created in the same region as the repository and code build. Use Type 'SecureString'.
+Name with /codebuild/mvision_username and enter the MVISION username in the value text area and click Create Parameter.
+Name with /codebuild/mvision_password and enter the MVISION password in the value text area and click Create Parameter.
 
-## Login to Jenkins
-
-Use the following credentials to login to your Jenkins instance:
-
-  Username: **admin**
-  Password: **McAfee123!**
-
-You should be presented with a Jenkins home screen similar to the one below:
-
-![Jenkins Signin](/images/mfe/jenkinshome.png?classes=border,shadow)
+![SM](/images/mfe/SM.png?classes=border,shadow)
 
 #### Continue to the next section to start configuring Jenkins
