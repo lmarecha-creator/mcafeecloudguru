@@ -27,7 +27,7 @@ As the following diagram shows, you can add CodeBuild as a build or test action 
 
 How CodeBuild works?
 
-he following diagram shows what happens when you run a build with CodeBuild:
+The following diagram shows what happens when you run a build with CodeBuild:
 
 ![CB-flow](/images/mfe/CB-flow.png?classes=border,shadow)
 
