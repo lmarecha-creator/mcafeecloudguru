@@ -1,5 +1,5 @@
 ---
-title: "Configure Jenkins Projects"
+title: "Configure CodeBuild Projects"
 date: 2018-08-07T08:30:11-07:00
 weight: 20
 draft: false
@@ -8,9 +8,9 @@ tags:
   
 ---
 
-Now that Jenkins is configured and ready to use MVISION Cloud, the final step is to enable the security checks are part of the project's build process.
+Now the integration of CodeCommit & CodeBuild with McAfee MVISION Cloud shift left inline API is done, the final step is to enable the security checks are part of the project's build process.
 
-To get started, return to the Jenkins homepage and click the first project (ConfigAudit_Easy):
+To get started, return to Cloud 9 homepage and clone your CodeCommit repository
 
 ![ConfigAudit_Easy](/images/mfe/clickconfigauditeasy.png?classes=border,shadow)
 
