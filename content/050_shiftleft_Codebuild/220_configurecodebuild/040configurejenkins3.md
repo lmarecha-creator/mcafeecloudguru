@@ -32,7 +32,7 @@ cd Shift-left-repo
 
 git status
 
-git add (name of the file)
+git add MyFile.py
 
 git commit -m "update"
 
