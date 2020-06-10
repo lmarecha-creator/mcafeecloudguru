@@ -18,7 +18,18 @@ Clone a CodeCommit Repository into your AWS Cloud9 Development Environment. In t
 
 git clone https://git-codecommit.us-east-2.amazonaws.com/v1/repos/Shift-left-repo
 
+You can find the Clone URL for your repository in the CodeCommit console by choosing Clone URL.
+
 ![C9-clone](/images/mfe/C9-clone.png?classes=border,shadow)
+
+When the cloning is complete, in the side navigation, expand the folder for your repository, and from the menu choose file, uplaod local files and upload the files provided by the instructor.
+
+When you have finished importing files, in the terminal window, change directories to your cloned repository and then commit and push your changes. For example, if you added a new file named MyFile.py:
+
+cd Shift-left-repo
+git commit -a MyFile.py
+git commit -m "Added a new file with some code improvements"
+git push
 
 With the project enabled, click on the "configure" button:
 
