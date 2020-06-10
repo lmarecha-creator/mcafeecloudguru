@@ -30,13 +30,13 @@ When you have finished importing files, in the terminal window, change directori
 
 cd Shift-left-repo
 
-git status
+"git status"
 
-git add MyFile.py
+"git add MyFile.py"
 
-git commit -m "update"
+"git commit -m "update"
 
-git push origin master
+"git push origin master"
 
 With the project enabled, click on the "configure" button:
 
