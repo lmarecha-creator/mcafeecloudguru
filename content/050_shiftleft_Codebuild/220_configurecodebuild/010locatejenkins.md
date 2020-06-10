@@ -58,4 +58,4 @@ Please follow the below steps for integrating AWS Ci/CD tools with McAfee MVISIO
 
 ![Lambda3](/images/mfe/Lambda3.png?classes=border,shadow)
 
-#### Please continue to the next section of the lab to configure CodeBuild
+#### Please continue to the next section of the lab to configure CodeBuild projects
