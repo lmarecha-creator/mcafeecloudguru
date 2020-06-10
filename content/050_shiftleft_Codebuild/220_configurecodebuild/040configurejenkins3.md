@@ -24,6 +24,8 @@ You can find the Clone URL for your repository in the CodeCommit console by choo
 
 When the cloning is complete, in the side navigation, expand the folder for your repository, and from the menu choose file, uplaod local files and upload the files provided by the instructor.
 
+![C9-import-file](/images/mfe/C9-import-file.png?classes=border,shadow)
+
 When you have finished importing files, in the terminal window, change directories to your cloned repository and then commit and push your changes. For example, if you added a new file named MyFile.py:
 
 cd Shift-left-repo
