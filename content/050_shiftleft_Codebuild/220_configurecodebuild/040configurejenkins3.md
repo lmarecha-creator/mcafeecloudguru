@@ -10,13 +10,13 @@ tags:
 
 Now the integration of CodeCommit & CodeBuild with McAfee MVISION Cloud shift left inline API is done, the final step is to enable the security checks are part of the project's build process.
 
-To get started, return to Cloud 9 homepage and clone your CodeCommit repository
+To get started, return to your CodeCommit and copy repository by clicking on clone https
 
-![ConfigAudit_Easy](/images/mfe/clickconfigauditeasy.png?classes=border,shadow)
+![CC-repo](/images/mfe/CC-repo.png?classes=border,shadow)
 
-You'll see a notice that the project is currently disabled.  Click enable:
+Go to your Cloud 9 and from open new terminal and clone CodeCommit repository by running git clone command
 
-![Click Enable](/images/mfe/clickenable.png?classes=border,shadow)
+![C9-clone](/images/mfe/C9-clone.png?classes=border,shadow)
 
 With the project enabled, click on the "configure" button:
 
