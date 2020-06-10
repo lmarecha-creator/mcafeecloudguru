@@ -14,7 +14,9 @@ To get started, return to your CodeCommit and copy repository by clicking on clo
 
 ![CC-repo](/images/mfe/CC-repo.png?classes=border,shadow)
 
-Go to your Cloud 9 open new terminal and clone CodeCommit repository by running git clone command
+Clone a CodeCommit Repository into your AWS Cloud9 Development Environment. In the terminal, run the git clone command, specifying the HTTPS clone URL of your repository. For example, if you want to clone a repository named shift-left-repo in the US East (Ohio) Region, you would enter:
+
+git clone https://git-codecommit.us-east-2.amazonaws.com/v1/repos/Shift-left-repo
 
 ![C9-clone](/images/mfe/C9-clone.png?classes=border,shadow)
 
