@@ -14,7 +14,7 @@ To get started, return to your CodeCommit and copy repository by clicking on clo
 
 ![CC-repo](/images/mfe/CC-repo.png?classes=border,shadow)
 
-Go to your Cloud 9 and from open new terminal and clone CodeCommit repository by running git clone command
+Go to your Cloud 9 open new terminal and clone CodeCommit repository by running git clone command
 
 ![C9-clone](/images/mfe/C9-clone.png?classes=border,shadow)
 
