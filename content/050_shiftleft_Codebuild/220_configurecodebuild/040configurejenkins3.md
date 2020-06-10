@@ -28,15 +28,15 @@ When the cloning is complete, in the side navigation, expand the folder for your
 
 When you have finished importing files, in the terminal window, change directories to your cloned repository and then commit and push your changes. For example, if you added a new file named MyFile.py:
 
-cd Shift-left-repo
+ cd Shift-left-repo
 
- git status
+ ``git status``
 
- git add MyFile.py
+  ``git add`` MyFile.py
 
- git commit -m "update"
+ ``git commit -a -m "Updated Security Configuration"``  
 
- git push origin master
+ ``git push``
 
 With the project enabled, click on the "configure" button:
 
