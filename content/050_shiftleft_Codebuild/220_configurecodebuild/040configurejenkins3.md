@@ -38,7 +38,7 @@ When you have finished importing files, in the terminal window, change directori
 
  ``git push``
 
-CodeCommit received the code
+ Go to your CodeCommit and verify that it received the code
 
 ![CC-code](/images/mfe/CC-code.png?classes=border,shadow)
 
