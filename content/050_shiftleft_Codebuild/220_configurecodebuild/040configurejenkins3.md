@@ -38,24 +38,27 @@ When you have finished importing files, in the terminal window, change directori
 
  ``git push``
 
-With the project enabled, click on the "configure" button:
+CodeCommit received the code
 
-![Click Configure](/images/mfe/clickconfigure.png?classes=border,shadow)
+![CC-code](/images/mfe/CC-code.png?classes=border,shadow)
 
-Scroll through the project's configuration, taking note of the enabled sections and what is configured there.  For instance you'll notice that the build is triggered automatically when AWS CodeCommit detects a change to code and sends a notification to the CodeCommitSQS queue.
+Go to CodeBuild and click on Build projects
 
-  ![SQS Trigger](/images/mfe/sqstrigger.png?classes=border,shadow)
+  ![CB-progress1](/images/mfe/CB-progress1.png?classes=border,shadow)
 
-  Also note that the project is built from the latest source stored in AWS CodeCommit using Git (more on this later):
+ click on the project names
 
-  ![Git AWS CodeCommit](/images/mfe/gitcodecommit.png?classes=border,shadow)
+  ![CB-progress2](/images/mfe/CB-progress2.png?classes=border,shadow)
 
-Click the "Enable Shift Left Inline Integration Box" (there is no need to change the other settings):
+Click the build run
 
-![Enable Shift Left](/images/mfe/enableshiftleft.png?classes=border,shadow)
+![CB-Build-run](/images/mfe/CB-Build-run.png?classes=border,shadow)
+
+Review the build logs
+
+![CB-Violation](/images/mfe/CB-Violation.png?classes=border,shadow)
 
 
-### Repeat the above steps for the Medium and Hard projects!
+### Repeat the above steps for the other templates!
 
-#### You have successfully configured the Jenkins projects to work with MVISION Cloud!  Please move on to the next section to configure MVISION Cloud policies.
-
+#### You have successfully configured CodeBuild projects to work with MVISION Cloud!  
