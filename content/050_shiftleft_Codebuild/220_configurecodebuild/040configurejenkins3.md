@@ -42,7 +42,7 @@ When you have finished importing files, in the terminal window, change directori
 
 ![CC-code](/images/mfe/CC-code.png?classes=border,shadow)
 
-Go to CodeBuild and click on Build projects. you will notice that latest build status is in progress
+Go to CodeBuild and click on Build projects. You will notice that latest build status is in progress
 
   ![CB-progress1](/images/mfe/CB-progress1.png?classes=border,shadow)
 
