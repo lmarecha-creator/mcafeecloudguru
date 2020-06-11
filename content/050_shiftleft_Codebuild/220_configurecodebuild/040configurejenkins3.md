@@ -58,7 +58,7 @@ Click the build run
 
 ![CB-Violation](/images/mfe/CB-Violation.png?classes=border,shadow)
 
-
+Back in Cloud9, expand the “shift-left" folder and double click the “fixme_easy_cloudformation.json” file to open it in the Cloud9 code editor:
 ### Repeat the above steps for the other templates!
 
 #### You have successfully configured CodeBuild projects to work with MVISION Cloud!  
