@@ -54,7 +54,7 @@ Click the build run
 
 ![CB-Build-run](/images/mfe/CB-Build-run.png?classes=border,shadow)
 
-Review the build logs
+ Review the build logs and investigate the cause of the build failure from the console output:
 
 ![CB-Violation](/images/mfe/CB-Violation.png?classes=border,shadow)
 
