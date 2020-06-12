@@ -10,7 +10,7 @@ tags:
 
 ## It's time to put on your software developer hat
 
-![Trust me](/images/mfe/trustme.jpg?classes=border,shadow)
+![Dev](/images/mfe/Dev.jpg?classes=border,shadow)
 
 You may recall during Jenkins configuration that the infrastructure source code (CloudFormation templates) was stored in AWS CodeCommit.  We will now try to build the code there, ivestigate any securityproblems encountered, and attempt to resolve them.
 
