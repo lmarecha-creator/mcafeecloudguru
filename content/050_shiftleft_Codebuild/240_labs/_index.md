@@ -12,6 +12,6 @@ tags:
 
 ![Dev](/images/mfe/Dev.jpg?classes=border,shadow)
 
-You may recall during Jenkins configuration that the infrastructure source code (CloudFormation templates) was stored in AWS CodeCommit.  We will now try to build the code there, ivestigate any securityproblems encountered, and attempt to resolve them.
+You may recall during Cloud9 configuration that the infrastructure source code (CloudFormation & Terraform templates) were imported in Cloud9.  We will now try to push the code to Codecommit repository which will triggered Codebuild to build the code, ivestigate any security problems encountered, and attempt to resolve them.
 
 #### Let's get started in the next section!
