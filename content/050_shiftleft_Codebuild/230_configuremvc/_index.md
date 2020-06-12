@@ -12,6 +12,6 @@ Now that CodeBuild is configured and ready to scan files with MVISION Cloud, we 
 
 1. **Login to MVISION Cloud** - 
 
-2. **Enable Security Audit checks in MVISION Cloud ** - 
+2. **Enable Security Audit checks in MVISION Cloud** - 
 
 #### Continue to the next section to get started
