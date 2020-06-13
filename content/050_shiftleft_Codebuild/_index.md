@@ -31,9 +31,11 @@ This lab is a scenario where you will be an engineer working on applications run
 3.	Observe what happens when you try to build infrastructure-as-code that violates your configuration policies.
 4.	Fix problems in infrastructure-as-code (CloudFormation) templates so that they can be deployed successfully.  We have provided you with three templates of varying difficulty:
 
-    Lab1:  Easy – Deploy an EC2 instance 
+    Lab1:  Easy 
 
-    Lab2:  Medium – Deploy an amazon-eks-nodegroup
+    Lab2:  Medium 
+    
+     Lab2:  Hard
 
 
 
