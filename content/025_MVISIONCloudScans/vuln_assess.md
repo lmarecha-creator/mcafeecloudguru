@@ -33,6 +33,10 @@ Supported platforms include:
 
 **NOTE : PLEASE USE YOUR OWN AWS ID ACCOUNT AND REGION where your ECR repo has been configured.**
 
+Tips :
+
+![ECR](/images/ECR-03.png?classes=border,shadow)
+
 ```
 aws ecr get-login-password --region eu-central-1 | docker login --username AWS --password-stdin 686567285182.dkr.ecr.eu-central-1.amazonaws.com
 
