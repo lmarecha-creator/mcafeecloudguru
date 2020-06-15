@@ -1,9 +1,5 @@
 
----
-title: "Container Vulnerability Assessment"
-date: 2020-02-24
-weight: 21
----
+# Container Vulnerability Assessment
 
 ## Labs Description
 
@@ -23,6 +19,8 @@ Supported platforms include:
 
 ## LAB 1 - Build, Tag and Push a Docker Image to AWS ECR
 **1#** Log on your AWS account and create an ECR (Container Images Registry) repository - Ex : "vulnerable-docker-images"
+
+![ECR](/images/ECR-1.png?classes=border,shadow)
 
 **2#** Log on your Cloud9 environment 
 
@@ -95,3 +93,6 @@ docker push 686567285182.dkr.ecr.eu-central-1.amazonaws.com/ vulnerable-docker-i
 
 
 **Labs completed, Congratz !**
+
+
+
