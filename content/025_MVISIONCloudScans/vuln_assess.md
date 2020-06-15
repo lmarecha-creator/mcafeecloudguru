@@ -88,10 +88,13 @@ Tip 3: Same as Tip 1
 
 **4#**	Review the incidents and confirm your see all the different CVE vulnerabilities
 
+![ECR](/images/ECR-06.png?classes=border,shadow)
 
 ## LAB 3 - Fix the vulnerabilities found in the image (only for the 'wget' package)
 
 **1#**	From your Cloud9 environment, edit the file “Dockerfile_to_fix” and find the line in relation with the incident reported in MVC during the previous scan (wget)
+
+**NOTE : Ping your instructor if stuck - This is the most difficult (or less easy) part of the Lab**
 
 **2#**	Mvision Cloud tells you what version of wget fixes this vulnerability – Make the appropriate change in the code
 
