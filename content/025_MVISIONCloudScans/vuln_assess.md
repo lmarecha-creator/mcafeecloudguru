@@ -59,7 +59,7 @@ docker build -t dockerfile_to_fix .
 **NOTE : PLEASE USE YOUR OWN AWS ID ACCOUNT AND REGION where your ECR repo has been configured.**
 
 ```
-docker tag dockerfile_to_fix:latest 686567285182.dkr.ecr.eu-central-1.amazonaws.com/ vulnerable-docker-images:1
+docker tag dockerfile_to_fix:latest 686567285182.dkr.ecr.eu-central-1.amazonaws.com/vulnerable-docker-images:1
 ```
 **8#** Run the following command to push this image to your newly created AWS ECR repository:
 
