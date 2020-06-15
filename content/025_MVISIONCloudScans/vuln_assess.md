@@ -15,7 +15,7 @@ Supported platforms include:
 Amazon Elastic Container Registry (ECR)
 API-based support for scanning manifest through ENS
 
-#### Prerequisites "LABS Course"
+#### "LABS Course"
 
 #### Prerequisites
 > Cloud9 environment up and running : https://aws.amazon.com/cloud9/?nc1=h_ls
