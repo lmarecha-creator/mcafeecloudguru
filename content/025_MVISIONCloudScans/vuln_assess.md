@@ -82,7 +82,7 @@ Tip 3: Same as Tip 1
 
 **1#**	Connect to https://auth.ui.mcafee.com/ and authenticate to MVision Cloud using your own account
 
-**2#**	To enable CVEs Scan in Mvision Cloud, you must follow the Container Vulnerability Scan LAB in Mindtouch at 'https://success.myshn.net/MVISION_Cloud_Container_Security/MVISION_Cloud_Container_Security/Container_Vulnerability_Scan'
+**2#**	To enable CVEs Scan in Mvision Cloud, you must follow the Container Vulnerability Scan LAB in Mindtouch at https://success.myshn.net/MVISION_Cloud_Container_Security/MVISION_Cloud_Container_Security/Container_Vulnerability_Scan
 
 **3#**	Run a Containers CVEs On-Demand Scan
 
