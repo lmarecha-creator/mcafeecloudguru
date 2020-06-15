@@ -12,8 +12,8 @@ MVISION Cloud Container Vulnerability Scan (CVS) assesses the vulnerability of c
 
 Supported platforms include:
 
-Amazon Elastic Container Registry (ECR)
-API-based support for scanning manifest through ENS
+# Amazon Elastic Container Registry (ECR)
+# API-based support for scanning manifest through ENS
 
 #### "LABS Course"
 
