@@ -4,7 +4,7 @@ date: 2020-02-24
 weight: 40
 ---
 
-#### LAB Description
+#### LABS Description
 
 **Introduction**
 
@@ -15,7 +15,7 @@ Supported platforms include:
 1. Amazon Elastic Container Registry (ECR)
 2. API-based support for scanning manifest through ENS
 
-#### LAB Course
+#### LABS Course
 
 #### Prerequisites
 > Cloud9 environment up and running : https://aws.amazon.com/cloud9/?nc1=h_ls
