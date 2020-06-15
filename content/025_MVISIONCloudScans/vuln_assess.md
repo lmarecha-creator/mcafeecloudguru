@@ -15,7 +15,7 @@ Supported platforms include:
 2. API-based support for scanning manifest through ENS
 
 # LABS Course
-## Prerequisites
+## *_Prerequisites_*
 1. Cloud9 environment up and running : https://aws.amazon.com/cloud9/?nc1=h_ls
 2. Access to your AWS environment trough GUI : https://aws.amazon.com/?nc1=h_ls
 
