@@ -6,8 +6,7 @@ weight: 40
 
 # LABS Description
 
-## Introduction
-
+## *_Introduction_*
 
 MVISION Cloud Container Vulnerability Scan (CVS) assesses the vulnerability of container components. The scan evaluates the code embedded in containers at build time, and periodically after that, to make sure that known risks are exposed or mitigated to reduce the opportunities malicious actors have to exfiltrate a container workload.
 
@@ -19,8 +18,8 @@ Supported platforms include:
 # LABS Course
 
 ## Prerequisites
-> Cloud9 environment up and running : https://aws.amazon.com/cloud9/?nc1=h_ls
-> Access to your AWS environment trough GUI : https://aws.amazon.com/?nc1=h_ls
+1. Cloud9 environment up and running : https://aws.amazon.com/cloud9/?nc1=h_ls
+2. Access to your AWS environment trough GUI : https://aws.amazon.com/?nc1=h_ls
 
 ## LAB 1 - Build, Tag and Push a Docker Image to AWS ECR
 1. Log on your AWS account and create an ECR (Container Images Registry) repository - Ex : "vulnerable-docker-images"
