@@ -70,6 +70,8 @@ Tip 2: Same as Tip 1
 ```
 docker push 686567285182.dkr.ecr.eu-central-1.amazonaws.com/ vulnerable-docker-images:1
 ```
+![ECR](/images/ECR-04.png?classes=border,shadow)
+
 Tip 3: Same as Tip 1
 
 ## LAB 2 - CVE Scan for your Docker Images stored in AWS ECR
