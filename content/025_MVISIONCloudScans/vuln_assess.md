@@ -4,15 +4,18 @@ date: 2020-02-24
 weight: 40
 ---
 
-MVC also provides comprehensive CVE vulnerability assessment for Containers in registries!
+#### LAB Description
 
-For the sake of time, we will not be performing this portion in the lab today, but feel free to watch the short video below to see it in action.
+Introduction
 
----
-title: "LABS Course"
-date: 2020-02-24
-weight: 30
----
+MVISION Cloud Container Vulnerability Scan (CVS) assesses the vulnerability of container components. The scan evaluates the code embedded in containers at build time, and periodically after that, to make sure that known risks are exposed or mitigated to reduce the opportunities malicious actors have to exfiltrate a container workload.
+
+Supported platforms include:
+
+Amazon Elastic Container Registry (ECR)
+API-based support for scanning manifest through ENS
+
+#### Prerequisites "LABS Course"
 
 #### Prerequisites
 > Cloud9 environment up and running : https://aws.amazon.com/cloud9/?nc1=h_ls
