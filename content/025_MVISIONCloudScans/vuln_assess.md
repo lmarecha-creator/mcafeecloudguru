@@ -6,7 +6,7 @@ weight: 40
 
 #### LAB Description
 
-Introduction
+**Introduction**
 
 MVISION Cloud Container Vulnerability Scan (CVS) assesses the vulnerability of container components. The scan evaluates the code embedded in containers at build time, and periodically after that, to make sure that known risks are exposed or mitigated to reduce the opportunities malicious actors have to exfiltrate a container workload.
 
