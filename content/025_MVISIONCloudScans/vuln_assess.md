@@ -74,6 +74,10 @@ docker push 686567285182.dkr.ecr.eu-central-1.amazonaws.com/ vulnerable-docker-i
 
 Tip 3: Same as Tip 1
 
+**9#** Confirm that your Docker Image has correctly been pushed to your ECR :
+
+![ECR](/images/ECR-05.png?classes=border,shadow)
+
 ## LAB 2 - CVE Scan for your Docker Images stored in AWS ECR
 
 **1#**	Connect to https://auth.ui.mcafee.com/ and authenticate to MVision Cloud using your own account
