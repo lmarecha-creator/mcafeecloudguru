@@ -68,7 +68,7 @@ Tip 2: Same as Tip 1
 **NOTE : PLEASE USE YOUR OWN AWS ID ACCOUNT AND REGION where your ECR repo has been configured.**
 
 ```
-docker push 686567285182.dkr.ecr.eu-central-1.amazonaws.com/ vulnerable-docker-images:v1
+docker push 686567285182.dkr.ecr.eu-central-1.amazonaws.com/ vulnerable-docker-images:1
 ```
 Tip 3: Same as Tip 1
 
@@ -94,14 +94,14 @@ Tip 3: Same as Tip 1
 ```
 docker build -t dockerfile_to_fix .
 ```
-**4#**	Tag again the docker image (use v2 for exemple) :
+**4#**	Tag again the docker image (use '2' for exemple) :
 
-docker tag dockerfile_to_fix:latest 686567285182.dkr.ecr.eu-central-1.amazonaws.com/ vulnerable-docker-images:2
+docker tag dockerfile_to_fix:latest 686567285182.dkr.ecr.eu-central-1.amazonaws.com/vulnerable-docker-images:2
 
 **5#**	Push the v2 image to ECR :
 
 ```
-docker push 686567285182.dkr.ecr.eu-central-1.amazonaws.com/ vulnerable-docker-images:v2
+docker push 686567285182.dkr.ecr.eu-central-1.amazonaws.com/vulnerable-docker-images:2
 ```
 **6#**	Run a Containers CVEs On-Demand Scan
 
