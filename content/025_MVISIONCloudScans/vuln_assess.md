@@ -33,7 +33,7 @@ Supported platforms include:
 
 **NOTE : PLEASE USE YOUR OWN AWS ID ACCOUNT AND REGION where your ECR repo has been configured.**
 
-Tips :
+Tip 1:
 
 ![ECR](/images/ECR-03.png?classes=border,shadow)
 
@@ -61,6 +61,8 @@ docker build -t dockerfile_to_fix .
 ```
 docker tag dockerfile_to_fix:latest 686567285182.dkr.ecr.eu-central-1.amazonaws.com/vulnerable-docker-images:1
 ```
+Tip 2: Same as Tip 1
+
 **8#** Run the following command to push this image to your newly created AWS ECR repository:
 
 **NOTE : PLEASE USE YOUR OWN AWS ID ACCOUNT AND REGION where your ECR repo has been configured.**
@@ -68,6 +70,7 @@ docker tag dockerfile_to_fix:latest 686567285182.dkr.ecr.eu-central-1.amazonaws.
 ```
 docker push 686567285182.dkr.ecr.eu-central-1.amazonaws.com/ vulnerable-docker-images:v1
 ```
+Tip 3: Same as Tip 1
 
 ## LAB 2 - CVE Scan for your Docker Images stored in AWS ECR
 
