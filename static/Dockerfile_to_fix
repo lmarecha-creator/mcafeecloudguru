@@ -1,5 +1,5 @@
 FROM centos:centos8.1.1911
-MAINTAINER adrianp@stindustries.net
+MAINTAINER mcafee@mcafeeebc.net
 
 # If you need to use a proxy to get to the internet, build with:
 #   docker build --build-arg CURL_OPTIONS="..."
