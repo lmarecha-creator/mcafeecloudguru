@@ -94,9 +94,9 @@ Tip 3: Same as Tip 1
 
 **1#**	From your Cloud9 environment, edit the file “Dockerfile_to_fix” and find the line in relation with the incident reported in MVC during the previous scan (wget)
 
-**NOTE : Ping your instructor if stuck - This is the most difficult (or less easy) part of the Lab**
-
 **2#**	Mvision Cloud tells you what version of wget fixes this vulnerability – Make the appropriate change in the code
+
+**NOTE : Ping your instructor if stuck - This is the most difficult (or less easy) part of the Lab**
 
 **3#**	Build again the new docker image
 
