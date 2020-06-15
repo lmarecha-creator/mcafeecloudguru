@@ -27,6 +27,8 @@ Supported platforms include:
 
 **2#** Log on your Cloud9 environment 
 
+![ECR](/images/ECR-02.png?classes=border,shadow)
+
 **3#** From Cloud9, retrieve YOUR authentication token and authenticate your Docker client to your registry by using the AWS CLI :
 
 **NOTE : PLEASE USE YOUR OWN AWS ID ACCOUNT AND REGION where your ECR repo has been configured.**
