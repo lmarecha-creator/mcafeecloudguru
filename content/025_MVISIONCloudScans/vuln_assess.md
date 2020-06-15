@@ -55,4 +55,39 @@ docker push 686567285182.dkr.ecr.eu-central-1.amazonaws.com/ vulnerable-docker-i
 ```
 
 ## LAB 2 - CVE Scan for your Docker Images stored in AWS ECR
+
+**1#**	Connect to https://auth.ui.mcafee.com/ and authenticate to MVision Cloud using your own account
+
+**2#**	To enable CVEs Scan in Mvision Cloud, you must follow the Container Vulnerability Scan LAB in Mindtouch at 'https://success.myshn.net/MVISION_Cloud_Container_Security/MVISION_Cloud_Container_Security/Container_Vulnerability_Scan'
+
+**3#**	Run a Containers CVEs On-Demand Scan
+
+**4#**	Review the incidents and confirm your see all the different CVE vulnerabilities
+
+
 ## LAB 3 - Fix the vulnerabilities found in the image (only for the 'wget' package)
+
+**1#**	From your Cloud9 environment, edit the file “Dockerfile_to_fix” and find the line in relation with the incident reported in MVC during the previous scan (wget)
+
+**2#**	Mvision Cloud tells you what version of wget fixes this vulnerability – Make the appropriate change in the code
+
+**3#**	Build again the new docker image
+
+```
+docker build -t dockerfile_to_fix .
+```
+**4#**	Tag again the docker image (use v2 for exemple) :
+
+docker tag dockerfile_to_fix:latest 686567285182.dkr.ecr.eu-central-1.amazonaws.com/ vulnerable-docker-images:2
+
+**5#**	Push the v2 image to ECR :
+
+```
+docker push 686567285182.dkr.ecr.eu-central-1.amazonaws.com/ vulnerable-docker-images:v2
+```
+**6#**	Run a Containers CVEs On-Demand Scan
+
+**7#**	Review the incidents and confirm there is not anymore CVEs reported for WGET. It confirms you successfully fixed the vulnerability.
+
+
+**Labs completed, Congratz !**
