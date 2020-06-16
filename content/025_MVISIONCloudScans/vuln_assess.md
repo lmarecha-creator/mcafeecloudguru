@@ -44,7 +44,7 @@ aws ecr get-login-password --region eu-central-1 | docker login --username AWS -
 **4#** Once successfully authenticated, import from the file ‘Dockerfile_to_fix’ docker config file in your Cloud9 environment
 
 ```
-wget https://github.com/lmarecha-creator/containers_CVE.git
+git clone https://github.com/lmarecha-creator/containers_CVE.git
 ```
 
 **5#** **Wait for instruction** - Instructor to explain the Dockerfile structure
