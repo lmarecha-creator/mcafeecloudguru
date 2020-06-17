@@ -106,15 +106,15 @@ Tip 3: Same as Tip 1
 
 ## LAB 3 - Fix the vulnerabilities found in the image (only for the 'wget' package)
 
-**1#**	From your Cloud9 environment, edit the file “Dockerfile_to_fix” and find the line in relation with the incident reported in MVC during the previous scan (wget)
-
-**2#**	Mvision Cloud tells you what version of wget fixes this vulnerability – Make the appropriate change in the docker config template :
+**1#**	From your Cloud9 environment, **edit the file “Dockerfile”** and find the line in relation with the incident reported in MVC during the previous scan (wget)
 
 ```
 vi dockerfile
 ```
 Tips:
-*"i" to enter in editor mode / "wq" to write and quit*
+*type "i" to enter in editor mode / "wq" to write and quit*
+
+**2#**	Mvision Cloud tells you what version of wget fixes this vulnerability – Make the appropriate change in the docker config template :
 
 Allright, give me a hint ...
 
@@ -122,12 +122,12 @@ Allright, give me a hint ...
 
 **NOTE : Ping your instructor if stuck - This is the most difficult (or less easy) part of the Lab**
 
-**3#**	Build again the new docker image
+**3#**	**Build** the new docker image
 
 ```
 docker build -t dockerfile .
 ```
-**4#**	Tag again the docker image (use 'v2' for exemple) :
+**4#**	**Tag** the docker image (use 'v2' for exemple) :
 
 docker tag dockerfile:latest 686567285182.dkr.ecr.eu-central-1.amazonaws.com/vulnerable-docker-images:v2
 
@@ -142,6 +142,9 @@ docker push 686567285182.dkr.ecr.eu-central-1.amazonaws.com/vulnerable-docker-im
 
 
 **Labs completed, Congratz !**
+
+
+
 
 
 
