@@ -116,6 +116,10 @@ vi dockerfile
 Tips:
 *"i" to enter in editor mode / "wq" to write and quit*
 
+Allright, give me a hint ...
+
+--> http://mirror.centos.org/centos/8/AppStream/x86_64/os/Packages
+
 **NOTE : Ping your instructor if stuck - This is the most difficult (or less easy) part of the Lab**
 
 **3#**	Build again the new docker image
@@ -138,4 +142,6 @@ docker push 686567285182.dkr.ecr.eu-central-1.amazonaws.com/vulnerable-docker-im
 
 
 **Labs completed, Congratz !**
+
+
 
