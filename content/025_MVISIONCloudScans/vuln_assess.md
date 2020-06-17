@@ -1,3 +1,4 @@
+
 ---
 title: "Container Vulnerability Assessment"
 date: 2020-02-24
@@ -21,19 +22,19 @@ Supported platforms include:
 >>***Access to your AWS environment trough GUI*** : https://aws.amazon.com/?nc1=h_ls
 
 ## LAB 1 - Build, Tag and Push a Docker Image to AWS ECR
-**1#** Log on your AWS account and create an ECR (Container Images Registry) repository - Ex : "vulnerable-docker-images"
+**1#** Log on your AWS account and **create an ECR (Container Images Registry) repository** - Ex : "vulnerable-docker-images"
 
 ![ECR](/images/ECR-1.png?classes=border,shadow)
 
-**2#** Log on your Cloud9 environment 
+**2#** Log on your **Cloud9 environment** 
 
 ![ECR](/images/ECR-02.png?classes=border,shadow)
 
-**3#** From Cloud9, retrieve YOUR authentication token and authenticate your Docker client to your registry by using the AWS CLI :
+**3#** From Cloud9, **retrieve YOUR authentication token** and authenticate your Docker client to your registry by using the AWS CLI :
 
-**NOTE : PLEASE USE YOUR OWN AWS ID ACCOUNT AND REGION where your ECR repo has been configured.**
+***NOTE : PLEASE USE YOUR OWN AWS ID ACCOUNT AND REGION where your ECR repo has been configured.***
 
-Tip 1:
+Tip 1 to retrieve your token:
 
 ![ECR](/images/ECR-03.png?classes=border,shadow)
 
@@ -41,25 +42,38 @@ Tip 1:
 aws ecr get-login-password --region eu-central-1 | docker login --username AWS --password-stdin 686567285182.dkr.ecr.eu-central-1.amazonaws.com
 
 ```
-**4#** Once successfully authenticated, import from the file ‘Dockerfile_to_fix’ docker config file in your Cloud9 environment
+**4#** Once successfully authenticated, **import from github the lab docker config file** in your Cloud9 environment
 
 ```
 git clone https://github.com/lmarecha-creator/containers_CVE.git
 ```
 
+```
+cd containers_CVE
+```
+
+```
+cat dockerfile
+```
 **5#** **Wait for instruction** - Instructor to explain the Dockerfile structure
 
-**6#** Build your Docker image using the following command (DO NOT FORGET THE ‘.’ AT THE END OF THE COMMAND – “dockerfile_to_fix” must be in lowercases):
+**6#** **Build your Docker image** using the following command (DO NOT FORGET THE ‘.’ AT THE END OF THE COMMAND – “dockerfile” must be in lowercases):
 
 ```
-docker build -t dockerfile_to_fix .
+docker build -t dockerfile .
 ```
-**7#** After the build completes, tag your image so you can push the image to this repository:
+--> you can confirm you docker image has been built by running 
+
+```
+docker image ls
+```
+
+**7#** After the build completes, **tag your image** so you can push the image to this repository:
 
 **NOTE : PLEASE USE YOUR OWN AWS ID ACCOUNT AND REGION where your ECR repo has been configured.**
 
 ```
-docker tag dockerfile_to_fix:latest 686567285182.dkr.ecr.eu-central-1.amazonaws.com/vulnerable-docker-images:1
+docker tag dockerfile:latest 686567285182.dkr.ecr.eu-central-1.amazonaws.com/vulnerable-docker-images:v1
 ```
 Tip 2: Same as Tip 1
 
@@ -68,7 +82,7 @@ Tip 2: Same as Tip 1
 **NOTE : PLEASE USE YOUR OWN AWS ID ACCOUNT AND REGION where your ECR repo has been configured.**
 
 ```
-docker push 686567285182.dkr.ecr.eu-central-1.amazonaws.com/ vulnerable-docker-images:1
+docker push 686567285182.dkr.ecr.eu-central-1.amazonaws.com/vulnerable-docker-images:v1
 ```
 ![ECR](/images/ECR-04.png?classes=border,shadow)
 
@@ -94,30 +108,34 @@ Tip 3: Same as Tip 1
 
 **1#**	From your Cloud9 environment, edit the file “Dockerfile_to_fix” and find the line in relation with the incident reported in MVC during the previous scan (wget)
 
-**2#**	Mvision Cloud tells you what version of wget fixes this vulnerability – Make the appropriate change in the code
+**2#**	Mvision Cloud tells you what version of wget fixes this vulnerability – Make the appropriate change in the docker config template :
+
+```
+vi dockerfile
+```
+Tips:
+*"i" to enter in editor mode / "wq" to write and quit*
 
 **NOTE : Ping your instructor if stuck - This is the most difficult (or less easy) part of the Lab**
 
 **3#**	Build again the new docker image
 
 ```
-docker build -t dockerfile_to_fix .
+docker build -t dockerfile .
 ```
-**4#**	Tag again the docker image (use '2' for exemple) :
+**4#**	Tag again the docker image (use 'v2' for exemple) :
 
-docker tag dockerfile_to_fix:latest 686567285182.dkr.ecr.eu-central-1.amazonaws.com/vulnerable-docker-images:2
+docker tag dockerfile:latest 686567285182.dkr.ecr.eu-central-1.amazonaws.com/vulnerable-docker-images:v2
 
-**5#**	Push the v2 image to ECR :
+**5#**	**Push** the v2 image to ECR :
 
 ```
-docker push 686567285182.dkr.ecr.eu-central-1.amazonaws.com/vulnerable-docker-images:2
+docker push 686567285182.dkr.ecr.eu-central-1.amazonaws.com/vulnerable-docker-images:v2
 ```
-**6#**	Run a Containers CVEs On-Demand Scan
+**6#**	Run a Containers CVEs **On-Demand Scan**
 
-**7#**	Review the incidents and confirm there is not anymore CVEs reported for WGET. It confirms you successfully fixed the vulnerability.
+**7#**	**Review the incidents** and confirm there is not anymore CVEs reported for WGET. It confirms you successfully fixed the vulnerability.
 
 
 **Labs completed, Congratz !**
-
-
 
