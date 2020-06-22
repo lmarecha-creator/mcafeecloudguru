@@ -1,5 +1,5 @@
 ---
-title: "...at McAfee SE Summit 2020"
+title: "...at McAfee"
 chapter: true
 hidden: true
 weight: 10
@@ -7,7 +7,7 @@ tags:
   - AWSWorkshop2020
 ---
 
-### Running the workshop at the McAfee SE Summit 2020 event
+### Running McAfee Cloud Workshop
 
 {{% notice warning %}}
 use this method when you want to run through the lab as done at McAfee SE Summit 20 evet again
