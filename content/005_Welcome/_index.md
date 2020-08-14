@@ -1,5 +1,5 @@
 ---
-title: "Welcome"
+title: "Welcome McAfee + AWS workshop"
 weight: 1
 chapter: true
 draft: false
@@ -10,10 +10,4 @@ tags:
 # Lab Welcome
 
 Thank you for attending this lab session! Here is a brief introduction of the lab objectives and what we hope you learn today. 
-
-
-{{% notice info %}}
-Please note: At noon today we will be serving lunch and you can continue the lab for an additional hour if needed.
-We would also ask that you complete the survey at the end of these labs. Your feedback is extremely important!
-{{% /notice %}}  
 
