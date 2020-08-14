@@ -1,5 +1,5 @@
 ---
-title: "Getting Started in your Lab"
+title: "Getting Started in your AWS Lab"
 date: 2018-08-07T08:30:11-07:00
 weight: 10
 draft: false
