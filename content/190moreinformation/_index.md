@@ -11,12 +11,12 @@ tags:
 
 In this module, you will:
 
-Create an Azure Kubernetes Service cluster
-Expose Pods to internal and external network users
-Connect MVISION CLOUD to MS Azure
-Discover AKS cluster
-Run Audit scan against AKS
-Run vulnerability scan for Azure Container Registry
+- Create an Azure Kubernetes Service cluster
+- Expose Pods to internal and external network users
+- Connect MVISION CLOUD to MS Azure
+- Discover AKS cluster in MVISION CLOUD
+- Run Audit scan against AKS
+- Run vulnerability scan for Azure Container Registry
 
 
 
