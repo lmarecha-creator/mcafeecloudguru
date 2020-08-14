@@ -27,6 +27,7 @@ You'll first need to create a resource group for your resources to deploy into.
 
 2 - We're going to reuse some values throughout the deployment scripts. For example, you need to choose a region where you want to create a resource group, such as East US. If you select a different value, remember it for the rest of the exercises in this module. You may need to redefine the value between Cloud Shell sessions. Run the following commands to record these values in Bash variables.
 
+#### Use Azure CLI
 ```
 REGION_NAME=eastus
 RESOURCE_GROUP=aksworkshop
