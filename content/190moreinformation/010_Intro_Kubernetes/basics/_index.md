@@ -90,8 +90,7 @@ az network vnet create \
     --query id -o tsv)
    
    ```
-   
- #### Create the AKS cluster
+  #### Create the AKS cluster
    
  With the new virtual network in place, you can go ahead and create your new cluster. There are two values you need to know before running the az aks create command. The first is the version of the latest, non-preview, Kubernetes version available in your selected region, and the second is a unique name for your cluster.
  
