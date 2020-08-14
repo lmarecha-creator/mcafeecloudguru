@@ -3,7 +3,7 @@ title: "Welcome"
 chapter: true
 weight: 1
 tags:
-  - AWSWorkshop2020
+
 ---
 
 <div style="text-align: center"><h2>McAfee + AWS Security Workshop</h2></div>
