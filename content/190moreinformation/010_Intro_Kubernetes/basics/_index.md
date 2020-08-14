@@ -82,18 +82,20 @@ az network vnet create \
  
  2 - Next, retrieve, and store the subnet ID in a Bash variable by running the command below.
  
-  ```
+ ```
   SUBNET_ID=$(az network vnet subnet show \
     --resource-group $RESOURCE_GROUP \
     --vnet-name $VNET_NAME \
     --name $SUBNET_NAME \
     --query id -o tsv)
    
-   ```
+  ```
    
   #### Create AKS cluster
+  
    
  With the new virtual network in place, you can go ahead and create your new cluster. There are two values you need to know before running the az aks create command. The first is the version of the latest, non-preview, Kubernetes version available in your selected region, and the second is a unique name for your cluster.
+ 
  
  1 - To get the latest, non-preview, Kubernetes version you use the az aks get-versions command. Store the value that returns from the command in a Bash variable named VERSION. Run the command below the retrieve and store the version number.
  
@@ -115,10 +117,10 @@ az network vnet create \
  
  #### Bash
  
- ```
+  ```
  echo $AKS_CLUSTER_NAME
  
- ```
+  ```
  
  4 - Run the following az aks create command to create the AKS cluster running the latest Kubernetes version. This command can take a few minutes to complete.
  
