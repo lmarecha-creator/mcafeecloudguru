@@ -1,20 +1,37 @@
 ---
-title: "Container Basics"
+title: "Application architecture"
 date: 2018-10-03T10:14:32-07:00
 draft: false
 weight: 30
 tags:
-  - AWSWorkshop2020
+  
 ---
 
-# How it works - IaaS Containers
-(Copied from McAfee MVISION Cloud Sales Cental: https://success.myshn.net/Sales_Central/Sales_Engineer/Reference_Material/How_it_works_-_IaaS_Containers)
+Our goal is to deploy an Azure managed Kubernetes service, Azure Kubernetes Service (AKS), that runs the Fruit Smoothies ratings website.
 
-## 1) What is a Container?
 
-A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.&#160;Containers&#160;are able&#160;to run&#160;virtually anywhere, greatly easing development and deployment: on Linux, Windows, and Mac operating systems; on virtual machines or bare metal; on a developer's machine or in data centers on-premises; and of course, in the public cloud.&#160;Multiple containers can run on the same machine and share the OS kernel with other containers, each running as isolated processes in user space. Containers take up less space than VMs (container images are typically tens of MBs in size), can handle more applications and require fewer VMs and Operating systems.
 
-![containerss](/images/mfe/containers.png?classes=border,shadow)
+There are several tasks that you'll complete to show how Kubernetes abstracts away complex container management and provides you with declarative configuration to orchestrate containers.
+
+1 - Use AKS to deploy a Kubernetes cluster.
+
+2 - Configure an Azure Container Registry to store application container images.
+
+3 - Deploy the three ratings application components.
+
+4 - Deploy the Fruit Smoothies website document database using Helm 3.
+
+5 - Deploy the Fruit smoothies RESTFul API using deployment manifests.
+
+6 - Deploy the Fruit smoothies website frontend using deployment manifests.
+
+7 - Deploy Azure Kubernetes ingress using Helm 3.
+
+8 - Configure SSL/TLS on the controller using cert-manager.
+
+9 - Configure cluster autoscaler and horizontal pod autoscaler for the Fruit Smoothies cluster.
+
+
 
 ## 2) What is Docker?
 
