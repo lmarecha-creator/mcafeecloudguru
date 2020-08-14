@@ -91,7 +91,7 @@ az network vnet create \
    
    ```
    
-   #### Create the AKS cluster
+ #### Create the AKS cluster
    
  With the new virtual network in place, you can go ahead and create your new cluster. There are two values you need to know before running the az aks create command. The first is the version of the latest, non-preview, Kubernetes version available in your selected region, and the second is a unique name for your cluster.
  
@@ -104,6 +104,7 @@ az network vnet create \
     --output tsv)
    ```
  2 - The AKS cluster name must be unique. Run the following command to create a Bash variable that holds a unique name.
+ 
  #### Bash
  
    ```
@@ -142,7 +143,7 @@ az aks create \
 
   ```
   
-  ##### Test cluster connectivity by using kubectl
+##### Test cluster connectivity by using kubectl
   
   kubectl is the main Kubernetes command-line client you use to interact with your cluster and is available in Cloud Shell. A cluster context is required to allow kubectl to connect to a cluster. The context contains the cluster's address, a user, and a namespace. Use the az aks get-credentials command to configure your instance of kubectl.
   
