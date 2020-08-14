@@ -27,7 +27,6 @@ You'll first need to create a resource group for your resources to deploy into.
 
 2 - We're going to reuse some values throughout the deployment scripts. For example, you need to choose a region where you want to create a resource group, such as East US. If you select a different value, remember it for the rest of the exercises in this module. You may need to redefine the value between Cloud Shell sessions. Run the following commands to record these values in Bash variables.
 
-#### Use Azure CLI
 ```
 REGION_NAME=eastus
 RESOURCE_GROUP=aksworkshop
@@ -37,7 +36,6 @@ VNET_NAME=aks-vnet
 ```
 3 - Create a new resource group with the name aksworkshop. Deploy all resources created in these exercises in this resource group. A single resource group makes it easier to clean up the resources after you finish the module.
 
-#### Use Azure CLI
 ```
 az group create \
     --name $RESOURCE_GROUP \
@@ -67,8 +65,6 @@ Let's create the virtual network for your AKS cluster. We will use this virtual 
 
 1 - First, create a virtual network and subnet. Pods deployed in your cluster will be assigned an IP from this subnet. Run the following command to create the virtual network.
 
-#### Azure CLI
-
 ```
 az network vnet create \
     --resource-group $RESOURCE_GROUP \
@@ -90,8 +86,7 @@ az network vnet create \
     --query id -o tsv)
    
   ```
-   
-  #### Create AKS cluster
+ #### Create AKS cluster
   
    
  With the new virtual network in place, you can go ahead and create your new cluster. There are two values you need to know before running the az aks create command. The first is the version of the latest, non-preview, Kubernetes version available in your selected region, and the second is a unique name for your cluster.
@@ -107,7 +102,6 @@ az network vnet create \
    ```
  2 - The AKS cluster name must be unique. Run the following command to create a Bash variable that holds a unique name.
  
- #### Bash
  
    ```
    AKS_CLUSTER_NAME=aksworkshop-$RANDOM
@@ -115,7 +109,6 @@ az network vnet create \
    ```
  3 - Run the following command to output the value stored in $AKS_CLUSTER_NAME. Note this for later use. You'll need it to reconfigure the variable in the future, if necessary.
  
- #### Bash
  
   ```
  echo $AKS_CLUSTER_NAME
@@ -124,7 +117,6 @@ az network vnet create \
  
  4 - Run the following az aks create command to create the AKS cluster running the latest Kubernetes version. This command can take a few minutes to complete.
  
- #### Azure CLI
  
   ```
 az aks create \
