@@ -125,7 +125,6 @@ az network vnet create \
  #### Use Azure CLI
  
   ```
-  Copy
 az aks create \
 --resource-group $RESOURCE_GROUP \
 --name $AKS_CLUSTER_NAME \
