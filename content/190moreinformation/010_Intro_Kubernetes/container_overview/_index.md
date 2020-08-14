@@ -9,7 +9,7 @@ tags:
 
 Our goal is to deploy an Azure managed Kubernetes service, Azure Kubernetes Service (AKS), that runs the Fruit Smoothies ratings website.
 
-
+![AppArch](/images/mfe/app-arch.svg?classes=border,shadow)
 
 There are several tasks that you'll complete to show how Kubernetes abstracts away complex container management and provides you with declarative configuration to orchestrate containers.
 
