@@ -67,7 +67,7 @@ Let's create the virtual network for your AKS cluster. We will use this virtual 
 
 1 - First, create a virtual network and subnet. Pods deployed in your cluster will be assigned an IP from this subnet. Run the following command to create the virtual network.
 
-#### Use Azure CLI
+#### Azure CLI
 
 ```
 az network vnet create \
@@ -90,7 +90,8 @@ az network vnet create \
     --query id -o tsv)
    
    ```
-  #### Create the AKS cluster
+   
+  #### Create AKS cluster
    
  With the new virtual network in place, you can go ahead and create your new cluster. There are two values you need to know before running the az aks create command. The first is the version of the latest, non-preview, Kubernetes version available in your selected region, and the second is a unique name for your cluster.
  
@@ -121,7 +122,7 @@ az network vnet create \
  
  4 - Run the following az aks create command to create the AKS cluster running the latest Kubernetes version. This command can take a few minutes to complete.
  
- #### Use Azure CLI
+ #### Azure CLI
  
   ```
 az aks create \
