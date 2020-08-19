@@ -60,8 +60,6 @@ With Azure Container Networking Interface (CNI), the AKS cluster is connected to
 
 Some of the features you'll use require you to deploy the AKS cluster by using the Azure Container Networking Interface networking configuration.
 
-For a more detailed comparison, see the Learn more section at the end of this module.
-
 Let's create the virtual network for your AKS cluster. We will use this virtual network and specify the networking model when we deploy the cluster.
 
 1 - First, create a virtual network and subnet. Pods deployed in your cluster will be assigned an IP from this subnet. Run the following command to create the virtual network.
