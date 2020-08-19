@@ -1,19 +1,16 @@
 ---
-title: "K8s Objects Overview"
+title: "Deploy the ratings API"
 date: 2018-10-03T10:15:55-07:00
 draft: false
 weight: 50
 ---
 
-Kubernetes objects are entities that are used to represent the state of the cluster.  
+The Fruit Smoothies' ratings website consists of several components. There's a web frontend, a document database that stores captured data, and a RESTful ratings API that allows the web frontend to communicate with the database. The development team is using MongoDB as the document store database of choice for the ratings website.
 
-An object is a “record of intent” – once created, the cluster does its best to ensure it exists as defined.  This is known as the cluster’s “desired state.”
+In the previous unit, you deployed MongoDB using Helm. You'll continue your deployment and deploy the ratings API. The ratings API is a Node.js application written by using the Express framework. It stores and retrieves items and their ratings in a MongoDB database. Recall that you already created an Azure Container Registry instance.
 
-Kubernetes is always working to make an object’s “current state” equal to the object’s “desired state.”  A desired state can describe:
+In this exercise, you will:
 
-* What pods (containers) are running, and on which nodes
-* IP endpoints that map to a logical group of containers
-* How many replicas of a container are running
-* And much more...
+Create a Kubernetes deployment for the RESTful API
+Create a Kubernetes service to expose the RESTful API over the network
 
-Let’s explain these k8s objects in a bit more detail...
