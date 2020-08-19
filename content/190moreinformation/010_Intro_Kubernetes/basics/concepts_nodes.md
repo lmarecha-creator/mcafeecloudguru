@@ -1,18 +1,18 @@
 ---
-title: "Kubernetes Nodes"
+title: "Deploy MongoDB"
 date: 2018-10-03T10:15:55-07:00
 draft: false
 weight: 40
 ---
 
-The machines that make up a Kubernetes cluster are called **nodes**.
+The Fruit Smoothies' ratings website consists of several components. There's a web frontend, a document database that stores captured data, and a RESTful API that allows the web frontend to communicate with the database. The development team is using MongoDB as the document store database of choice for the ratings website.
 
-Nodes in a Kubernetes cluster may be physical, or virtual.  
+In this exercise, you'll deploy MongoDB to the Azure Kubernetes Service (AKS) cluster using Helm. You'll also see how to use a Kubernetes secret to store the MongoDB connection username and password.
 
-There are two types of nodes:
+This example architecture deploys MongoDB on the cluster for the application to use to store data. While this is acceptable for test and development environments, it's not recommended for production environments. For production, it's recommended to store your application state and data in a scalable data storage platform, such as CosmosDB.
 
-* A Master-node type, which makes up the [Control Plane](../../architecture/architecture_control), acts as the “brains” of the cluster.
+In this exercise, you will:
 
-* A Worker-node type, which makes up the [Data Plane](../../architecture/architecture_worker), runs the actual container images (via pods).
-
-We’ll dive deeper into how nodes interact with each other later in the presentation.
+Configure the Helm stable repository
+Install the MongoDB chart
+Create a Kubernetes secret to hold database credentials
