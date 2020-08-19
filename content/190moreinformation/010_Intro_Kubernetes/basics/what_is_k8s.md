@@ -72,3 +72,174 @@ You'll see a response similar to this JSON example when the command completes.
 
 ```
 
+#### Build the container images by using Azure Container Registry Tasks
+
+The Fruit Smoothies rating app makes use of two container images, one for the front-end website and one for the RESTful API web service. Your development teams use the local Docker tooling to build the container images for the website and API web service. A third container is used to deploy the document database provided by the database publisher and will not be stored the database container in ACR.
+
+You can use Azure Container Registry to build these containers using a standard Dockerfile to provide build instructions. With Azure Container Registry, you can reuse any Dockerfile currently in your environment, which includes multi-staged builds.
+
+#### Build the ratings-api image
+
+The ratings API is a Node.js application that's built using Express, a Node.js web framework. The source code  is on GitHub and already includes a Dockerfile , which builds images based on the Node.js Alpine container image.
+
+Here, you'll clone the repository and then build the Docker image using the included Dockerfile. Use the built-in ACR functionality to build and push the container image into your registry by running the az acr build command.
+
+1 - Clone the repository to your Cloud Shell.
+
+```
+git clone https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api.git
+
+```
+
+2 - Change into the newly cloned directory.
+
+```
+cd mslearn-aks-workshop-ratings-api
+
+```
+
+3 - Run az acr build. This command builds a container image by using the Dockerfile. Then it pushes the resulting image to the container registry.
+
+```
+az acr build \
+    --resource-group $RESOURCE_GROUP \
+    --registry $ACR_NAME \
+    --image ratings-api:v1 .
+
+```
+
+After a few minutes, you'll see a response similar to this example.
+
+
+```
+2019/12/28 02:04:11 Successfully pushed image: acr4229.azurecr.io/ratings-api:v1
+2019/12/28 02:04:11 Step ID: build marked as successful (elapsed time in seconds: 240.205952)
+2019/12/28 02:04:11 Populating digests for step ID: build...
+2019/12/28 02:04:13 Successfully populated digests for step ID: build
+2019/12/28 02:04:13 Step ID: push marked as successful (elapsed time in seconds: 33.293102)
+2019/12/28 02:04:13 The following dependencies were found:
+2019/12/28 02:04:13
+- image:
+    registry: acr4229.azurecr.io
+    repository: ratings-api
+    tag: v1
+    digest: sha256:b35cc14b16e3a4f51b86d0ed61f74dcfabb00f63e015ed33ec1fe7f48c55abda
+  runtime-dependency:
+    registry: registry.hub.docker.com
+    repository: library/node
+    tag: 13.5-alpine
+    digest: sha256:a5a7ff4267a810a019c7c3732b3c463a892a61937d84ee952c34af2fb486058d
+  git: {}
+
+Run ID: ca2 was successful after 4m41s
+
+```
+
+Make a note of the pushed image registry and name, for example, acr4229.azurecr.io/ratings-api:v1. You'll need this information when you configure the Kubernetes deployment.
+
+#### Build the ratings-web image
+
+The ratings front end is a Node.js application that was built by using the Vue JavaScript framework and WebPack to bundle the code. The source code  is on GitHub and already includes a Dockerfile , which builds images based on the Node.js Alpine image.
+
+The steps you follow are the same as before. Clone the repository and then build the docker image using the included Dockerfile using the az acr build command.
+
+1 - First, change back to the home directory.
+
+```
+cd ~
+
+```
+
+2 - Clone the ratings-web repo.
+
+```
+git clone https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web.git
+
+```
+
+3 - Change into the newly cloned directory.
+
+```
+cd mslearn-aks-workshop-ratings-web
+
+```
+
+4 - Run az acr build. This command builds a container image by using the Dockerfile. Then it pushes the resulting image to the container registry.
+
+```
+az acr build \
+    --resource-group $RESOURCE_GROUP \
+    --registry $ACR_NAME \
+    --image ratings-web:v1 .
+```
+
+In a few minutes, you'll see a response similar to this example.
+
+```
+2019/12/28 02:09:51 Successfully pushed image: acr4229.azurecr.io/ratings-web:v1
+2019/12/28 02:09:51 Step ID: build marked as successful (elapsed time in seconds: 26.612936)
+2019/12/28 02:09:51 Populating digests for step ID: build...
+2019/12/28 02:09:53 Successfully populated digests for step ID: build
+2019/12/28 02:09:53 Step ID: push marked as successful (elapsed time in seconds: 35.571607)
+2019/12/28 02:09:53 The following dependencies were found:
+2019/12/28 02:09:53
+- image:
+    registry: acr4229.azurecr.io
+    repository: ratings-web
+    tag: v1
+    digest: sha256:ae4bab55e74d057e48b05b45761eef8d1c71874d9cfeeef6e0c3c1178f01f0f2
+  runtime-dependency:
+    registry: registry.hub.docker.com
+    repository: library/node
+    tag: 13.5-alpine
+    digest: sha256:a5a7ff4267a810a019c7c3732b3c463a892a61937d84ee952c34af2fb486058d
+  git: {}
+
+Run ID: ca3 was successful after 1m9s
+
+```
+
+Make a note of the pushed image registry and name, for example, acr4229.azurecr.io/ratings-web:v1. Use this information when you configure the Kubernetes deployment.
+
+#### Verify the images
+
+1 - Run the following command in Cloud Shell to verify that the images were created and stored in the registry.
+
+```
+az acr repository list \
+    --name $ACR_NAME \
+    --output table
+```
+
+The output from this command looks similar to this example.
+
+```
+Result
+-----------
+ratings-api
+ratings-web
+
+```
+
+The images are now ready for use.
+
+##### Configure the AKS cluster to authenticate to the container registry
+
+We need to set up authentication between your container registry and Kubernetes cluster to allow communication between the services.
+
+Let's integrate the container registry with the existing AKS cluster by supplying valid values for AKS_CLUSTER_NAME and ACR_NAME. You can automatically configure the required service principal authentication between the two resources by running the az aks update command.
+
+Run the following command.
+
+```
+az aks update \
+    --name $AKS_CLUSTER_NAME \
+    --resource-group $RESOURCE_GROUP \
+    --attach-acr $ACR_NAME
+```
+
+#### Summary
+
+In this exercise, you created a container registry for the Fruit Smoothies application. You then built and added container images for the ratings-api and ratings-web to the container registry. You then verified the container images, and configured your AKS cluster to authenticate to the container registry.
+
+Next, you'll take the first step to deploy your ratings app. The first component you'll deploy is MongoDB as your document store database, and you'll see how to use the HELM package manager for Kubernetes.
