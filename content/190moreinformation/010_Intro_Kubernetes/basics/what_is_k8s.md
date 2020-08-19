@@ -16,3 +16,59 @@ Let's deploy a container registry for the Fruit Smoothies environment.
 
 1 - The container registry name must be unique within Azure and contain between 5 and 50 alphanumeric characters. For learning purposes, run this command from Azure Cloud Shell to create a Bash variable that holds a unique name.
 
+```
+ACR_NAME=acr$RANDOM
+
+```
+2 - You use the az acr create command to create the registry in the same resource group and region as your Azure Kubernetes Service (AKS) cluster. For example, aksworkshop in East US.
+
+Run the command below to create the ACR instance.
+
+```
+az acr create \
+    --resource-group $RESOURCE_GROUP \
+    --location $REGION_NAME \
+    --name $ACR_NAME \
+    --sku Standard
+
+```
+
+You'll see a response similar to this JSON example when the command completes.
+
+```
+{
+  "adminUserEnabled": false,
+  "creationDate": "2019-12-28T01:33:23.906677+00:00",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/aksworkshop/providers/Microsoft.ContainerRegistry/registries/acr4229",
+  "location": "eastus",
+  "loginServer": "acr4229.azurecr.io",
+  "name": "acr4229",
+  "networkRuleSet": null,
+  "policies": {
+    "quarantinePolicy": {
+      "status": "disabled"
+    },
+    "retentionPolicy": {
+      "days": 7,
+      "lastUpdatedTime": "2019-12-28T01:33:25.070450+00:00",
+      "status": "disabled"
+    },
+    "trustPolicy": {
+      "status": "disabled",
+      "type": "Notary"
+    }
+  },
+  "provisioningState": "Succeeded",
+  "resourceGroup": "aksworkshop",
+  "sku": {
+    "name": "Standard",
+    "tier": "Standard"
+  },
+  "status": null,
+  "storageAccount": null,
+  "tags": {},
+  "type": "Microsoft.ContainerRegistry/registries"
+}
+
+```
+
