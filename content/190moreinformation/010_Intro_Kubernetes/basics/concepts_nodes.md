@@ -16,3 +16,15 @@ In this exercise, you will:
 Configure the Helm stable repository
 Install the MongoDB chart
 Create a Kubernetes secret to hold database credentials
+
+![AzureK8ssrv](/images/mfe/azurek8s-service.svg?classes=border,shadow)
+
+#### Add the Helm bitnami repository
+
+Helm is an application package manager for Kubernetes. It offers a way to easily deploy applications and services using charts.
+
+The Helm client is already installed in the Azure Cloud Shell and can be run with the helm command. Helm provides a standard repository of charts for many different software packages. Helm has a chart for MongoDB that is part of the official Helm bitnami charts repository.
+
+1 - Configure the Helm client to use the stable repository by running the helm repo add command below.
+
+helm repo add bitnami https://charts.bitnami.com/bitnami
