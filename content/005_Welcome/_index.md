@@ -1,5 +1,5 @@
 ---
-title: "Welcome McAfee + AWS workshop"
+title: "Welcome McAfee workshop"
 weight: 1
 chapter: true
 draft: false
