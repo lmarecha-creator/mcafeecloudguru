@@ -25,11 +25,7 @@ There are several tasks that you'll complete to show how Kubernetes abstracts aw
 
 6 - Deploy the Fruit smoothies website frontend using deployment manifests.
 
-7 - Deploy Azure Kubernetes ingress using Helm 3.
 
-8 - Configure SSL/TLS on the controller using cert-manager.
-
-9 - Configure cluster autoscaler and horizontal pod autoscaler for the Fruit Smoothies cluster.
 
 
 
