@@ -203,4 +203,14 @@ Make note of that EXTERNAL-IP, for example, 13.90.152.99. You'll use the address
 
 Now that the ratings-web service has a public IP, open the IP in a web browser, for example, at http://13.90.152.99, to view and interact with the application.
 
+![ratings-web](/images/mfe/ratings-web.png?classes=border,shadow)
+
+#### Summary
+
+In this exercise, you created a deployment of ratings-web and exposed it to the internet through a LoadBalancer type service.
+
+Deployment/ratings-web: The web front end.
+Service/ratings-web: The load-balanced service, which is exposed on Azure Load Balancer through a public IP.
+Next, we'll improve the network accessibility of the application by using Ingress.
+
 
