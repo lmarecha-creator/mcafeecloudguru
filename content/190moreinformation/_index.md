@@ -1,5 +1,5 @@
 ---
-title: "Getting Started in your MS Azure Workshop"
+title: "Getting Started in your MS Azure Lab"
 date: 2018-08-07T08:30:11-07:00
 weight: 190
 draft: false
