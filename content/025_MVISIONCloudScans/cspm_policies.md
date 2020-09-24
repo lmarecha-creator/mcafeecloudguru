@@ -21,4 +21,4 @@ On the left hand side, expand the Policy Category section and choose "Container 
 ![cspm3](/images/mvcscan/cspmpolicy05.png?classes=border,shadow)
 
 
-### You should have ~225 Active policies ###
+### You should have ~368 Active policies ###
