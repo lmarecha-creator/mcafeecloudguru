@@ -72,7 +72,6 @@ Required Roles, in Azure users require the following Azure roles:
 
 ![MVISION Cloud for AWS Summary](/images/mfe/Azure-roles.png?classes=border,shadow)
 
-
 3.  Select the Subscription from the list. 
 
 
@@ -91,7 +90,7 @@ Required Roles, in Azure users require the following Azure roles:
 ![MVISION Cloud for AWS Summary](/images/mfe/Azure-iam2.png?classes=border,shadow)
 
 
-6. Go to Role assignments and search for the user to verify the roles assigned.
+6.  Go to Role assignments and search for the user to verify the roles assigned.
 
 
 ![MVISION Cloud for AWS Summary](/images/mfe/Azure-iam3.png?classes=border,shadow)
