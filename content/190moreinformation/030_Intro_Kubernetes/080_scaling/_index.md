@@ -34,9 +34,9 @@ https://www.myshn.net
 
  ![MVISION Cloud for AWS Summary](/images/mfe/Azure-permission.png?classes=border,shadow)
  
-8. API Access is Enabled. Click Next.
+8.  API Access is Enabled. Click Next.
 
-9. Select a Subscription ID from the list. Click Next.
+9.  Select a Subscription ID from the list. Click Next.
 
  ![MVISION Cloud for AWS Summary](/images/mfe/Azure-sub-ID.png?classes=border,shadow)
  
