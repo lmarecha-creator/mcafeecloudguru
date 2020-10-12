@@ -19,6 +19,5 @@ This is a fully cloud-hosted lab environment. You do not need any additional sof
 + Data Loss Prevention policies
 + Incident Management Framework
 + Azure Devops
-+ For CI/CD DevOps Code Deployment 
 + Azure Container Registry
 
