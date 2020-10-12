@@ -69,11 +69,11 @@ Reader and Data Access
 
 ![MVISION Cloud for AWS Summary](/images/mfe/Azure-roles.png?classes=border,shadow)
 
-3. Select the Subscription from the list. 
+3.  Select the Subscription from the list. 
 
 ![MVISION Cloud for AWS Summary](/images/mfe/azure-role2.png?classes=border,shadow)
 
-4. Go to Access control (IAM) > Check access > Add a role assignment. Click Add.
+4.  Go to Access control (IAM) > Check access > Add a role assignment. Click Add.
 
 ![MVISION Cloud for AWS Summary](/images/mfe/Azure-IAM.png?classes=border,shadow)
 
