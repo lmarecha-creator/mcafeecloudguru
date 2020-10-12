@@ -72,20 +72,29 @@ Required Roles, in Azure users require the following Azure roles:
 
 ![MVISION Cloud for AWS Summary](/images/mfe/Azure-roles.png?classes=border,shadow)
 
+
 3.  Select the Subscription from the list. 
 
-![MVISION Cloud for AWS Summary](/images/mfe/azure-role2.png?classes=border,shadow)
+
+![MVISION Cloud for AWS Summary](/images/mfe/azure-role.png?classes=border,shadow)
+
 
 4.  Go to Access control (IAM) > Check access > Add a role assignment. Click Add.
 
+
 ![MVISION Cloud for AWS Summary](/images/mfe/Azure-IAM.png?classes=border,shadow)
+
 
 5.  Select a Role from the list. Select a user from the list, or search for a specific user. Click Save.
 
+
 ![MVISION Cloud for AWS Summary](/images/mfe/Azure-iam2.png?classes=border,shadow)
+
 
 6. Go to Role assignments and search for the user to verify the roles assigned.
 
+
 ![MVISION Cloud for AWS Summary](/images/mfe/Azure-iam3.png?classes=border,shadow)
+
 
 #### Congratulations MVISION Cloud is now configured and ready for use with MS Azure!
