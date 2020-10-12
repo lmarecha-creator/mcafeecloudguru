@@ -19,8 +19,3 @@ identity
 - Enter the verification code sent to you
 - Provide valid payment details—don’t worry, your credit card won’t be charged for any services you use during the trial period, and the account is automatically deactivated at the end of the trial period, unless you expressly request to keep it active
 {{% /notice %}}
-
-
-{{% children %}}
-
-
