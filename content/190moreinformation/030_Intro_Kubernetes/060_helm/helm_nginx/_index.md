@@ -1,11 +1,8 @@
----
-title: "Deploy Nginx With Helm"
-chapter: true
-weight: 70
----
+WHAT YOU WILL LEARN
+When completed, you should have a solid understanding that AWS and McAfee can work together to simplify and automate modern IaaS and IaC processes.
 
-# Deploy Nginx With Helm
-
- In this Chapter, we will dig deeper with Helm and demonstrate how to install the NGINX web server via the following steps:
- 
- {{% children showhidden="false" %}}
+Improving developer and security workflows as you modernize next gen processes
+Use security best practices as a part of a normal developer workflow
+Operationalize incident management to assure proper deployment of cloud resources
+Identify critical data found in cloud infrastructure
+Identify misconfigurations of cloud resources and easily resolve them
