@@ -51,15 +51,18 @@ Azure is enabled in the Service Management page.
 Required Roles, in Azure users require the following Azure roles:
 
 - Config Audit
-Reader
-Reader and Data Access
+
+. Reader
+. Reader and Data Access
 
 - Activity Monitoring
-Reader
-Reader and Data Access
+
+. Reader
+. Reader and Data Access
 
 - DLP and Malware (including Quarantine)
-Reader and Data Access
+
+. Reader and Data Access
 
 #### Configure Roles in Azure
 
