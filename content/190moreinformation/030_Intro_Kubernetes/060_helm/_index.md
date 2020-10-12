@@ -1,5 +1,5 @@
 ---
-title: "Helm"
+title: "INTRODUCTION TO MVISION CLOUD"
 chapter: true
 weight: 60
 tags:
@@ -7,10 +7,17 @@ tags:
   - CON203
 ---
 
-# Kubernetes Helm
 
-[Helm](https://helm.sh/) is a package manager for Kubernetes that packages multiple Kubernetes resources into a single logical deployment unit called **Chart**.
+MVISION Cloud is a broad security platform designed to provide a variety of services to customers who need security policy in cloud assets.
 
-In this chapter, we'll cover [installing Helm](helm_intro).  Once installed, we'll demonstrate how Helm can be used to [deploy a simple NGINX webserver](helm_nginx), and a more [sophisticated microservice](helm_micro).
+Examples
+SaaS services such as Office 365, Slack, Salesforce, Workday, etc.
+Containers running in services like Azure Kubernetes
+Data Loss Prevention Policies tied to data in cloud services and IaaS
+Collaboration events such as controlled sharing of sensitive data externally
+Threat prevention (Insider threats, impossible travel, anomalous behavior, compromised accounts, malware protection)
 
-![Helm Logo](/images/helm-logo.svg)
+Lab Objectives
+In this lab, we will focus on DevOps/DevSecOps/Developer roles and their need to have a simple approach to securing cloud resources.
+
+Container Security, Infrastructure-as-a-service (IaaS) and Infrastructure-as-Code (IaC) are a fundamental shift for most companies. Customer cloud transformation initiatives always include simple concepts such as cloud migration strategies for legacy resources (i.e. moving server infrastructure and data to a public cloud). However, cloud transformation also now includes building infrastructure for new projects, customer facing applications, and other modern workflows commonly associated with DevOps and DevSecOps. Today, it is common that infrastructure and applications are deployed and bypass traditional “IT” processes.
