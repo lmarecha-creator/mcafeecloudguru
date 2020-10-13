@@ -2,7 +2,7 @@
 title: "Create Azure Container Registry"
 date: 2018-10-03T10:14:46-07:00
 draft: false
-weight: 30
+weight: 60
 ---
 
 
