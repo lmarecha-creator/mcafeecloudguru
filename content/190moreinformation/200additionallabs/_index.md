@@ -9,9 +9,10 @@ tags:
 
 # GETTING STARTED IN YOUR MS AZURE LAB
 
-You’ll go through tasks to deploy a multicontainer application to Kubernetes on Azure Kubernetes Service (AKS) and secure AKS with McAfee MVISION CLOUD.
+You’ll go through tasks to deploy a multicontainer application to Kubernetes on Azure Kubernetes Service (AKS) and 
+secure AKS with McAfee MVISION CLOUD.
 
-In this module, you will:
+# In this module, you will:
 
 - Create an Azure Kubernetes Service cluster
 - Expose Pods to internal and external network users
