@@ -2,7 +2,7 @@
 title: "Deploy MongoDB"
 date: 2018-10-03T10:15:55-07:00
 draft: false
-weight: 40
+weight: 50
 ---
 
 The Fruit Smoothies' ratings website consists of several components. There's a web frontend, a document database that stores captured data, and a RESTful API that allows the web frontend to communicate with the database. The development team is using MongoDB as the document store database of choice for the ratings website.
