@@ -1,7 +1,7 @@
 ---
 title: "Cloud Security Posture Management (CSPM) Policies"
 date: 2020-02-24
-weight: 15
+weight: 70
 ---
 
 For the first Security Scan, we will be performing Cloud Security Posture Management (CSPM or Config Audit) against both the Azure environment as a whole and the Azure Kubernetes Service (AKS).
