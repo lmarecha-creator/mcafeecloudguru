@@ -1,9 +1,10 @@
 ---
-title: "GETTING STARTED IN YOUR MS AZURE LAB"
+title: " GETTING STARTED IN YOUR MS AZURE LAB "
 chapter: true
 weight: 30
 tags:
   - advanced
+  
 ---
 
 In this workshop, you’ll go through tasks to deploy a multicontainer application to Kubernetes on Azure Kubernetes Service (AKS) and secure AKS with McAfee MVISION CLOUD.
