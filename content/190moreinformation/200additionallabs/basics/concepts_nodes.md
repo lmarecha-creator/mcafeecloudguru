@@ -118,9 +118,7 @@ The ratings API expects to find the connection details to the MongoDB database i
 1 - Use the kubectl create secret generic command to create a secret called mongosecret in the ratingsapp namespace. A Kubernetes secret can hold several items and is indexed by a key. In this case, the secret contains only one key, called MONGOCONNECTION. The value is the constructed connection string from the previous step. Replace <username> and <password> with the ones you used when you created the database.
  
 ```
-kubectl create secret generic mongosecret \
-    --namespace ratingsapp \
-    --from-literal=MONGOCONNECTION="mongodb://<username>:<password>@ratings-mongodb.ratingsapp:27017/ratingsdb"
+kubectl create secret generic mongosecret --namespace ratingsapp --from-literal=MONGOCONNECTION="mongodb://<username>:<password>@ratings-mongodb.ratingsapp:27017/ratingsdb"
 ```
 
 2 - Run the kubectl describe secret command to validate that the secret.
