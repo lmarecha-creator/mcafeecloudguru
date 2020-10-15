@@ -18,6 +18,6 @@ Click the check box at the top-left of the list to select all the CSPM policies.
 
 On the left hand side, expand the Policy Category section and choose "Container Security". Then select the checkbox above the list to select all the policies. Once all the Container Security policies are selected, click ACTIONS in the top right and choose activate.
 
-![cspm3](/images/mvcscan/cspmpolicy05.png?classes=border,shadow)
+![cspm3](/images/mvcscan/AKS-audit.png?classes=border,shadow)
 
 
