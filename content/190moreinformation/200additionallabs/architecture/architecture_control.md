@@ -37,7 +37,7 @@ az provider register --namespace Microsoft.ContainerService
 
 ### Enable pod security policy on an AKS cluster
 
-You can enable or disable pod security policy using the az aks update command. The following example enables pod security policy on the cluster name myAKSCluster in the resource group named myResourceGroup. (change cluster name and resourcegroup to one used in your tenant)
+You can enable or disable pod security policy using the az aks update command. The following example enables pod security policy on the cluster name myAKSCluster in the resource group named myResourceGroup. (change cluster name and resourcegroup to the one used in your tenant)
 
 ```
 az aks update \
