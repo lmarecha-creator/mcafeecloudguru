@@ -21,9 +21,15 @@ In this exercise, you will:
 
 # Create a new resource group
 
+Launch Cloud Shell
+Azure Cloud Shell is a browser-based CLI tool integrated directly into the Azure portal. Cloud shell provides all of the tools you need to manage your Azure resources in a pre-configured, on-demand virtual machine.
+
+You may launch Cloud Shell from the Azure Portal or open a new browser window and navigate to Azure Cloud Shell https://shell.azure.com.
+
 You'll first need to create a resource group for your resources to deploy into.
 
-1 - Sign in to Azure Cloud Shell with your Azure account. Select the Bash version of Cloud Shell [https://shell.azure.com/]
+1 - You may launch Cloud Shell from the Azure Portal or open a new browser window and navigate to Azure Cloud Shell https://shell.azure.com.
+ Select the Bash version of Cloud Shell.
 
 2 - We're going to reuse some values throughout the deployment scripts. For example, you need to choose a region where you want to create a resource group, such as East US. If you select a different value, remember it for the rest of the exercises in this module. You may need to redefine the value between Cloud Shell sessions. Run the following commands to record these values in Bash variables.
 
