@@ -214,7 +214,6 @@ kubectl apply -f psp-deny-privileged-clusterrole.yaml
 Now create a ClusterRoleBinding to use the ClusterRole created in the previous step. Create a file named psp-deny-privileged-clusterrolebinding.yaml and paste the following YAML manifest:
 
 ```
-Kopiraj
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
