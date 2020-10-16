@@ -95,7 +95,7 @@ alias kubectl-nonadminuser='kubectl --as=system:serviceaccount:psp-aks:nonadmin-
 
 Let's first test what happens when you schedule a pod with the security context of privileged: true. This security context escalates the pod's privileges. In the previous section that showed the default AKS pod security policies, the privilege policy should deny this request.
 
-Create a file named nginx-privileged.yaml and paste the following YAML manifest:
+Create a file named nginx-privileged.yaml and paste the following YAML manifest using the Azure Cloud Shell editor:
 
 ```
 code nginx-privileged.yaml 
@@ -116,7 +116,7 @@ spec:
         privileged: true
 ```
 
-Create the pod using the kubectl apply command and specify the name of your YAML manifest:
+Create the pod using the kubectl apply command and specify the name of your YAML manifest using the Azure Cloud Shell editor:
 
 ```
 kubectl-nonadminuser apply -f nginx-privileged.yaml
@@ -137,7 +137,7 @@ Now that you've seen the behavior of the default pod security policies, let's pr
 
 Let's create a policy to reject pods that request privileged access. Other options, such as runAsUser or allowed volumes, aren't explicitly restricted. This type of policy denies a request for privileged access, but otherwise lets the cluster run the requested pods.
 
-Create a file named psp-deny-privileged.yaml and paste the following YAML manifest:
+Create a file named psp-deny-privileged.yaml and paste the following YAML manifest using the Azure Cloud Shell editor:
 
 ```
 code psp-deny-privileged.yaml
@@ -182,7 +182,7 @@ psp-deny-privileged   false          RunAsAny   RunAsAny           RunAsAny    R
 
 In the previous step, you created a pod security policy to reject pods that request privileged access. To allow the policy to be used, you create a Role or a ClusterRole. Then, you associate one of these roles using a RoleBinding or ClusterRoleBinding.
 
-For this example, create a ClusterRole that allows you to use the psp-deny-privileged policy created in the previous step. Create a file named psp-deny-privileged-clusterrole.yaml and paste the following YAML manifest:
+For this example, create a ClusterRole that allows you to use the psp-deny-privileged policy created in the previous step. Create a file named psp-deny-privileged-clusterrole.yaml and paste the following YAML manifest using the Azure Cloud Shell editor:
 
 ```
 code psp-deny-privileged-clusterrole.yaml
