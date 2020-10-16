@@ -95,7 +95,7 @@ alias kubectl-nonadminuser='kubectl --as=system:serviceaccount:psp-aks:nonadmin-
 
 Let's first test what happens when you schedule a pod with the security context of privileged: true. This security context escalates the pod's privileges. In the previous section that showed the default AKS pod security policies, the privilege policy should deny this request.
 
-Create a file named nginx-privileged.yaml and paste the following YAML manifest. we are going to use Azure Cloud Shell editor:
+Create a file named nginx-privileged.yaml. We are going to use Azure Cloud Shell editor:
 
 ```
 code nginx-privileged.yaml 
