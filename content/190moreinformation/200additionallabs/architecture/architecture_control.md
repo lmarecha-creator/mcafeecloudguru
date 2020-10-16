@@ -95,7 +95,9 @@ alias kubectl-nonadminuser='kubectl --as=system:serviceaccount:psp-aks:nonadmin-
 
 Let's first test what happens when you schedule a pod with the security context of privileged: true. This security context escalates the pod's privileges. In the previous section that showed the default AKS pod security policies, the privilege policy should deny this request.
 
-Create a file named nginx-privileged.yaml and paste the following YAML manifest using the Azure Cloud Shell editor:
+Create a file named nginx-privileged.yaml and paste the following YAML manifest. we are going to use Azure Cloud Shell editor by running command code.:
+
+![cspm2](/images/mvcscan/Azure-Shell-editor.png?classes=border,shadow)
 
 ```
 code nginx-privileged.yaml 
@@ -255,4 +257,15 @@ Delete the NGINX unprivileged pod using the kubectl delete command and specify t
 ```
 kubectl-nonadminuser delete -f nginx-unprivileged.yaml
 ```
+Now that we've updated our PSP policy, let's kick off another CSPM scan
 
+![cspm2](/images/mvcscan/azure-scan.png?classes=border,shadow)
+
+
+Hover over the INCIDENT tab and choose POLICY INCIDENT SUMMARY. You'll be able to see that a few of the incidents have automatically moved to a Resolved status. This drastically reduces the number of incidents your infosec teams need to review! 
+
+![cspm2](/images/mvcscan/AKS-resolved.png?classes=border,shadow)
+
+Please note, the Pod Security Policy incidents can take some time to resolve. 
+
+Furthermore, Autonomous Remediation also works for DLP Incidents. In a production environment, if the files within the S3 bucket were deleted, the incidents would automatically be moved to a Resolved status.
