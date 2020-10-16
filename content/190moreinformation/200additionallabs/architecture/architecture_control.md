@@ -256,11 +256,7 @@ nginx-unprivileged   1/1     Running   0          7m14s
 ```
 This example shows how you can create custom pod security policies to define access to the AKS cluster for different users or groups. The default AKS policies provide tight controls on what pods can run, so create your own custom policies to then correctly define the restrictions you need.
 
-Delete the NGINX unprivileged pod using the kubectl delete command and specify the name of your YAML manifest:
 
-```
-kubectl-nonadminuser delete -f nginx-unprivileged.yaml
-```
 Now that we've updated our PSP policy, let's kick off another CSPM scan
 
 ![cspm2](/images/mvcscan/azure-scan.png?classes=border,shadow)
@@ -273,3 +269,9 @@ Hover over the INCIDENT tab and choose POLICY INCIDENT SUMMARY. You'll be able t
 Please note, the Pod Security Policy incidents can take some time to resolve. 
 
 Furthermore, Autonomous Remediation also works for DLP Incidents. In a production environment, if the files within the S3 bucket were deleted, the incidents would automatically be moved to a Resolved status.
+
+Delete the NGINX unprivileged pod using the kubectl delete command and specify the name of your YAML manifest:
+
+```
+kubectl-nonadminuser delete -f nginx-unprivileged.yaml
+```
