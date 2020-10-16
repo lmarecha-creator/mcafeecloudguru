@@ -55,6 +55,33 @@ privileged   true    *      RunAsAny   RunAsAny           RunAsAny    RunAsAny  
 
 ```
 
+Now run:
+
+```
+kubectl edit psp
+```
+
+This will pull up the following screen, allowing you to edit the file with Vi commands. Here is a quick cheatsheet on Vi commands, but further information is available here:
+
+https://kb.iu.edu/d/afdc
+
+Move the cursor to around where you want to modify. Press the Insert key on your keyboard to modify (drop "into" the document). Once modified, press the Insert or Escape key to stop modifying.
+
+![AR](/images/mvcscan/cspmresolve02.png?classes=border,shadow)
+
+Here is what the modification should look like.
+
+![AR](/images/mvcscan/psp-resolve1.png?classes=border,shadow)
+
+![AR](/images/mvcscan/psp-resolve2.png?classes=border,shadow)
+
+Make sure you no longer see --- INSERT --- at the bottom of the screen, which lets you know you are no longer modifying.
+
+Then press the following keys in order to issue a command to write and quit:
+
+1. :
+2. w
+3. q
 
 Please note, the Pod Security Policy incidents can take some time to resolve. Try checking back later after the Shift-Left lab.
 
