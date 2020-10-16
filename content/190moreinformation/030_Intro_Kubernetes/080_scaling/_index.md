@@ -9,6 +9,8 @@ MVISION Cloud utilizes MS Azure' comprehensive set of APIs to provide security f
 ![MVISION Cloud](/images/mfe/mvcforAWS.png?classes=border,shadow)
 
 
+### MVISION Cloud Integration
+
 ![MVISION Cloud](/images/mfe/MVC-azure2.png?classes=border,shadow)
 
 
