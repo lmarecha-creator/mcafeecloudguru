@@ -60,14 +60,15 @@ Now run:
 ```
 kubectl edit psp
 ```
+![AR](/images/mvcscan/edit-psp.png?classes=border,shadow)
+
+Press enter command to continue
 
 This will pull up the following screen, allowing you to edit the file with Vi commands. Here is a quick cheatsheet on Vi commands, but further information is available here:
 
 https://kb.iu.edu/d/afdc
 
 Move the cursor to around where you want to modify. Press the Insert key on your keyboard to modify (drop "into" the document). Once modified, press the Insert or Escape key to stop modifying.
-
-![AR](/images/mvcscan/cspmresolve02.png?classes=border,shadow)
 
 Here is what the modification should look like.
 
