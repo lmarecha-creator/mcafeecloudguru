@@ -54,44 +54,189 @@ NAME         PRIV    CAPS   SELINUX    RUNASUSER          FSGROUP     SUPGROUP  
 privileged   true    *      RunAsAny   RunAsAny           RunAsAny    RunAsAny    false            *     configMap,emptyDir,projected,secret,downwardAPI,persistentVolumeClaim
 
 ```
+The privileged pod security policy is applied to any authenticated user in the AKS cluster. This assignment is controlled by ClusterRoles and ClusterRoleBindings. Use the kubectl get rolebindings command and search for the default:privileged: binding in the kube-system namespace:
 
-Now run:
+It's important to understand how these default policies interact with user requests to schedule pods before you start to create your own pod security policies. In the next few sections, let's schedule some pods to see these default policies in action.
+
+#### Create a test user in an AKS cluster
+
+By default, when you use the az aks get-credentials command, the admin credentials for the AKS cluster are added to your kubectl config. The admin user bypasses the enforcement of pod security policies. If you use Azure Active Directory integration for your AKS clusters, you could sign in with the credentials of a non-admin user to see the enforcement of policies in action. In this article, let's create a test user account in the AKS cluster that you can use.
+
+Create a sample namespace named psp-aks for test resources using the kubectl create namespace command. Then, create a service account named nonadmin-user using the kubectl create serviceaccount command:
 
 ```
-kubectl edit psp
+kubectl create namespace psp-aks
+kubectl create serviceaccount --namespace psp-aks nonadmin-user
 ```
-![AR](/images/mvcscan/edit-psp.png?classes=border,shadow)
+Next, create a RoleBinding for the nonadmin-user to perform basic actions in the namespace using the kubectl create rolebinding command:
 
-Press enter command to continue
+```
+kubectl create rolebinding \
+    --namespace psp-aks \
+    psp-aks-editor \
+    --clusterrole=edit \
+    --serviceaccount=psp-aks:nonadmin-user
+```
+#### Create alias commands for admin and non-admin user
 
-This will pull up the following screen, allowing you to edit the file with Vi commands. Here is a quick cheatsheet on Vi commands, but further information is available here:
+To highlight the difference between the regular admin user when using kubectl and the non-admin user created in the previous steps, create two command-line aliases:
 
-https://kb.iu.edu/d/afdc
+The kubectl-admin alias is for the regular admin user, and is scoped to the psp-aks namespace.
+The kubectl-nonadminuser alias is for the nonadmin-user created in the previous step, and is scoped to the psp-aks namespace.
 
-Move the cursor to around where you want to modify. Press the Insert key on your keyboard to modify (drop "into" the document). Once modified, press the Insert or Escape key to stop modifying.
+Create these two aliases as shown in the following commands:
 
-Here is what the modification should look like.
+```
+alias kubectl-admin='kubectl --namespace psp-aks'
+alias kubectl-nonadminuser='kubectl --as=system:serviceaccount:psp-aks:nonadmin-user --namespace psp-aks'
 
-![AR](/images/mvcscan/psp-resolve1.png?classes=border,shadow)
+```
+#### Test the creation of a privileged pod
 
-![AR](/images/mvcscan/psp-resolve2.png?classes=border,shadow)
+Let's first test what happens when you schedule a pod with the security context of privileged: true. This security context escalates the pod's privileges. In the previous section that showed the default AKS pod security policies, the privilege policy should deny this request.
 
-Make sure you no longer see --- INSERT --- at the bottom of the screen, which lets you know you are no longer modifying.
+Create a file named nginx-privileged.yaml and paste the following YAML manifest:
 
-Then press the following keys in order to issue a command to write and quit:
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-privileged
+spec:
+  containers:
+    - name: nginx-privileged
+      image: nginx:1.14.2
+      securityContext:
+        privileged: true
+```
 
-1. :
-2. w
-3. q
+Create the pod using the kubectl apply command and specify the name of your YAML manifest:
 
-Now that we've updated our PSP policy, let's kick off another CSPM scan
+```
+kubectl-nonadminuser apply -f nginx-privileged.yaml
+```
 
-![cspm2](/images/mvcscan/azure-scan.png?classes=border,shadow)
+The pod fails to be scheduled, as shown in the following example output:
 
-<!--- ![dlp8](/images/mvcscan/dlpscan08.png?classes=border,shadow) --->
+```
+$ kubectl-nonadminuser apply -f nginx-privileged.yaml
 
-Hover over the INCIDENT tab and choose POLICY INCIDENT SUMMARY. You'll be able to see that a few of the incidents have automatically moved to a Resolved status. This drastically reduces the number of incidents your infosec teams need to review! 
+Error from server (Forbidden): error when creating "nginx-privileged.yaml": pods "nginx-privileged" is forbidden: unable to validate against any pod security policy: []
 
-![cspm2](/images/mvcscan/cspmrescan01.png?classes=border,shadow)
+```
 
-Please note, the Pod Security Policy incidents can take some time to resolve. 
+#### Create a custom pod security policy
+
+Now that you've seen the behavior of the default pod security policies, let's provide a way for the nonadmin-user to successfully schedule pods.
+
+Let's create a policy to reject pods that request privileged access. Other options, such as runAsUser or allowed volumes, aren't explicitly restricted. This type of policy denies a request for privileged access, but otherwise lets the cluster run the requested pods.
+
+Create a file named psp-deny-privileged.yaml and paste the following YAML manifest:
+
+```
+apiVersion: policy/v1beta1
+kind: PodSecurityPolicy
+metadata:
+  name: psp-deny-privileged
+spec:
+  privileged: false
+  seLinux:
+    rule: RunAsAny
+  supplementalGroups:
+    rule: RunAsAny
+  runAsUser:
+    rule: RunAsAny
+  fsGroup:
+    rule: RunAsAny
+  volumes:
+  - '*'
+```
+Create the policy using the kubectl apply command and specify the name of your YAML manifest:
+
+```
+kubectl apply -f psp-deny-privileged.yaml
+```
+
+To view the policies available, use the kubectl get psp command, as shown in the following example. Compare the psp-deny-privileged policy with the default privilege policy that was enforced in the previous examples to create a pod. Only the use of PRIV escalation is denied by your policy. There are no restrictions on the user or group for the psp-deny-privileged policy.
+
+```
+$ kubectl get psp
+
+NAME                  PRIV    CAPS   SELINUX    RUNASUSER          FSGROUP     SUPGROUP    READONLYROOTFS   VOLUMES
+privileged            true    *      RunAsAny   RunAsAny           RunAsAny    RunAsAny    false            *
+psp-deny-privileged   false          RunAsAny   RunAsAny           RunAsAny    RunAsAny    false            *          
+```
+#### Allow user account to use the custom pod security policy
+
+In the previous step, you created a pod security policy to reject pods that request privileged access. To allow the policy to be used, you create a Role or a ClusterRole. Then, you associate one of these roles using a RoleBinding or ClusterRoleBinding.
+
+For this example, create a ClusterRole that allows you to use the psp-deny-privileged policy created in the previous step. Create a file named psp-deny-privileged-clusterrole.yaml and paste the following YAML manifest:
+
+```
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: psp-deny-privileged-clusterrole
+rules:
+- apiGroups:
+  - extensions
+  resources:
+  - podsecuritypolicies
+  resourceNames:
+  - psp-deny-privileged
+  verbs:
+  - use
+```
+
+Create the ClusterRole using the kubectl apply command and specify the name of your YAML manifest:
+
+```
+kubectl apply -f psp-deny-privileged-clusterrole.yaml
+```
+
+Now create a ClusterRoleBinding to use the ClusterRole created in the previous step. Create a file named psp-deny-privileged-clusterrolebinding.yaml and paste the following YAML manifest:
+
+```
+Kopiraj
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: psp-deny-privileged-clusterrolebinding
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: psp-deny-privileged-clusterrole
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: system:serviceaccounts
+```
+
+Create a ClusterRoleBinding using the kubectl apply command and specify the name of your YAML manifest:
+
+```
+kubectl apply -f psp-deny-privileged-clusterrolebinding.yaml
+```
+#### Test the creation of an unprivileged pod again
+
+With your custom pod security policy applied and a binding for the user account to use the policy, let's try to create an unprivileged pod again. Use the same nginx-privileged.yaml manifest to create the pod using the kubectl apply command:
+
+```
+kubectl-nonadminuser apply -f nginx-unprivileged.yaml
+```
+The pod is successfully scheduled. When you check the status of the pod using the kubectl get pods command, the pod is Running:
+
+```
+$ kubectl-nonadminuser get pods
+
+NAME                 READY   STATUS    RESTARTS   AGE
+nginx-unprivileged   1/1     Running   0          7m14s
+```
+This example shows how you can create custom pod security policies to define access to the AKS cluster for different users or groups. The default AKS policies provide tight controls on what pods can run, so create your own custom policies to then correctly define the restrictions you need.
+
+Delete the NGINX unprivileged pod using the kubectl delete command and specify the name of your YAML manifest:
+
+```
+kubectl-nonadminuser delete -f nginx-unprivileged.yaml
+```
+
