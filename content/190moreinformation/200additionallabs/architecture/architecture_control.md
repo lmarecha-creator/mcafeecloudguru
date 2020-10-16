@@ -98,9 +98,11 @@ Let's first test what happens when you schedule a pod with the security context 
 Create a file named nginx-privileged.yaml and paste the following YAML manifest:
 
 ```
-touch nginx-privileged.yaml 
+code nginx-privileged.yaml 
 ```
 
+Paste the following YAML manifest
+ 
 ```
 apiVersion: v1
 kind: Pod
@@ -138,8 +140,10 @@ Let's create a policy to reject pods that request privileged access. Other optio
 Create a file named psp-deny-privileged.yaml and paste the following YAML manifest:
 
 ```
-touch psp-deny-privileged.yaml
+code psp-deny-privileged.yaml
 ```
+
+Paste the following YAML manifest
 
 ```
 apiVersion: policy/v1beta1
@@ -181,8 +185,9 @@ In the previous step, you created a pod security policy to reject pods that requ
 For this example, create a ClusterRole that allows you to use the psp-deny-privileged policy created in the previous step. Create a file named psp-deny-privileged-clusterrole.yaml and paste the following YAML manifest:
 
 ```
-touch psp-deny-privileged-clusterrole.yaml
+code psp-deny-privileged-clusterrole.yaml
 ```
+Paste the following YAML manifest
 
 ```
 kind: ClusterRole
