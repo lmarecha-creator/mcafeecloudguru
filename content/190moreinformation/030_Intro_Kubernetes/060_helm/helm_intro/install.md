@@ -20,4 +20,3 @@ This is a fully cloud-hosted lab environment. You do not need any additional sof
 + Incident Management Framework
 + Azure Devops
 + Azure Container Registry
-
