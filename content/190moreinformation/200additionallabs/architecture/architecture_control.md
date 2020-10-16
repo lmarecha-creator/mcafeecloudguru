@@ -100,7 +100,7 @@ Create a file named nginx-privileged.yaml and paste the following YAML manifest.
 ```
 code nginx-privileged.yaml 
 ```
-![cspm2](/images/mvcscan/Azure-code.png?classes=border,shadow)
+![cspm2](/images/mvcscan/azure-code.png?classes=border,shadow)
 
 Paste the following YAML manifest
  
