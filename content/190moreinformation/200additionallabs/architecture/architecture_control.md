@@ -138,6 +138,10 @@ Let's create a policy to reject pods that request privileged access. Other optio
 Create a file named psp-deny-privileged.yaml and paste the following YAML manifest:
 
 ```
+touch psp-deny-privileged.yaml
+```
+
+```
 apiVersion: policy/v1beta1
 kind: PodSecurityPolicy
 metadata:
@@ -175,6 +179,10 @@ psp-deny-privileged   false          RunAsAny   RunAsAny           RunAsAny    R
 In the previous step, you created a pod security policy to reject pods that request privileged access. To allow the policy to be used, you create a Role or a ClusterRole. Then, you associate one of these roles using a RoleBinding or ClusterRoleBinding.
 
 For this example, create a ClusterRole that allows you to use the psp-deny-privileged policy created in the previous step. Create a file named psp-deny-privileged-clusterrole.yaml and paste the following YAML manifest:
+
+```
+touch psp-deny-privileged-clusterrole.yaml
+```
 
 ```
 kind: ClusterRole
