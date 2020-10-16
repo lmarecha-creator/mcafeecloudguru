@@ -98,6 +98,10 @@ Let's first test what happens when you schedule a pod with the security context 
 Create a file named nginx-privileged.yaml and paste the following YAML manifest:
 
 ```
+touch nginx-privileged.yaml 
+```
+
+```
 apiVersion: v1
 kind: Pod
 metadata:
