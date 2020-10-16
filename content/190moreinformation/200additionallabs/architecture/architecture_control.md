@@ -95,13 +95,12 @@ alias kubectl-nonadminuser='kubectl --as=system:serviceaccount:psp-aks:nonadmin-
 
 Let's first test what happens when you schedule a pod with the security context of privileged: true. This security context escalates the pod's privileges. In the previous section that showed the default AKS pod security policies, the privilege policy should deny this request.
 
-Create a file named nginx-privileged.yaml and paste the following YAML manifest. we are going to use Azure Cloud Shell editor by running command code.:
-
-![cspm2](/images/mvcscan/Azure-Shell-editor.png?classes=border,shadow)
+Create a file named nginx-privileged.yaml and paste the following YAML manifest. we are going to use Azure Cloud Shell editor:
 
 ```
 code nginx-privileged.yaml 
 ```
+![cspm2](/images/mvcscan/Azure-code.png?classes=border,shadow)
 
 Paste the following YAML manifest
  
@@ -117,6 +116,7 @@ spec:
       securityContext:
         privileged: true
 ```
+Press Ctrl+S to save or right click and click on save.
 
 Create the pod using the kubectl apply command and specify the name of your YAML manifest using the Azure Cloud Shell editor:
 
@@ -165,6 +165,9 @@ spec:
   volumes:
   - '*'
 ```
+Press Ctrl+S to save or right click and click on save.
+
+
 Create the policy using the kubectl apply command and specify the name of your YAML manifest:
 
 ```
@@ -206,6 +209,7 @@ rules:
   verbs:
   - use
 ```
+Press Ctrl+S to save or right click and click on save.
 
 Create the ClusterRole using the kubectl apply command and specify the name of your YAML manifest:
 
