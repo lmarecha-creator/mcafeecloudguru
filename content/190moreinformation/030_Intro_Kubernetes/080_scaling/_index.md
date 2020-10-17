@@ -102,4 +102,4 @@ Required Roles, in Azure users require the following Azure roles:
 ![MVISION Cloud for AWS Summary](/images/mfe/Azure-iam3.png?classes=border,shadow)
 
 
-#### Congratulations MVISION Cloud is now configured and ready for use with MS Azure!
+#### Congratulations MVISION Cloud is now configured and ready for use with MS Azure!!
