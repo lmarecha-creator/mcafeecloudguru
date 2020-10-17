@@ -3,10 +3,10 @@ title: "McAfee & MS Azure workshop"
 date: 2018-08-07T08:30:11-07:00
 weight: 190
 draft: false
-tags:
-  
-  
+tags:  
+
 ---
+
 # Lab Welcome
 
 Thank you for attending this lab session! Here is a brief introduction of the lab objectives and what we hope you learn today. 
