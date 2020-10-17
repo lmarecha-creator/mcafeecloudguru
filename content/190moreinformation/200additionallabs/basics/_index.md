@@ -214,3 +214,4 @@ namespace/ratingsapp created
 In this exercise, you created a resource group for your resources. You created a virtual network for your cluster to use. You then deployed your AKS cluster, including the Azure CNI networking mode. You then connected to your cluster with kubectl and created a namespace for your Kubernetes resources.
 
 Next, you'll create and configure an Azure Container Registry (ACR) instance to use with your AKS cluster and store your containerized ratings app.
+
