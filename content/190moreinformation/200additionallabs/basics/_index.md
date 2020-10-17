@@ -22,6 +22,7 @@ In this exercise, you will:
 # Create a new resource group
 
 Launch Cloud Shell
+
 Azure Cloud Shell is a browser-based CLI tool integrated directly into the Azure portal. Cloud shell provides all of the tools you need to manage your Azure resources in a pre-configured, on-demand virtual machine.
 
 You may launch Cloud Shell from the Azure Portal or open a new browser window and navigate to Azure Cloud Shell https://shell.azure.com.
