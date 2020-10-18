@@ -16,10 +16,10 @@ Thank you for attending this workshop! Here is a brief introduction of the lab o
 
 ## What to expect
 
-MVISION Cloud will be connected to your provided Microsoft Azure account to monitor DevSecOps and Developer workflows. Use the provided credentials to log into both environments. 
+MVISION Cloud will be connected to your provided Microsoft Azure account to monitor DevSecOps and Developer workflows.
 
-- The initial use-case is based upon managing cloud resources through Cloud Security Posture Management (CSPM). As you deploy resources into Azure, McAfee MVISION Cloud will check configuration against best practices and standards. 
+- The initial use-case is based upon managing cloud resources through Cloud Security Posture Management (CSPM). As you deploy resources like AKS into Azure, McAfee MVISION Cloud will check configuration against best practices and standards. 
 
-- The next use case concerns itself with sensitive data stored in Micrsoft Azure. Customers often do not have visibility into what kind of data lives in clouds. In this case, an Bolb bucket is protected by MVISION Cloud 
+- The next use case concerns itself with sensitive data stored in Micrsoft Azure. Customers often do not have visibility into what kind of data lives in clouds. In this case, an Blob storage is protected by MVISION Cloud 
 
 - Lastly, we will guide you through the "Shift Left" use-case. What if security principles were applied BEFORE a devops team pushed infrastructure? The scan results will show discrepancies that need to be remediated before being allowed to deploy to production. 
