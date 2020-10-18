@@ -7,7 +7,7 @@ tags:
   
 ---
 
-# Lab Welcome
+# Workshop Welcome
 
 Thank you for attending this workshop! Here is a brief introduction of the lab objectives and what we hope you learn today. 
 
