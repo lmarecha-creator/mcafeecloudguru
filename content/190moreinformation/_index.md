@@ -1,6 +1,6 @@
 ---
 title: "Welcome McAfee workshop"
-weight: 1
+weight: 80
 chapter: true
 draft: false
 tags:
