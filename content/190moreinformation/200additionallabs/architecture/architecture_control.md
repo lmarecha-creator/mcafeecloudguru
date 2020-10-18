@@ -1,8 +1,5 @@
 ---
 title: "Resolve Incidents and Rescan"
-```diff
-- text in red
-```
 date: 2020-02-24
 weight: 30
 ---
