@@ -8,6 +8,7 @@ weight: 130
 ## LAB 1
 
 1#  Connect to https://portal.azure.com using your admin credentials
+
 2#  Launch Cloud Shell from the top navigation of the Azure portal
 
 ![IDE](/images/mfe/shell-icon.png?classes=border,shadow)
