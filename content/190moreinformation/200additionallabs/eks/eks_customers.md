@@ -36,3 +36,4 @@ az account set --subscription 'my-subscription-name'
 ```
 az group create --name LaurentLab-ressource-group --location westus
 ```
+
