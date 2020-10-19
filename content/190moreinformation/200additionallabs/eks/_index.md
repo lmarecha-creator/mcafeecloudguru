@@ -23,3 +23,9 @@ MVISION Cloud can scan Azure Storage BLOB containers, just as we can for AWS S3 
 5.  You know how to create a MVISION Cloud DLP policy
 6.  You know how to create an On Demand Scan
 
+## What we will learn :
+
+1.  Create Blobs in Azure.
+2.  Configure DLP policies for Azure Blobs storage.
+3.  Configure and Execute ODS DLP & Malware scans.
+4.  Configure and Execute NRT DLP & Malware scans.
