@@ -14,7 +14,9 @@ weight: 130
 ![IDE](/images/mfe/shell-icon.png?classes=border,shadow)
 
 3#  Select a subscription to create a storage account and Microsoft Azure Files share.
+
 4#  Select "Create storage".
+
 5#  Check that the environment drop-down from the left-hand side of shell window says Bash. 
 
 ![IDE](/images/mfe/env-selector.png?classes=border,shadow)
