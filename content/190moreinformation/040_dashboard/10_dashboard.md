@@ -13,6 +13,6 @@ tags:
 Azure DevOps provides the CI / CD pipeline, starting with a Git repository to manage your application source code and infrastructure code (ARM templates), a build system for producing packages and other build artifacts, and a release management system to set up a pipeline to deploy your changes through development, testing, and production environments. The pipeline uses ARM templates to provision or update your infrastructure, as needed in any environment, and then deploys the updated build.
 
 
-![Jenkins](/images/mfe/jenkins.png?classes=border,shadow)
+![AzureDevOps](/images/mfe/azure-devops.png?classes=border,shadow)
 
 #### Move on to the next section to learn more about Azure DevOps.
