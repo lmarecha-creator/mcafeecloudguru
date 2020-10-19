@@ -8,7 +8,7 @@ tags:
   
 ---
 
-## Introduction to Azure DevOps and the MVISION Cloud Plugin
+## Introduction to Azure DevOps and the MVISION Cloud 
 
 Azure DevOps provides the CI / CD pipeline, starting with a Git repository to manage your application source code and infrastructure code (ARM templates), a build system for producing packages and other build artifacts, and a release management system to set up a pipeline to deploy your changes through development, testing, and production environments. The pipeline uses ARM templates to provision or update your infrastructure, as needed in any environment, and then deploys the updated build.
 
