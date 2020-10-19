@@ -31,7 +31,7 @@ az account list
 ```
 az account set --subscription 'my-subscription-name'
 ```
-8# Create a resource group using the following command. Make sure to replace the resource group name and location with your deployment preference.
+8# Create a resource group using the following command. Make sure to **replace the resource group name and location with your deployment preference**.
 
 ```
 az group create --name LaurentLab-ressource-group --location westus
