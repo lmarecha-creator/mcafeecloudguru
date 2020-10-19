@@ -1,27 +1,18 @@
 ---
-title: "Deploy the Official Kubernetes Dashboard"
+title: "Introduction"
 date: 2018-08-07T08:30:11-07:00
 weight: 10
+draft: false
 tags:
-  - beginner
+  - mfesesummit2020
+  
 ---
 
-The official Kubernetes Dashboard is not deployed by default, but there are
-instructions in [the official documentation](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
+## Introduction to Azure DevOps and the MVISION Cloud Plugin
 
-The Kubernetes Dashboard is a tool with a lot of focus currently and which wraps a comfortable UI around the kubernetes control commands and monitoring tools. We will use it throughout the lab as its a great tool to visualize whats going on.
-
-We can deploy the dashboard easily with the following command:
-```
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml
-```
-
-This results in the following output:
-![dashinstalloutput](/images/mfe/dashinstalloutput.jpg?classes=border,shadow)
-
-The command above is a great example on how dynamic the kubernetes and conatiner tools are built. By specifying a URL that point to a configuration (in YAML format here) the tool automatically downlaod the specifications and deploys a full application including all required infrastructure. 
-
-The file `/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml` is tored on GitHub, a Code Collaboration tool, so when the develoeprs check in a new version or make any changes to the infrastructure, re-executing this command will automatically update the application and infrastructure.
+Azure DevOps provides the CI / CD pipeline, starting with a Git repository to manage your application source code and infrastructure code (ARM templates), a build system for producing packages and other build artifacts, and a release management system to set up a pipeline to deploy your changes through development, testing, and production environments. The pipeline uses ARM templates to provision or update your infrastructure, as needed in any environment, and then deploys the updated build.
 
 
-Please continue on the next page
+![Jenkins](/images/mfe/jenkins.png?classes=border,shadow)
+
+#### Move on to the next section to learn more about Azure DevOps.
