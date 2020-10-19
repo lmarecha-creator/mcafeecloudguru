@@ -37,3 +37,15 @@ az account set --subscription 'my-subscription-name'
 az group create --name LaurentLab-ressource-group --location westus
 ```
 
+9# Create Azure storage account using the following command:
+
+```
+az storage account create --name <account-name> --resource-group <resource group name> --location <azure region> --sku <storage account sku> --kind <storage account sku>
+```
+ >> _**Update the values as follows**_
+
+    1. Name: Name of the storage account
+    2. Resource group: Give the name of resource group created above in Step 2.
+    3. Location: Update with the name of the Azure region. Output values from the following command can be used here #az account list-locations
+    4. SKU: Select from the following SKUs based on storage replication requirements: Premium_LRS, Premium_ZRS, Standard_GRS, Standard_GZRS, Standard_LRS,          Standard_RAGRS, Standard_RAGZRS, Standard_ZRS
+    5. Kind: Select the storage account type from the following options: BlobStorage, BlockBlobStorage, FileStorage, Storage, StorageV2
