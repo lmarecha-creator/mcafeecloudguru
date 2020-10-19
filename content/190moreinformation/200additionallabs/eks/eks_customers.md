@@ -12,14 +12,19 @@ weight: 130
 
 ![IDE](/images/mfe/shell-icon.png?classes=border,shadow)
 
-3.  You have completed the earlier Azure labs
-4.  **StorageExplorer** is installed on your Mac / PC (You can download the software from https://azure.microsoft.com/en-us/features/storage-explorer/)
-5.  You know how to create a MVISION Cloud DLP policy
-6.  You know how to create an On Demand Scan
+3.  Select a subscription to create a storage account and Microsoft Azure Files share.
+4.  Select "Create storage".
+5.  Check that the environment drop-down from the left-hand side of shell window says Bash. 
 
-## What we will learn :
+![IDE](/images/mfe/env-selector.png?classes=border,shadow)
 
-1.  Create Blobs in Azure.
-2.  Configure DLP policies for Azure Blobs storage.
-3.  Configure and Execute ODS DLP & Malware scans.
-4.  Configure and Execute NRT DLP & Malware scans.
+6.  List subscriptions you have access to.
+
+```
+az account list
+```
+7.  List subscriptions you have access to.
+
+```
+az account set --subscription 'my-subscription-name'
+```
