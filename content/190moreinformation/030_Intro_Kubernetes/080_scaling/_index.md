@@ -20,7 +20,7 @@ https://www.myshn.net
 
 1.  From the MVISION Cloud dashboard, click the configuration wheel and click **service management**.
 
-  ![Enter Service Management](/images/mfe/MVC-Azure.png?classes=border,shadow)
+  ![Enter Service Management](/images/mfe/Azure-enable.png?classes=border,shadow)
 
 2.  Click **Add Service Instance**, select Azure, and provide a name for the instance when promted ("Azure" will work just fine)
 
