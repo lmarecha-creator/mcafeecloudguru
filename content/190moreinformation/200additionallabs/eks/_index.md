@@ -19,7 +19,7 @@ MVISION Cloud can scan Azure Storage BLOB containers, just as we can for AWS S3 
 1.  You have an **Azure account and Azure subscription** (can be pay-as-you-go)
 2.  You have a **MVISION Cloud tenant** and the API is connected to Azure.
 3.  You have completed the earlier Azure labs
-4.  **StorageExplorer** is installed on your Mac / PC
+4.  **StorageExplorer** is installed on your Mac / PC (You can download the software from https://azure.microsoft.com/en-us/features/storage-explorer/)
 5.  You know how to create a MVISION Cloud DLP policy
 6.  You know how to create an On Demand Scan
 
