@@ -10,7 +10,7 @@ tags:
 
 Azure storage is similar to a AWS S3 in that it is used to store data for various Azure services. Azure storage can store Binary Large Objects (BLOBs) which are basically files. BLOBs live in BLOB Containers (similar to S3 buckets).
 
-A good introduction to Azure BLOB services can be found here.
+>> _**A good introduction to Azure BLOB services can be found here**_ : https://www.red-gate.com/simple-talk/cloud/cloud-data/an-introduction-to-windows-azure-blob-storage/
 
 MVISION Cloud can scan Azure Storage BLOB containers, just as we can for AWS S3 buckets.
 
