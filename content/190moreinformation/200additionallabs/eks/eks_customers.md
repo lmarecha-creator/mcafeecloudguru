@@ -42,7 +42,7 @@ az group create --name LaurentLab-ressource-group --location westus
 ```
 az storage account create --name <account-name> --resource-group <resource group name> --location <azure region> --sku <storage account sku> --kind <storage account sku>
 ```
- >> _**Update the values as follows**_
+ **Update the values as follows**
 
     1. Name: Name of the storage account
     2. Resource group: Give the name of resource group created above in Step 8.
