@@ -15,7 +15,3 @@ weight: 60
 4. Finally, we rescanned the environment to show through reporting a reduction of Open incidents.
 
 
-### Critical Takeaways ###
-
-1. Vocabulary! As we all as learn more about bridging the gap between security and DevOps, getting to speak the same language is so important.
-
