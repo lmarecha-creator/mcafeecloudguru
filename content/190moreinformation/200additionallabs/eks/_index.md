@@ -4,8 +4,10 @@ date: 2018-10-03T10:14:32-07:00
 draft: false
 weight: 90
 tags:
-  - AWSWorkshop2020
+  - AzureWorkshop2020
 ---
+![DLP](/images/mfe/DLP_33532832_m.jpg?classes=border,shadow)
+
 Azure storage is similar to a AWS S3 in that it is used to store data for various Azure services. Azure storage can store Binary Large Objects (BLOBs) which are basically files. BLOBs live in BLOB Containers (similar to S3 buckets).
 
 A good introduction to Azure BLOB services can be found here.
