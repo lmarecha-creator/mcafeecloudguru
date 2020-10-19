@@ -1,45 +1,21 @@
 ---
-title: "DLP"
-date: 2018-10-03T10:18:27-07:00
-draft: false
-weight: 110
+title: "Conclusion"
+date: 2020-02-24
+weight: 60
 ---
 
-{{<mermaid>}}
-graph TB
-internet((internet))
-    subgraph worker1
-      kubelet1(kubelet)
-      kube-proxy1(kube-proxy)
-      subgraph docker1
-        subgraph podA
-          containerA[container]
-        end
-        subgraph podB
-          containerB[container]
-        end
-      end
-    end
+### What did we do? ###
 
-  internet-->kube-proxy1
-  api-->kubelet1
-  kubelet1-->containerA
-  kubelet1-->containerB
-  kube-proxy1-->containerA
-  kube-proxy1-->containerB
+1. We linked our Azure environment to our MVISION Cloud tenant to run two different types of security scans. This included Cloud Security Posture Management (CSPM) scans against the Azure environment as a whole, as well as the EKS cluster. 
 
-  classDef green fill:#9f6,stroke:#333,stroke-width:4px;
-  classDef orange fill:#f96,stroke:#333,stroke-width:4px;
-  classDef blue fill:#6495ed,stroke:#333,stroke-width:4px;
-  class api blue;
-  class internet green;
-  class kubectl orange;
-{{< /mermaid >}}
+2. We configured a number of policies associated with those scans, including numerous Container Security policies.
 
-* Made up of worker nodes
+3. After identifying issues, we went back into the Azure environment and fixed them via Azure Cloud shell CLI. This would be very indicative of what your DevOps team would need to do!
 
-* kubelet: Acts as a conduit between the API server and the node
+4. Finally, we rescanned the environment to show through reporting a reduction of Open incidents.
 
-* kube-proxy: Manages IP translation and routing
 
-Check out [the official Kubernetes documentation](https://kubernetes.io/docs/concepts/overview/components/#node-components) for a more in-depth explanation of data plane components.
+### Critical Takeaways ###
+
+1. Vocabulary! As we all as learn more about bridging the gap between security and DevOps, getting to speak the same language is so important.
+
