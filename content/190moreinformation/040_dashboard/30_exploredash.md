@@ -10,5 +10,7 @@ tags:
 
 ![Azuredevops](/images/mfe/AzureDevOps.png?classes=border,shadow)
 
-2- Create a project in Azure DevOps
+2- Create a new project in Azure DevOps
+
+![Azuredevops](/images/mfe/devops-project.png?classes=border,shadow)
 
