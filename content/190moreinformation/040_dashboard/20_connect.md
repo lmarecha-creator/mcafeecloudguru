@@ -8,7 +8,7 @@ tags:
   
 ---
 
-1- Go to github.
+1- Go to github https://github.com/
 
 2- Log in to your account.
 
