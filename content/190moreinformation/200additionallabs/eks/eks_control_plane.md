@@ -1,9 +1,11 @@
 ---
-title: "What happens when you create your EKS cluster"
+title: "Blob Uploading to Azure Storage"
 date: 2018-10-03T10:23:24-07:00
 draft: false
 weight: 140
 ---
 
+** LAB 2
 
-![EKS Control Plane](/images/introduction/eks-k8s-control-plane.svg)
+Now that storage account is provisioned, let’s upload data using *StorageExplorer*.
+
