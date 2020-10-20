@@ -14,3 +14,5 @@ tags:
 
 ![Azuredevops](/images/mfe/devops-project.png?classes=border,shadow)
 
+![Azuredevops](/images/mfe/new-project.png?classes=border,shadow)
+
