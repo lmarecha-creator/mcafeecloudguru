@@ -5,11 +5,11 @@ draft: false
 weight: 120
 ---
 
-###Sign in to Azure### 
+***Sign in to Azure***
 
 Sign in to the Azure portal at https://portal.azure.com.
 
-###Create virtual machine###
+***Create virtual machine***
 
 1- Type virtual machines in the search.
 
