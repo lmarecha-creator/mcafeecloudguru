@@ -35,7 +35,7 @@ tags:
 
 7- Choose Github from the list
 
-![Azuredevops](/images/mfe/git-code.png?classes=border,shadow)
+![Azuredevops](/images/mfe/gitcode.png?classes=border,shadow)
 
 8- Select Github repositry you have created in the previous lab
 
