@@ -53,4 +53,11 @@ az storage account create --name laurentlab --resource-group LaurentLab-ressourc
 
 . **Kind**: Select 'StorageV2'
 
+**10#** You can list the  storage accounts in the resource group to view the newly provisioned storage using the following command:
+
+```
+#az storage account list -g <resource group name>
+```
+
+![BLOB](/images/mfe/AZ_blob.png?classes=border,shadow)
 
