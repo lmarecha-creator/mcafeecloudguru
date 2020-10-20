@@ -39,7 +39,7 @@ tags:
 
 8- Select Github repositry you have created in the previous lab
 
-![Azuredevops](/images/mfe/select-repo.png?classes=border,shadow)
+![Azuredevops](/images/mfe/selectrepo.png?classes=border,shadow)
 
 9- Select the starter pipeline
 
