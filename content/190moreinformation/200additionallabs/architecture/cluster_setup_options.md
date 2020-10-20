@@ -43,6 +43,8 @@ Create a remote desktop connection to the virtual machine. These directions tell
 
 1- Select the Connect button on the overview page for your virtual machine.
 
+![ShiftLeft](/images/mfe/connecttovm.png?classes=border,shadow)
+
 2- In the Connect to virtual machine page, keep the default options to connect by IP address, over port 3389, and click Download RDP file.
 
 3- Open the downloaded RDP file and click Connect when prompted.
