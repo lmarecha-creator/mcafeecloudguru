@@ -18,3 +18,34 @@ tags:
 
 ![Azuredevops](/images/mfe/new-project.png?classes=border,shadow)
 
+4- Click on Pipelines, Create Variable group under Library with name “MVISION_GROUP”
+
+5- Create below variables with MVISION account details
+
+  - MVISION_USERNAME (tenant login)
+  - MVISION_PASSWORD( tenant password, Mark this variable type to secret)
+  - ENVIRONMENT ( MVISION URL : https://www.myshn.net/)
+  - CLOUD_SERVICE_PROVIDER ( Template types: Aws/Azure )
+
+![Azuredevops](/images/mfe/variable.png?classes=border,shadow)
+
+6- Create pipeline to your code
+
+![Azuredevops](/images/mfe/pipeline.png?classes=border,shadow)
+
+7- Choose Github from the list
+
+![Azuredevops](/images/mfe/git-code.png?classes=border,shadow)
+
+8- Select Github repositry you have created in the previous lab
+
+![Azuredevops](/images/mfe/select-repo.png?classes=border,shadow)
+
+9- Select the starter pipeline
+
+![Azuredevops](/images/mfe/starter-pipeline.png?classes=border,shadow)
+
+10- Copy pipeline code from wiki (azure-mvc-shiftleft-pipeline.yml is attached), make sure that indentation is correct. Click on Save and run, this commits pipeline yaml file to source code and executes pipeline. Make sure that file name matches to “azure-mvc-shiftleft-pipeline.yml”
+
+![Azuredevops](/images/mfe/codepipeline-yaml.png?classes=border,shadow)
+
