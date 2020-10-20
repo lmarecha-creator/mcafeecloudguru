@@ -19,13 +19,23 @@ Sign in to the Azure portal at https://portal.azure.com.
 
 4- In the Basics tab, under Project details, make sure the correct subscription is selected and then choose to Create new resource group. Type myResourceGroup for the name.
 
+![ShiftLeft](/images/mfe/vm1.png?classes=border,shadow)
+
+
 5- Under Instance details, type myVM for the Virtual machine name and choose East US for your Region, and then choose Windows Server 2019 Datacenter for the Image. Leave the other defaults.
+
+![ShiftLeft](/images/mfe/vm2.png?classes=border,shadow)
+
 
 6- Under Administrator account, provide a username, such as azureuser and a password. The password must be at least 12 characters long and meet the defined complexity requirements.
 
 7- Under Inbound port rules, choose Allow selected ports and then select RDP (3389) and HTTP (80) from the drop-down.
 
+![ShiftLeft](/images/mfe/vm3.png?classes=border,shadow)
+
 8- Leave the remaining defaults and then select the Review + create button at the bottom of the page.
+
+![ShiftLeft](/images/mfe/vm4.png?classes=border,shadow)
 
 ###Connect to virtual machine### 
 
