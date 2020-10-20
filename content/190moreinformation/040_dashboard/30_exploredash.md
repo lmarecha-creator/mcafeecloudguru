@@ -25,7 +25,7 @@ tags:
   - MVISION_USERNAME (tenant login)
   - MVISION_PASSWORD( tenant password, Mark this variable type to secret)
   - ENVIRONMENT ( MVISION URL : https://www.myshn.net/)
-  - CLOUD_SERVICE_PROVIDER ( Template types: Aws/Azure )
+  - CLOUD_SERVICE_PROVIDER ( Template types: Azure ) 
 
 ![Azuredevops](/images/mfe/variable.png?classes=border,shadow)
 
