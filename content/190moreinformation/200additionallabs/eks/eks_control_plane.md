@@ -14,3 +14,4 @@ Now that storage account is provisioned, let’s upload data using *StorageExplo
 **#2** Configure the connection settings to your Azure Storage :
 
 
+![BbobClient](/images/mfe/AZ_client1.png?classes=border,shadow)
