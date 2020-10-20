@@ -59,4 +59,4 @@ az storage account create --name laurentlab --resource-group LaurentLab-ressourc
 #az storage account list -g <resource group name>
 ```
 
-![BLOB](/images/mfe/AZ_blob.png?classes=border,shadow)
+![BLOB](/images/mfe/AZ_blobv2.png?classes=border,shadow)
