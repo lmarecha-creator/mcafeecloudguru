@@ -1,5 +1,5 @@
 ---
-title: "Create DevOps"
+title: "Create DevOps Project"
 date: 2018-08-07T13:36:57-07:00
 weight: 30
 tags:
