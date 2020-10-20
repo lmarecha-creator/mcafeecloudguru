@@ -8,7 +8,7 @@ tags:
 
 1- Sign in to Azure DevOps: https://azure.microsoft.com/en-gb/services/devops/
 
-![Azuredevops](/images/mfe/AzureDevOps.?classes=border,shadow)
+![Azuredevops](/images/mfe/AzureDevOps.png?classes=border,shadow)
 
 2- Create a project in Azure DevOps
 
