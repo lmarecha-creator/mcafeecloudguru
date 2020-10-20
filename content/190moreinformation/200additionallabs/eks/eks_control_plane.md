@@ -15,4 +15,4 @@ Now that storage account is provisioned, let’s upload data using **StorageExpl
 
 ![BbobClient](/images/mfe/AZ_client1.png?classes=border,shadow)
 
-![BbobClient](/images/mfe/AZ_client2.png?classes=border,shadow)
+![BbobClient](/images/mfe/AZ_Client2.png?classes=border,shadow)
