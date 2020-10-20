@@ -43,4 +43,3 @@ az group create --name LaurentLab-ressource-group --location westus
 
 ![AZ_Account](/images/mfe/AZ_Storage_Account.png?classes=border,shadow)
 
-
