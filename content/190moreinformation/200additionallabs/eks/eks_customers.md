@@ -61,4 +61,4 @@ az storage account create --name laurentlab --resource-group LaurentLab-ressourc
 
 ![BLOB](/images/mfe/AZ_blobv2.png?classes=border,shadow)
 
-## LAB 1 COMPLETED
+# LAB 1 COMPLETED ..
