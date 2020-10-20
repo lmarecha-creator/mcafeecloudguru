@@ -1,28 +1,20 @@
 ---
-title: "Deploy the Metrics Server"
+title: "Lab Objectives"
 date: 2018-08-07T08:30:11-07:00
-weight: 15
+weight: 10
+draft: false
 tags:
-  - beginner
+
+  
 ---
 
-To collect resource monitoring data and metrics and to display those in the Kubernetes Dashboard we can install the official **Kubernetes Metrics Server**. The Kubernetes Metrics Server runs in the Kubernetes system namespace and continuously collects data. More detail can be found in   [the official documentation](https://github.com/kubernetes-sigs/metrics-server)
 
-This is how the dashboard looks when the Metrics Server is installed:
-![dashmetrics](/images/mfe/dashwithmetrics.jpg?classes=border,shadow)
 
-We first need to clone the repository to download the deployment files:
-```
-cd ~/environment
-git clone https://github.com/kubernetes-sigs/metrics-server.git
-cd metrics-server
 
-```
+1. **Set up Azure DevOps & github repository ** - We'll start off by learning and setting up CAzure DevOps & github repository
 
-Now can deploy the latest version of the Metric Server with the following command:
-```
-kubectl create -f deploy/kubernetes/
-```
+2. **Set Infrastructure Security Policy** - Then we will configure a few policies in MVISION Cloud to control what kind of security or best practices must be present in infrastructure deployed to Azure.
 
-Now that this is installed in our cluster, let's connect to the Kubernetes Dashboard and see whats going on
+4. **Put your developer hat on** - Now comes the fun part!  You'll run into trouble trying to deploy insecure infrastructure-as-code Azure Resource Manager (ARM) templates.  Test your skills to see if you can solve the problems at three different levels!
 
+#### Let's get started with the lab in the next section!
