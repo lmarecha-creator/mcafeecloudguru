@@ -47,10 +47,10 @@ az storage account create --name laurentlab --resource-group LaurentLab-ressourc
 
 . **Resource group**: Give the name of resource group created above in Step 2.
 
-. **Location**: use 'westus'
+. **Location**: Use 'westus'
 
 . **SKU**: Select 'Standard_LRS'
 
-. **Kind**: Select 'StorageV2'**_
+. **Kind**: Select 'StorageV2'
 
 
