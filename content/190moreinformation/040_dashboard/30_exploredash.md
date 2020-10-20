@@ -14,5 +14,7 @@ tags:
 
 ![Azuredevops](/images/mfe/devops-project.png?classes=border,shadow)
 
+3- Provide a name and click on create
+
 ![Azuredevops](/images/mfe/new-project.png?classes=border,shadow)
 
