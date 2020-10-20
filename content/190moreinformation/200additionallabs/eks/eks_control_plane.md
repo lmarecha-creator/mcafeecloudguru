@@ -5,13 +5,12 @@ draft: false
 weight: 140
 ---
 
-** LAB 2
+## LAB 2
 
-Now that storage account is provisioned, let’s upload data using *StorageExplorer*.
+Now that storage account is provisioned, let’s upload data using **StorageExplorer**.
 
-**#1** If not done yet, install the StorageExplorer software on your device
+**#1** If not done yet, install the StorageExplorer software on your device.
 
 **#2** Configure the connection settings to your Azure Storage :
-
 
 ![BbobClient](/images/mfe/AZ_client1.png?classes=border,shadow)
