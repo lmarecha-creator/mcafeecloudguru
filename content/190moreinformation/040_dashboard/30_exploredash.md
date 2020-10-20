@@ -31,7 +31,7 @@ tags:
 
 6- Create pipeline to your code
 
-![Azuredevops](/images/mfe/pipeline.png?classes=border,shadow)
+![Azuredevops](/images/mfe/newpipeline.png?classes=border,shadow)
 
 7- Choose Github from the list
 
