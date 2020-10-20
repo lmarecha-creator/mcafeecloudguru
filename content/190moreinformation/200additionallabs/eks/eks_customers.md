@@ -42,7 +42,8 @@ az group create --name LaurentLab-ressource-group --location westus
 ```
 az storage account create --name laurentlab --resource-group LaurentLab-ressource-group --location westus --sku Standard_LRS --kind StorageV2
 ```
->> _**. Name: Name of the storage account - Whatever you like
+>> _**
+. Name: Name of the storage account - Whatever you like
 
 . Resource group: Give the name of resource group created above in Step 2.
 
@@ -51,5 +52,5 @@ az storage account create --name laurentlab --resource-group LaurentLab-ressourc
 . SKU: Select 'Standard_LRS'
 
 . Kind: Select 'StorageV2'**_
-
+_**
 
