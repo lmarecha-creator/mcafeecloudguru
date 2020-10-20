@@ -40,6 +40,5 @@ az group create --name LaurentLab-ressource-group --location westus
 9# Create Azure storage account using the following command:
 
 **Make sure the highlighted parameters reflect your own environment**
-
 ![AZ_Account](/images/mfe/AZ_Storage_Account.png?classes=border,shadow)
 
