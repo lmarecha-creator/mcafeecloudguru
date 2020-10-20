@@ -11,7 +11,7 @@ tags:
 
 
 
-1. **Set up Azure DevOps & github repository ** - We'll start off by learning and setting up CAzure DevOps & github repository
+1. **Set up Azure DevOps & github repository** - We'll start off by learning and setting up CAzure DevOps & github repository
 
 2. **Set Infrastructure Security Policy** - Then we will configure a few policies in MVISION Cloud to control what kind of security or best practices must be present in infrastructure deployed to Azure.
 
