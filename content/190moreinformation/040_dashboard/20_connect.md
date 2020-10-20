@@ -9,7 +9,9 @@ tags:
 ---
 
 1- Go to github.
+
 2- Log in to your account.
+
 3- Click the new repository button in the top-right. You'll have an option there to initialize the repository with a README file, but I don't.
 
 ![Git](/images/mfe/create-git-repo.png?classes=border,shadow)
