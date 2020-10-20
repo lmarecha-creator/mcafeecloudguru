@@ -9,3 +9,8 @@ weight: 140
 
 Now that storage account is provisioned, let’s upload data using *StorageExplorer*.
 
+**#1** If not done yet, install the StorageExplorer software on your device
+
+**#2** Configure the connection settings to your Azure Storage :
+
+
