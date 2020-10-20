@@ -27,7 +27,7 @@ tags:
   - ENVIRONMENT ( MVISION URL : https://www.myshn.net/)
   - CLOUD_SERVICE_PROVIDER ( Template types: Azure ) 
 
-![Azuredevops](/images/mfe/variable.png?classes=border,shadow)
+![Azuredevops](/images/mfe/variable2.png?classes=border,shadow)
 
 6- Create pipeline to your code
 
