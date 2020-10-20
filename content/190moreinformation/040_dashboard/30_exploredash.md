@@ -1,16 +1,12 @@
 ---
-title: "Explore your EKS Cluster in Dashboard"
+title: "Create DevOps"
 date: 2018-08-07T13:36:57-07:00
 weight: 30
 tags:
   - beginner
 ---
 
-## Explore details of your cluster using the Kubernetes Dashboard
+1- Sign in to Azure DevOps: https://azure.microsoft.com/en-gb/services/devops/
 
-#### Investigate the worker nodes
-{{<todo>}}need content{{</todo>}}
+2- Create a project in Azure DevOps
 
-
-#### Investigate the Daemon Sets
-Daemon Sets are tasks/services that run on each worker node and are often used to e.g. collect metrics aggregate logs or perform additional monitoring
