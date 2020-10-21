@@ -24,7 +24,7 @@ In Azure Cloud Sehll CLI, run these two commands:
 
 The assignee is the username used to enable your Azure tenant in MVISION Cloud.
 
-#1 Retreive your Azure Subscription ID by running the following command - **Make sure it reflects your own environment**
+#1 Retreive your Azure Subscription ID by running the following command 
 
 ```
 az account list
@@ -32,14 +32,14 @@ az account list
 
 ![AzureSub](/images/mfe/azuresub.png?classes=border,shadow)
 
+#2 run these two commands to create a role and assign it to your account - **Make sure to replace the values by your own account and subscription ID : 
+```
 az role assignment create --role "Reader and Data Access" --assignee accountname@mcafeetmecom.onmicrosoft.com --subscription df03f283-1111-4444-8180-22222222222
+```
 
-Get your Azure subscription ID: az account list --output table :
+![AzureSub](/images/mfe/azuresub2.png?classes=border,shadow)
 
+```
 az role assignment create --role "Reader" --assignee accountname@mcafeetmecom.onmicrosoft.com --subscription df03f283-1111-4444-8180-222222222222
+```
 
-or use the UI
-
-1. Navigate to portal.azure.com and log in
-
-2. Search for Subscription
