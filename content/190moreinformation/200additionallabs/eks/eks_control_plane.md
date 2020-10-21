@@ -18,3 +18,11 @@ Now that storage account is provisioned, let’s upload data using **StorageExpl
 ![BbobClient](/images/mfe/AZ_Client2.png?classes=border,shadow)
 
 ![BbobClient](/images/mfe/blob3.png?classes=border,shadow)
+
+**#3** Download the demo files from https://github.com/lmarecha-creator/DLP_Workshop/blob/main/PCI-SSN.zip
+
+**#4** Using **Azure Storage Explorer**, upload the demo files to the previoulsy created storage container : 
+
+![BbobClient](/images/mfe/upload1.png?classes=border,shadow)
+
+![BbobClient](/images/mfe/upload2.png?classes=border,shadow)
