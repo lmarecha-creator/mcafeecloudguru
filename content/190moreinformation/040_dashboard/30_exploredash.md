@@ -45,8 +45,8 @@ tags:
 
 ![Azuredevops](/images/mfe/starter-pipeline.png?classes=border,shadow)
 
-10- Copy pipeline code from wiki (azure-mvc-shiftleft-pipeline.yml from : https://github.com/MVCEBC/shift-left-yaml/blob/main/azure-mvc-shiftleft-pipeline.yml.zip
-make sure that indentation is correct. Click on Save and run, this commits pipeline yaml file to source code and executes pipeline. Make sure that file name matches to “azure-mvc-shiftleft-pipeline.yml”
+10-  Dwnoload azure-mvc-shiftleft-pipeline.yml from : https://github.com/MVCEBC/shift-left-yaml/blob/main/azure-mvc-shiftleft-pipeline.yml.zip
+Copy pipeline code from wiki (azure-mvc-shiftleft-pipeline.yml), make sure that indentation is correct. Click on Save and run, this commits pipeline yaml file to source code and executes pipeline. Make sure that file name matches to “azure-mvc-shiftleft-pipeline.yml”
 
 ![Azuredevops](/images/mfe/codepipeline-yaml.png?classes=border,shadow)
 
