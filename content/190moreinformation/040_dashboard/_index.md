@@ -1,5 +1,5 @@
 ---
-title: "Shift Left inline integration with Azure native DevOps"
+title: "Shift Left Lab Azure DevOps"
 chapter: true
 weight: 40
 tags:
