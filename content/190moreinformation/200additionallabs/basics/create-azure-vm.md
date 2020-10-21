@@ -5,6 +5,16 @@ draft: false
 weight: 10
 ---
 
+
+{{% notice warning %}}
+Only complete this section if you are having issues connecting to Azure Cloud Shell from your local machine. If you can connect then skip this and go to next section.
+{{% /notice %}}
+
+{{% children %}}
+
+
+
+
 ### Sign in to Azure 
 
 Sign in to the Azure portal at https://portal.azure.com.
