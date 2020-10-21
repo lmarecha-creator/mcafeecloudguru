@@ -1,5 +1,5 @@
 ---
-title: "SHIFT-LEFT LAB Azure DevOps"
+title: "Fix and Build Projects"
 chapter: true
 weight: 50
 tags:
