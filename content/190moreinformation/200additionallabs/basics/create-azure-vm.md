@@ -12,7 +12,7 @@ Only complete this section if you are having issues connecting to Azure Cloud Sh
 
 {{% children %}}
 
-***test the connection to Azure Cloud Shell***
+***Test the connection to Azure Cloud Shell***
 
 Launch Cloud Shell
 
