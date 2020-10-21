@@ -6,7 +6,7 @@ weight: 60
 
 ### What did we do? ###
 
-1. We linked our Azure environment to our MVISION Cloud tenant to run two different types of security scans. This included Cloud Security Posture Management (CSPM) scans against the Azure environment as a whole, as well as the EKS cluster. It also included a Data Loss Prevention (DLP) scan against blob storage which had some sensitive test files.
+1. We linked our Azure environment to our MVISION Cloud tenant to run two different types of security scans. This included Cloud Security Posture Management (CSPM) scans against the Azure environment as a whole, as well as the EKS cluster. 
 
 2. We configured a number of policies associated with those scans, including numerous Container Security policies
 
