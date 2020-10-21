@@ -1,10 +1,22 @@
 ---
-title: "IaaS PaaS and MVISION Cloud"
-date: 2018-10-03T10:23:24-07:00
-draft: false
-weight: 160
+title: "DLP Incidents"
+date: 2020-02-24
+weight: 60
 ---
+Once the Scan is complete, you can either go to POLICY > POLICY INCIDENTS, or you can click on the Last Scan Incidents number as shown below.
 
-Stay tuned as we continue the journey through IaaS and PaaS in the next module!
+![dlp](/images/mvcscan/dlpincident01.png?classes=border,shadow)
 
-Always ask questions!  Feel free to ask them in person during this workshop, or any time on the [MVISION Cloud Teams Channel](https://teams.microsoft.com/l/channel/19%3a82f5f0ffbecf45df8bcfb52adf27a6fc%40thread.skype/General?groupId=c7cea1ae-f12d-46fb-9f9e-c94388d4953f&tenantId=4943e38c-6dd4-428c-886d-24932bc2d5de).
+You will see a list of files that were found in the AWS S3 bucket.
+
+![dlp](/images/mvcscan/azuredlp1.png?classes=border,shadow)
+
+By selecting an incident row, you can see details for that incident.
+
+![dlp](/images/mvcscan/azuredlp2.png?classes=border,shadow)
+
+Make sure to scroll down within the Incident Details to see the secure Match Highlighting with Obfuscation.
+
+![dlp](/images/mvcscan/dlpincident04.png?classes=border,shadow)
+
+You may notice that one high severity incident has an action taken of "Quarantine Failed". This is expected as our IAM Role is ReadOnly. MVISION Cloud can take numerous automatic response actions, but require further permissions within the AWS environment.

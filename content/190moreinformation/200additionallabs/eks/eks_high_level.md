@@ -1,11 +1,38 @@
 ---
-title: "High Level"
-date: 2018-10-03T10:23:24-07:00
-draft: false
-weight: 150
+title: "DLP Scan"
+date: 2020-02-24
+weight: 50
 ---
 
+Hover over POLICY and choose ON-DEMAND SCAN.
 
-Once your EKS cluster is ready, you get an API endpoint and you'd [use Kubectl, community developed tool to interact with your cluster.](https://kubernetes.io/docs/reference/kubectl/kubectl/)
+![dlp1](/images/mvcscan/dlpscan01.png?classes=border,shadow)
 
-![EKS High Level](/images/introduction/eks-high-level.svg)
+At the top right, click ACTIONS and choose CREATE A SCAN.
+
+![dlp2](/images/mvcscan/dlpscan02.png?classes=border,shadow)
+
+For Scan Type choose DLP, give the scan a name, and then make sure to choose your current AWS environment. Click Next.
+
+![dlp3](/images/mfe/Azure1.png?classes=border,shadow)
+
+Select the two recently created DLP policies as shown below, and click Next.
+
+![dlp4](/images/mvcscan/dlpscan04.png?classes=border,shadow)
+
+For Configure Scan, choose the options as shown below.
+
+![dlp5](/images/mfe/Azure2.png?classes=border,shadow)
+
+Leave the Frequency as On-Demand.
+
+![dlp6](/images/mvcscan/dlpscan06.png?classes=border,shadow)
+
+Review the settings and verify they match what is shown below. Click Save.
+
+![dlp7](/images/mfe/Azure3.png?classes=border,shadow)
+
+Click on the (...) next to your recently created DLP Scan and click Start.
+
+![dlp8](/images/mvcscan/dlpscan08.png?classes=border,shadow)
+

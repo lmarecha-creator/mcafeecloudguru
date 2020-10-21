@@ -2,7 +2,7 @@
 title: "Create and Configure a Blob Storage"
 date: 2018-10-03T10:23:24-07:00
 draft: false
-weight: 130
+weight: 30
 ---
 
 ## LAB 1
@@ -60,5 +60,15 @@ az storage account create --name laurentlab --resource-group LaurentLab-ressourc
 ```
 
 ![BLOB](/images/mfe/AZ_blobv2.png?classes=border,shadow)
+
+**11#** Create your Blob storage - **Please replace the name and account-name values to reflect your own environment**:
+
+```
+az storage container create --name laurentcontainer2 --public-access container --account-name laurentlab2
+```
+
+**12#** You can confirm you see the storage container created in the Azure GUI as below :
+
+![GUI](/images/mfe/GUI1.png?classes=border,shadow)
 
 # LAB1 COMPLETED ..
