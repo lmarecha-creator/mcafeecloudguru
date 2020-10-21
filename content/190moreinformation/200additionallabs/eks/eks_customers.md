@@ -61,4 +61,10 @@ az storage account create --name laurentlab --resource-group LaurentLab-ressourc
 
 ![BLOB](/images/mfe/AZ_blobv2.png?classes=border,shadow)
 
+**11#** Create your Blob storage - **Please replace the name and account-name values to reflect your own environment**:
+
+```
+az storage container create --name laurentcontainer2 --public-access container --account-name laurentlab2
+```
+
 # LAB1 COMPLETED ..
