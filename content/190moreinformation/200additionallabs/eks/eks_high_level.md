@@ -14,7 +14,7 @@ At the top right, click ACTIONS and choose CREATE A SCAN.
 
 For Scan Type choose DLP, give the scan a name, and then make sure to choose your current AWS environment. Click Next.
 
-![dlp3](/images/mvcscan/dlpscan03.png?classes=border,shadow)
+![dlp3](/images/mvcscan/Azure1.png?classes=border,shadow)
 
 Select the two recently created DLP policies as shown below, and click Next.
 
@@ -22,7 +22,7 @@ Select the two recently created DLP policies as shown below, and click Next.
 
 For Configure Scan, choose the options as shown below.
 
-![dlp5](/images/mvcscan/dlpscan05.png?classes=border,shadow)
+![dlp5](/images/mvcscan/Azure2.png?classes=border,shadow)
 
 Leave the Frequency as On-Demand.
 
@@ -30,7 +30,7 @@ Leave the Frequency as On-Demand.
 
 Review the settings and verify they match what is shown below. Click Save.
 
-![dlp7](/images/mvcscan/dlpscan07.png?classes=border,shadow)
+![dlp7](/images/mvcscan/Azure3.png?classes=border,shadow)
 
 Click on the (...) next to your recently created DLP Scan and click Start.
 
