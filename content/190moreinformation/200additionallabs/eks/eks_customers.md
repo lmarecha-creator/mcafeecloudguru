@@ -67,4 +67,8 @@ az storage account create --name laurentlab --resource-group LaurentLab-ressourc
 az storage container create --name laurentcontainer2 --public-access container --account-name laurentlab2
 ```
 
+**12#** You can confirm you see the storage container created in the Azure GUI as below :
+
+![GUI](/images/mfe/GUI1.png?classes=border,shadow)
+
 # LAB1 COMPLETED ..
