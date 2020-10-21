@@ -35,3 +35,4 @@ Review the settings and verify they match what is shown below. Click Save.
 Click on the (...) next to your recently created DLP Scan and click Start.
 
 ![dlp8](/images/mvcscan/dlpscan08.png?classes=border,shadow)
+
