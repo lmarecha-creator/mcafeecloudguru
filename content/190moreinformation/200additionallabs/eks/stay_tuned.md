@@ -1,7 +1,7 @@
 ---
 title: "DLP Incidents"
 date: 2020-02-24
-weight: 22
+weight: 60
 ---
 Once the Scan is complete, you can either go to POLICY > POLICY INCIDENTS, or you can click on the Last Scan Incidents number as shown below.
 
