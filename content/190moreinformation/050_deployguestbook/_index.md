@@ -1,5 +1,5 @@
 ---
-title: "Deploy Guestbook Application"
+title: "SHIFT-LEFT LAB Azure DevOps"
 chapter: true
 weight: 50
 tags:
