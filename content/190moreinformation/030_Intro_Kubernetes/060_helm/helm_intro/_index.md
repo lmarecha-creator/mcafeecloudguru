@@ -12,8 +12,8 @@ tags:
 + Lab 1: Cloud Security Scans
      - A configuration issue will need to be resolved. 
      - A data compliance issue will need to be resolved. 
-+ Lab 2:  CI/CD Developer Workflows - Protect insecure CloudFormation Templates
-     - Learn about Micrsoft Devops
-     - Connect MVISION Cloud to MS Devops
-     - Correct identified issues in CloudFormation Templates (easy, medium, hard) 
++ Lab 2:  CI/CD Developer Workflows - Protect insecure Azure Resource Manager Templates
+     - Learn about Micrsoft Azure DevOps
+     - Connect MVISION Cloud to Microsoft Azure DevOps
+     - Correct identified issues in Azure Resource Manager Templates (easy, medium, hard) 
 
