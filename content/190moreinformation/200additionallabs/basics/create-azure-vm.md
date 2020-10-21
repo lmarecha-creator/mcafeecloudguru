@@ -12,6 +12,15 @@ Only complete this section if you are having issues connecting to Azure Cloud Sh
 
 {{% children %}}
 
+***test the connection to Azure Cloud Shell***
+
+Launch Cloud Shell
+
+Azure Cloud Shell is a browser-based CLI tool integrated directly into the Azure portal. Cloud shell provides all of the tools you need to manage your Azure resources in a pre-configured, on-demand virtual machine.
+
+You may launch Cloud Shell from the Azure Portal or open a new browser window and navigate to Azure Cloud Shell https://shell.azure.com.
+
+![AppArch](/images/mfe/azurecloudshell-failed.png?classes=border,shadow)
 
 
 
