@@ -26,3 +26,7 @@ Now that storage account is provisioned, let’s upload data using **StorageExpl
 ![BbobClient](/images/mfe/upload1.png?classes=border,shadow)
 
 ![BbobClient](/images/mfe/upload2.png?classes=border,shadow)
+
+**#5** Using **Azure Storage Explorer** or through the Azure GUI, Confirm you can see the demo files in your Blob storage: 
+
+![BbobClient](/images/mfe/upload3.png?classes=border,shadow)
