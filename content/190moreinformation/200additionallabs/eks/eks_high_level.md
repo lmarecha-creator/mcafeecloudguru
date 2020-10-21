@@ -1,7 +1,7 @@
 ---
 title: "DLP Scan"
 date: 2020-02-24
-weight: 21
+weight: 140
 ---
 
 Hover over POLICY and choose ON-DEMAND SCAN.
