@@ -44,3 +44,15 @@ az role assignment create --role "Reader" --assignee accountname@mcafeetmecom.on
 ```
 
 ![AzureSub](/images/mfe/azuresub3.png?classes=border,shadow)
+
+## Setup WebHook
+
+These steps help you configure **Azure Event Grid** Subscription with Webhook
+
+#1. Log into the Azure Portal
+
+#2. Navigate to Templates
+
+![AzureSub](/images/mfe/hook1.png?classes=border,shadow)
+
+
