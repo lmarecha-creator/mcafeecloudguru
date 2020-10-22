@@ -48,7 +48,7 @@ Sign in to the Azure portal at https://portal.azure.com.
 
 6- Under Administrator account, provide a username, such as azureuser and a password. The password must be at least 12 characters long and meet the defined complexity requirements.
 
-7- Under Inbound port rules, choose Allow selected ports and then select RDP (3389) and HTTP (80) from the drop-down.
+7- Under Inbound port rules, choose Allow selected ports and then select RDP (3389) from the drop-down.
 
 ![ShiftLeft](/images/mfe/vm3.png?classes=border,shadow)
 
