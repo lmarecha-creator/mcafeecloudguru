@@ -43,3 +43,4 @@ az role assignment create --role "Reader and Data Access" --assignee accountname
 az role assignment create --role "Reader" --assignee accountname@mcafeetmecom.onmicrosoft.com --subscription df03f283-1111-4444-8180-222222222222
 ```
 
+![AzureSub](/images/mfe/azuresub3.png?classes=border,shadow)
