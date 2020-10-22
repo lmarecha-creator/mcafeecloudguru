@@ -111,7 +111,7 @@ With the new virtual network in place, you can go ahead and create your new clus
  
   ```
  
- 4 - Run the following az aks create command to create the AKS cluster running the latest Kubernetes version. This command can take a few minutes to complete.
+ 4 - Run the following az aks create command to create the AKS cluster running the latest Kubernetes version. **This command can take a few minutes to complete**.
  
  
   ```
@@ -131,6 +131,8 @@ az aks create \
 --generate-ssh-keys
 
   ```
+
+** PLEASE WAIT THE EKS CLUSTER CREATION COMPLETES BEFORE MOVING FORWARD **
   
 ##### Test cluster connectivity by using kubectl
   
