@@ -32,7 +32,7 @@ az account list
 
 ![AzureSub](/images/mfe/azuresub.png?classes=border,shadow)
 
-#2 run these two commands to create a role and assign it to your account - **Make sure to replace the values by your own account and subscription ID : 
+#2 run these two commands to create a role and assign it to your account - **Make sure to replace the values by your own account and subscription ID** : 
 ```
 az role assignment create --role "Reader and Data Access" --assignee accountname@mcafeetmecom.onmicrosoft.com --subscription df03f283-1111-4444-8180-22222222222
 ```
