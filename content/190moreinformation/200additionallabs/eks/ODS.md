@@ -77,3 +77,14 @@ FYI : Using this template will help minimize the time it takes to enable Event S
 
 ![AzureSub](/images/mfe/hook6.png?classes=border,shadow)
 
+#8. Fill in the required information. 
+
+**Your storage name and endpoint will be different than what is shown in the image below.**
+
+
+>> _**Note: The storage name field in the deployment template is a JSON formatted array of strings, the strings contain the Azure storage accounts that you want to subscribe for events which will then be sent to MVISION Cloud via webhooks, ie: this field determines which storage accounts you want to monitor for NRT DLP.
+
+Eg: Customer has 3 storage accounts named "blobaccount", "customerfiles" & "devblobs" then the storage name field should contain:
+
+["blobaccount", "customerfiles", "devblobs"]**_
+
