@@ -95,3 +95,5 @@ EU region: https://webhooks.myshn.eu/azure/events
 Prod region: https://webhooks.myshn.net/azure/events
 
 Accept terms and conditions, then select purchase
+
+![AzureSub](/images/mfe/hook7.png?classes=border,shadow)
