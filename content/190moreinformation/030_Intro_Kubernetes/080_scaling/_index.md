@@ -70,7 +70,7 @@ Required Roles, in Azure users require the following Azure roles:
 
 #### Configure Roles in Azure
 
-1.  Log in to the Microsoft Azure Portal.
+1.  Log in to the Microsoft Azure Portal (https://portal.azure.com)
 
 2.  Click Subscriptions.
 
