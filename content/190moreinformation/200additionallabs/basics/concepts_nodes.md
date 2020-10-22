@@ -65,7 +65,7 @@ You're now ready to install the MonogoDB instance. Recall from earlier, that you
 Keep in mind that the MongoDB connection string is a URI. You have to escape special characters using a standard URI escape mechanism when choosing special characters in the username or password.
 
 ```
-helm install ratings bitnami/mongodb --namespace ratingsapp --set auth.username=<username>,auth.password=<password>,auth.database=ratings-mongodb
+helm install ratings bitnami/mongodb --namespace ratingsapp --set auth.username=<username>,auth.password=<password>,auth.database=ratingsdb
 
 ```
 
