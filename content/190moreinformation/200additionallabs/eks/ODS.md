@@ -108,7 +108,16 @@ Prod region: https://webhooks.myshn.net/azure/events
 
 ## MVISION Cloud Configuration
 
-#1. Ensure Azure instance under MVISION Cloud dashboard > Service Management > Your Azure instance > setup > API (edit) is enabled for NRT  
+#1. Ensure Azure instance under MVISION Cloud dashboard > Service Management > Your Azure instance > setup > API (edit) is enabled for NRT:
 
 ![Dash](/images/mfe/dash1.png?classes=border,shadow)
 
+#2. **Create a DLP policy**: MVISION Cloud > Policy > DLP Policies > DLP Policies > Actions > Create New Policy
+
+![Dash](/images/mfe/dash2.png?classes=border,shadow)
+
+#3. Upload files containing credit cards to your Azure Blob storage, then in a minute we will see events in MVISION Cloud
+
+![Dash](/images/mfe/dash3.png?classes=border,shadow)
+
+## LAB COMPLETED !
