@@ -60,6 +60,8 @@ Then, click on **Create**.
 
 ### Connect to virtual machine 
 
+**NOTE: We are going to use this machine to connect to the Azure Cloud Shell environment from https://portal.azure.com/
+
 Create a remote desktop connection to the virtual machine. These directions tell you how to connect to your VM from a Windows computer. On a Mac, you need an RDP client such as this Remote Desktop Client from the Mac App Store.
 
 1- Select the Connect button on the overview page for your virtual machine.
@@ -74,3 +76,6 @@ Create a remote desktop connection to the virtual machine. These directions tell
 
 5- You may receive a certificate warning during the sign-in process. Click Yes or Continue to create the connection.
 
+6- Using IE, connect to https://portal.azure.com/
+
+**NOTE** : How to disable IE Enhanced Security : https://tunecomp.net/disable-internet-explorer-enhanced-security-configuration-windows-server-2016/
