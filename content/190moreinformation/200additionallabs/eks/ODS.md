@@ -97,3 +97,18 @@ Prod region: https://webhooks.myshn.net/azure/events
 Accept terms and conditions, then select purchase
 
 ![AzureSub](/images/mfe/hook7.png?classes=border,shadow)
+
+#9. To ensure this worked, ensure events has been configured for the intended storage blobs
+
+![AzureSub](/images/mfe/hook8.png?classes=border,shadow)
+
+#10. To manually configure event subscription:
+
+![AzureSub](/images/mfe/hook9.png?classes=border,shadow)
+
+## MVISION Cloud Configuration
+
+#1. Ensure Azure instance under MVISION Cloud dashboard > Service Management > Your Azure instance > setup > API (edit) is enabled for NRT  
+
+![Dash](/images/mfe/dash1.png?classes=border,shadow)
+
