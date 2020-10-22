@@ -31,8 +31,6 @@ code ratings-web-deployment.yaml
 2 - Paste the following text in the file.
 
 ```
-
-Copy
 apiVersion: apps/v1
 kind: Deployment
 metadata:
