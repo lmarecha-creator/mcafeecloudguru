@@ -115,7 +115,7 @@ Kubernetes has a concept of secrets. Secrets let you store and manage sensitive 
 
 The ratings API expects to find the connection details to the MongoDB database in the form of mongodb://<username>:<password>@<endpoint>:27017/ratingsdb. Replace <username>, <password>, and <endpoint> with the ones you used when you created the database, for example, mongodb://ratingsuser:ratingspassword@ratings-mongodb.ratingsapp:27017/ratingsdb.
   
-1 - Use the kubectl create secret generic command to create a secret called mongosecret in the ratingsapp namespace. A Kubernetes secret can hold several items and is indexed by a key. In this case, the secret contains only one key, called MONGOCONNECTION. The value is the constructed connection string from the previous step. Replace <username> and <password> with the ones you used when you created the database.
+1 - Use the kubectl create secret generic command to create a secret called mongosecret in the ratingsapp namespace. A Kubernetes secret can hold several items and is indexed by a key. In this case, the secret contains only one key, called MONGOCONNECTION. The value is the constructed connection string from the previous step. **Replace <username> and <password> with the ones you used when you created the database.**
  
 ```
 kubectl create secret generic mongosecret --namespace ratingsapp --from-literal=MONGOCONNECTION="mongodb://<username>:<password>@ratings-mongodb.ratingsapp:27017/ratingsdb"
