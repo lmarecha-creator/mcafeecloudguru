@@ -55,6 +55,25 @@ These steps help you configure **Azure Event Grid** Subscription with Webhook
 
 ![AzureSub](/images/mfe/hook1.png?classes=border,shadow)
 
-#2. Select **Add**
+#3. Select **Add**
 
 ![AzureSub](/images/mfe/hook2.png?classes=border,shadow)
+
+#4. Add General info as seen here and select Ok.
+
+![AzureSub](/images/mfe/hook3.png?classes=border,shadow)
+
+#5. **Copy** paste the content of this file: update_Storage_account_with_Event_sub.json from https://github.com/lmarecha-creator/DLP_Workshop/blob/main/update_Storage_account_with_Event_sub.json into the Arm Template page, then **select ok**, then **add**
+
+FYI : Using this template will help minimize the time it takes to enable Event Subscription across all blobs.
+
+![AzureSub](/images/mfe/hook4.png?classes=border,shadow)
+
+#6. This will be the outcome:
+
+![AzureSub](/images/mfe/hook5.png?classes=border,shadow)
+
+#7. Deploy the template
+
+![AzureSub](/images/mfe/hook6.png?classes=border,shadow)
+
