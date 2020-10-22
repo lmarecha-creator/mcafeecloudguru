@@ -77,6 +77,9 @@ spec:
             path: /healthz
 ```
 
+**Example**:
+![ACR](/images/mfe/acr1.png?classes=border,shadow
+
 3 - In this file, update the <acrname> value in the image key with the name of your Azure Container Registry instance.
 
 4 - Review the file, and note the following points:
