@@ -15,7 +15,7 @@ Azure Cloud Shell is a browser-based CLI tool integrated directly into the Azure
 
 You may launch Cloud Shell from the Azure Portal or open a new browser window and navigate to Azure Cloud Shell https://shell.azure.com.
 
-![AppArch](/images/mfe/azure-cloud-shell.png?classes=border,shadow)
+![AppArch](/images/mfe/azure-cloud-shell2.png?classes=border,shadow)
 
 You'll first need to create a resource group for your resources to deploy into.
 
