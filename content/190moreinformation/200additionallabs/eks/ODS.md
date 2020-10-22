@@ -88,3 +88,12 @@ Eg: Customer has 3 storage accounts named "blobaccount", "customerfiles" & "devb
 
 ["blobaccount", "customerfiles", "devblobs"] <<
 
+- Your Endpoint will be either:
+
+Canada region: https://webhooks.myshn.ca/azure/events
+
+EU region: https://webhooks.myshn.eu/azure/events 
+
+Prod region: https://webhooks.myshn.net/azure/events
+
+Accept terms and conditions, then select purchase
