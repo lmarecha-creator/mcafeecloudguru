@@ -55,4 +55,6 @@ These steps help you configure **Azure Event Grid** Subscription with Webhook
 
 ![AzureSub](/images/mfe/hook1.png?classes=border,shadow)
 
+#2. Select **Add**
 
+![AzureSub](/images/mfe/hook2.png?classes=border,shadow)
