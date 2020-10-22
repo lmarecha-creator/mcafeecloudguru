@@ -112,7 +112,7 @@ Prod region: https://webhooks.myshn.net/azure/events
 
 ![Dash](/images/mfe/dash2.png?classes=border,shadow)
 
-#3. **Upload files containing credit cards** to your Azure Blob storage, then in a minute we will see events in MVISION Cloud
+#3. **Upload files containing credit cards** (source : https://github.com/lmarecha-creator/DLP_Workshop/blob/main/PCI-SSN.zip) to your Azure Blob storage, then in a minute we will see events in MVISION Cloud
 
 ![Dash](/images/mfe/dash3.png?classes=border,shadow)
 
