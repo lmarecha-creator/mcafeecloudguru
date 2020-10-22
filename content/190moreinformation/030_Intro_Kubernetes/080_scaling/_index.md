@@ -88,7 +88,7 @@ Required Roles, in Azure users require the following Azure roles:
 ![MVISION Cloud for AWS Summary](/images/mfe/Azure-IAM.png?classes=border,shadow)
 
 
- Select a Role from the list. Select a user from the list, or search for a specific user. Click Save.
+ Select a Role from the list. Select a user from the list, or search for your user account. Click Save.
 
 
 ![MVISION Cloud for AWS Summary](/images/mfe/Azure-iam2.png?classes=border,shadow)
