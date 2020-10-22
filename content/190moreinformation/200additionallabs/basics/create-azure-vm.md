@@ -56,6 +56,8 @@ Sign in to the Azure portal at https://portal.azure.com.
 
 ![ShiftLeft](/images/mfe/vm4.png?classes=border,shadow)
 
+Then, click on **Create**.
+
 ### Connect to virtual machine 
 
 Create a remote desktop connection to the virtual machine. These directions tell you how to connect to your VM from a Windows computer. On a Mac, you need an RDP client such as this Remote Desktop Client from the Mac App Store.
