@@ -31,26 +31,26 @@ We're going to start with VM ARM based template
 
 ![Click Failed Build](/images/mfe/pipeline4.png?classes=border,shadow)
   
-6.  The build will fail.  Let's click the number next to the red dot of the recent build to explore why:
+6. The build will fail.  Let's click the number next to the red dot of the recent build to explore why:
 
     
-7.  From the build status screen, click MVISION Template Auditing "Console Output":
+7. From the build status screen, click MVISION Template Auditing "Console Output":
 
  ![Click Failed Build](/images/mfe/pipeline5.png?classes=border,shadow)
   
-6.  Investigate the cause of the build failure from the console output:
+6. Investigate the cause of the build failure from the console output:
 
   ![Investigate](/images/mfe/violation1.png?classes=border,shadow)
   
-7.  Back in Github, expand the "repository" and double click the "azuredeploy.json" file to open it and then click on edit on the right corner
+7. Back in Github, expand the "repository" and double click the "azuredeploy.json" file to open it and then click on edit on the right corner
 
   ![Open Easy Cloudformation File](/images/mfe/arm-failed.png?classes=border,shadow)
   
   ![Open Easy Cloudformation File](/images/mfe/git-edit.png?classes=border,shadow)
   
-8.  Using the information in the failed DevOps console output, try to find and fix the problem within the ARM template.  Feel free to use Google and Azur Documentation to assist with making the necessary changes! 
+8. Using the information in the failed DevOps console output, try to find and fix the problem within the ARM template.  Feel free to use Google and Azur Documentation to assist with making the necessary changes! 
 
-9.  When you are satisfied with your changes, click on commit changes to your repository.
+9. When you are satisfied with your changes, click on commit changes to your repository.
 
 ![Git commit and push](/images/mfe/commit-change.png?classes=border,shadow)
 
