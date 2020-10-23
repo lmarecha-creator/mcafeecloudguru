@@ -20,4 +20,4 @@ Select the following policies and enable them through the actions menu:
 
 ![Configuration Audit](/images/mfe/enablepolicies.png?classes=border,shadow)
 
-#### Congratulations, MVISION Cloud is ready to start protecting AWS from insecure infrastructure-as-code.  It's time to test your skills in the shoes of an application developer writing infrastructure-as-code!
+#### Congratulations, MVISION Cloud is ready to start protecting Azure from insecure infrastructure-as-code.  It's time to test your skills in the shoes of an application developer writing infrastructure-as-code!
