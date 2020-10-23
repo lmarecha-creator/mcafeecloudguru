@@ -1,7 +1,7 @@
 ---
 title: "Build Github Repository"
 date: 2018-08-07T08:30:11-07:00
-weight: 15
+weight: 20
 draft: false
 tags:
  
