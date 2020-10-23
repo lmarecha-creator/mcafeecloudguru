@@ -13,7 +13,7 @@ We're going to start with VM ARM based template
 
 1. Download deployment files of a Windows VM from this link :  https://github.com/MVCEBC/ARM-Windows-VM-/blob/main/101-vm-simple-windows.zip
 
-2. Log into to your Github and select the repository you have created in the previous lab : https://github.com/
+2. Log into your Github and select the repository you have created in the previous lab : https://github.com/
 
 3. Extract the files and upload them to your repository. Make sure you have all files inclding “azure-mvc-shiftleft-pipeline.yml”
 
