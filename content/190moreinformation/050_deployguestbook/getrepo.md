@@ -1,7 +1,7 @@
 ---
 title: "Lab 1 - Easy"
 chapter: false
-weight: 110
+weight: 10
 tags:
   - beginner
   - shiftleft
