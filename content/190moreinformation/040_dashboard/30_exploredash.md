@@ -50,4 +50,7 @@ Copy pipeline code from (azure-mvc-shiftleft-pipeline.yml), make sure that inden
 
 ![Azuredevops](/images/mfe/codepipeline-yaml.png?classes=border,shadow)
 
+11- Make sure taht  ***azure-mvc-shiftleft-pipeline.yml*** is visible on your Github repository
+
+![Azuredevops](/images/mfe/github-yaml.png?classes=border,shadow)
 #### You have successfully configured Azure DevOps projects to work with MVISION Cloud!  Please move on to the next section to configure MVISION Cloud policies.
