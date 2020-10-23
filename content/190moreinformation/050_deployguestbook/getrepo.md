@@ -40,7 +40,7 @@ We're going to start with VM ARM based template
   
 6.  Investigate the cause of the build failure from the console output:
 
-  ![Investigate](/images/mfe/project1consoleoutput.png?classes=border,shadow)
+  ![Investigate](/images/mfe/violation1.png?classes=border,shadow)
   
 7.  Back in Github, expand the "repository" and double click the "azuredeploy.json" file to open it and then click on edit on the right corner
 
