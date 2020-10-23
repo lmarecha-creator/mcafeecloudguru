@@ -25,7 +25,7 @@ We're going to start with VM ARM based template
   
 5. Double click on the build you have created before and then click again 
 
-![Click Failed Build](/images/mfe/pipeline2.png?classes=border,shadow)
+![Click Failed Build](/images/mfe/pipeline6.png?classes=border,shadow)
 
 ![Click Failed Build](/images/mfe/pipeline3.png?classes=border,shadow)
 
