@@ -9,7 +9,7 @@ tags:
 1- Sign in to Azure DevOps: https://azure.microsoft.com/en-gb/services/devops/
 
 
-2 - Create new pipeline to your code
+2 - Click on pipeline and create new pipeline to your code
 
 ![Azuredevops](/images/mfe/newpipeline.png?classes=border,shadow)
 
