@@ -37,7 +37,7 @@ tags:
 
 ![Azuredevops](/images/mfe/gitcode.png?classes=border,shadow)
 
-8- Select Github ***Deployment of a Windows VM*** repositry you have created in the previous lab
+8- Select Github ***DDeployment of app with SQL*** repositry you have created in the previous lab
 
 ![Azuredevops](/images/mfe/selectrepo.png?classes=border,shadow)
 
@@ -45,7 +45,7 @@ tags:
 
 ![Azuredevops](/images/mfe/starter-pipeline.png?classes=border,shadow)
 
-10-  Dwnoload azure-mvc-shiftleft-pipeline.yml from : https://github.com/MVCEBC/shift-left-yaml/blob/main/azure-mvc-shiftleft-pipeline.yml.zip
+10-  Dwnoload azure-mvc-shiftleft-pipeline.yml from : https://github.com/MVCEBC/SQL-with-violation/blob/main/SQL-with-violation.zip
 Copy pipeline code from (azure-mvc-shiftleft-pipeline.yml), make sure that indentation is correct. Click on Save and run, this commits pipeline yaml file to source code and executes pipeline. Make sure that file name matches to “azure-mvc-shiftleft-pipeline.yml”
 
 ![Azuredevops](/images/mfe/codepipeline-yaml.png?classes=border,shadow)
