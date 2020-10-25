@@ -14,7 +14,6 @@ Repositoy 1, name : Deployment of a Windows VM
 
 Repositry 2, name : Deployment of app with SQL 
 
-----------------------------------------------------------------------------------------------
 
 1- Go to github https://github.com/
 
