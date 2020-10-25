@@ -8,6 +8,14 @@ tags:
   
 ---
 
+Lab objectives: create two repositoies:
+
+1- Deployment of a Windows VM
+
+2- Deployment of app with SQL 
+
+----------------------------------------------------------------------------------------------
+
 1- Go to github https://github.com/
 
 2- Log in to your account.
