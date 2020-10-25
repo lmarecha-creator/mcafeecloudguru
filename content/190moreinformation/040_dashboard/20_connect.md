@@ -8,7 +8,7 @@ tags:
   
 ---
 
-Lab objectives: create two repositoies:
+***Lab objectives: create two repositories***:
 
 1- Deployment of a Windows VM
 
