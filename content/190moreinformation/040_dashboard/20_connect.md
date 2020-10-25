@@ -10,9 +10,9 @@ tags:
 
 ***Lab objectives: create two repositories***:
 
-Repositoy 1:  Deployment of a Windows VM
+Repositoy 1, name : Deployment of a Windows VM
 
-Repositry 2:  Deployment of app with SQL 
+Repositry 2, name : Deployment of app with SQL 
 
 ----------------------------------------------------------------------------------------------
 
