@@ -202,7 +202,7 @@ Run ID: ca3 was successful after 1m9s
 Make a note of the pushed image registry and name, for example, acr4229.azurecr.io/ratings-web:v1. Use this information when you configure the Kubernetes deployment.
 
 
-#### A little extra activity : ODS Vulnerabilities Scan on Azure Containers Registry 
+#### A little extra activity : ODS Vulnerabilities for ACS containers images 
 
 Of course, the previously provided container images don't contain any vulnerabilities :) - Now, let's work on a vulnerable image.
 
