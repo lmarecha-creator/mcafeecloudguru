@@ -226,7 +226,7 @@ You should then see in Azure Cloud Shell your tenant details, with your subscrip
 
 ![Containers](/images/mfe/contain2.png?classes=border,shadow)
 
-3 - Now, let's build and tag our container image with the following commands :
+3 - Now, let's build, tag and push to ACR our container image with the following commands :
 
 ```
 cd containers_CVE/
@@ -237,7 +237,9 @@ az acr build --registry Cloudguru --subscription YOUR_SUBSCRIPBION_ID --image my
 ```
 ![Containers](/images/mfe/contain3.png?classes=border,shadow)
 
+By browsing the Azure GUI, you should see you container image :
 
+![Containers](/images/mfe/contain4.png?classes=border,shadow)
 
 #### Verify the images
 
