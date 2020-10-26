@@ -226,6 +226,19 @@ You should then see in Azure Cloud Shell your tenant details, with your subscrip
 
 ![Containers](/images/mfe/contain2.png?classes=border,shadow)
 
+3 - Now, let's build and tag our container image with the following commands :
+
+```
+cd containers_CVE/
+```
+
+```
+az acr build --registry Cloudguru --subscription YOUR_SUBSCRIPBION_ID --image my_vulnerable:v1 --file ./dockerfile .
+```
+![Containers](/images/mfe/contain3.png?classes=border,shadow)
+
+
+
 #### Verify the images
 
 1 - Run the following command in Cloud Shell to verify that the images were created and stored in the registry.
