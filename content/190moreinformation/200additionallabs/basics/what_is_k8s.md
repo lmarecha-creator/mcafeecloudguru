@@ -248,13 +248,21 @@ Now, by browsing the Azure GUI, you should see your container image :
 5 - Let's now create an ODS configuration - in the MVC Dashboard, browse **POLICY > ON-DEMAND SCAN** then apply the following settings :
 
 a# **Scan Type** : Vulnerability
+
 b# **Name** : Azure-Workshop
+
 c# **Instance** : You Azure Instance
+
 d# **Select Policy** : Azure Workshop
+
 e# **Data Scope** : Full
+
 f# **Scan Dates** : All
+
 g# **Repositories to Scan** : All Repositories
+
 h# **Subscriptions** : All Subscriptions
+
 i# **Frequency** : Nonce (On-Demand Only)
 
 ![Containers](/images/mfe/contain6.png?classes=border,shadow)
