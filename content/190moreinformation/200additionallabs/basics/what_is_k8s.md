@@ -218,15 +218,18 @@ git clone https://github.com/lmarecha-creator/containers_CVE.git
 ```
 az login
 ```
+![Containers](/images/mfe/contain1.png?classes=border,shadow)
 
+As requested, connect to https://microsoft.com/devicelogin and enter the code previously provided to you, then select your Azure admin user.
 
+You should then see in Azure Cloud Shell your tenant details, with your subscription ID :
 
-As requested, connect to https://microsoft.com/devicelogin and enter the code previously provided to you.
+![Containers](/images/mfe/contain2.png?classes=border,shadow)
 
 #### Verify the images
 
 1 - Run the following command in Cloud Shell to verify that the images were created and stored in the registry.
-
+1.png
 ```
 az acr repository list \
     --name $ACR_NAME \
