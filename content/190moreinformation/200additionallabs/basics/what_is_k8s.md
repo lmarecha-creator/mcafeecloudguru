@@ -237,7 +237,7 @@ az acr build --registry Cloudguru --subscription YOUR_SUBSCRIPBION_ID --image my
 ```
 ![Containers](/images/mfe/contain3.png?classes=border,shadow)
 
-By browsing the Azure GUI, you should see you container image :
+Now, by browsing the Azure GUI, you should see your container image :
 
 ![Containers](/images/mfe/contain4.png?classes=border,shadow)
 
