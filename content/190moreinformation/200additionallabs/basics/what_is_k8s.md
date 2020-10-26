@@ -267,6 +267,12 @@ i# **Frequency** : Nonce (On-Demand Only)
 
 ![Containers](/images/mfe/contain6.png?classes=border,shadow)
 
+5 - Run your'Azure-Workshop'scan and wait till it completes successfully - Then check if you are reported with incidents :
+
+![Containers](/images/mfe/contain7.png?classes=border,shadow)
+
+YOU DON'T SEE ANY INCIDENT ? IT'S NOT BECAUSE OF YOU ... WE'VE IDENTITY A PRODUCT ISSUE AND SUPPORT IS WORKING ON IT (as of 26th,Oct).
+
 #### Verify the images
 
 1 - Run the following command in Cloud Shell to verify that the images were created and stored in the registry.
