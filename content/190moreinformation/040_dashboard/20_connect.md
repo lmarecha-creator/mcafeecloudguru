@@ -23,8 +23,8 @@ tags:
 
 ![Git](/images/mfe/create-git-repo.png?classes=border,shadow)
 
-4- Click the “Create repository” button.
+4- Click the “Create repository” button. Give a name: Deployment of a Windows VM
 
 ![Git](/images/mfe/git-repo-public.png?classes=border,shadow)
 
-5- Repeat the same and click the “Create repository” button for the second repository.
+5- Repeat the same and click the “Create repository” button for the second repository and give it a name : Deployment of app with SQL.
