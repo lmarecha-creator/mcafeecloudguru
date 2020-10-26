@@ -233,7 +233,7 @@ cd containers_CVE/
 ```
 
 ```
-az acr build --registry Cloudguru --subscription YOUR_SUBSCRIPBION_ID --image my_vulnerable:v1 --file ./dockerfile .
+az acr build --registry Cloudguru --subscription YOUR_SUBSCRIPTION_ID --image my_vulnerable:v1 --file ./dockerfile .
 ```
 ![Containers](/images/mfe/contain3.png?classes=border,shadow)
 
