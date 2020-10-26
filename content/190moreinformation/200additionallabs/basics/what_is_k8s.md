@@ -275,7 +275,7 @@ i# **Frequency** : Nonce (On-Demand Only)
 
 ![Containers](/images/mfe/contain11.png?classes=border,shadow)
 
-**BRAVO !** ... LET'S THEN MOVE FORWARD. (note : Again, this exercice has NO RELATION our ratings-api and ratings-web containers)
+**BRAVO !** .. LET'S THEN MOVE FORWARD. (note : Again, this exercice has NO RELATION our ratings-api and ratings-web containers)
 
 #### Verify the images
 
