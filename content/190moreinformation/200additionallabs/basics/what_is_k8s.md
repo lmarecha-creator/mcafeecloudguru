@@ -271,7 +271,7 @@ i# **Frequency** : Nonce (On-Demand Only)
 
 ![Containers](/images/mfe/contain7.png?classes=border,shadow)
 
-YOU DON'T SEE ANY INCIDENT ? IT'S NOT BECAUSE OF YOU ... WE'VE IDENTITY A PRODUCT ISSUE AND SUPPORT IS WORKING ON IT (as of 26th,Oct).
+**Ooops YOU DON'T SEE ANY INCIDENT ? IT'S NOT BECAUSE OF YOU ... WE'VE IDENTITY A PRODUCT ISSUE AND SUPPORT IS WORKING ON IT (as of 26th,Oct).**
 
 #### Verify the images
 
