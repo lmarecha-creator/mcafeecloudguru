@@ -277,7 +277,6 @@ i# **Frequency** : Nonce (On-Demand Only)
 
 **BRAVO !** ... LET'S THEN MOVE FORWARD. (note : Again, this exercice has NO RELATION our ratings-api and ratings-web containers)
 
-
 #### Verify the images
 
 1 - Run the following command in Cloud Shell to verify that the images were created and stored in the registry.
