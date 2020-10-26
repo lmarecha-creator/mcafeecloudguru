@@ -8,7 +8,7 @@ tags:
   
 ---
 
-***Lab objectives: create two repositories***:
+***Lab objectives: create two repositories in Github that we are going to use for our next DevOps labs***:
 
 Repositoy 1, name : Deployment of a Windows VM
 
