@@ -26,3 +26,5 @@ tags:
 4- Click the “Create repository” button.
 
 ![Git](/images/mfe/git-repo-public.png?classes=border,shadow)
+
+5- Repeat the same and click the “Create repository” button for the second repository.
