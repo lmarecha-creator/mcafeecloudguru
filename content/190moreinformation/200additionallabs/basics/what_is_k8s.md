@@ -212,6 +212,17 @@ Of course, the previously provided container images don't contain any vulnerabil
 git clone https://github.com/lmarecha-creator/containers_CVE.git
 ```
 
+
+2 - Retreive your Azure Subscription ID
+
+```
+az login
+```
+
+
+
+As requested, connect to https://microsoft.com/devicelogin and enter the code previously provided to you.
+
 #### Verify the images
 
 1 - Run the following command in Cloud Shell to verify that the images were created and stored in the registry.
