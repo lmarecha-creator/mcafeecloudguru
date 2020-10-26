@@ -16,5 +16,5 @@ tags:
 + Lab 2:  CI/CD Developer Workflows - Protect insecure Azure Resource Manager Templates
      - Learn about Micrsoft Azure DevOps
      - Connect MVISION Cloud to Microsoft Azure DevOps
-     - Correct identified issues in Azure Resource Manager Templates (easy, medium, hard) 
+     - Correct identified issues in Azure Resource Manager Templates (easy, medium) 
 
