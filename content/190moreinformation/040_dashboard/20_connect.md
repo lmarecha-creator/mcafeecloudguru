@@ -8,11 +8,11 @@ tags:
   
 ---
 
-***Lab objectives: create two repositories in Github that we are going to use for our next DevOps labs***:
+###Lab objectives: create two repositories in Github that we are going to use for our next DevOps labs.
 
-Repositoy 1, name : Deployment of a Windows VM
+***Repositoy 1, name : Deployment of a Windows VM***
 
-Repositry 2, name : Deployment of app with SQL 
+***Repositry 2, name : Deployment of app with SQL***
 
 
 1- Go to github https://github.com/
