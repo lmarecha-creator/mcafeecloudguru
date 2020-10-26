@@ -241,6 +241,11 @@ Now, by browsing the Azure GUI, you should see your container image :
 
 ![Containers](/images/mfe/contain4.png?classes=border,shadow)
 
+4 - We will now create a MVC policy for Vulnerable Container images - First, let's connect and authenticate to https://http://auth.ui.mcafee.com/, then browse **POLICIES > VULNERABILITIES**. Then create a policy called “Azure-Workshop“ with the following settings :
+
+![Containers](/images/mfe/contain5.png?classes=border,shadow)
+
+
 #### Verify the images
 
 1 - Run the following command in Cloud Shell to verify that the images were created and stored in the registry.
