@@ -269,9 +269,14 @@ i# **Frequency** : Nonce (On-Demand Only)
 
 5 - Run your'Azure-Workshop'scan and wait till it completes successfully - Then check if you are reported with incidents :
 
-![Containers](/images/mfe/contain7.png?classes=border,shadow)
+![Containers](/images/mfe/contain8.png?classes=border,shadow)
 
-**Ooops YOU DON'T SEE ANY INCIDENT ? IT'S NOT BECAUSE OF YOU ... WE'VE IDENTITY A PRODUCT ISSUE AND SUPPORT IS WORKING ON IT (as of 26th,Oct).**
+![Containers](/images/mfe/contain9.png?classes=border,shadow)
+
+![Containers](/images/mfe/contain10.png?classes=border,shadow)
+
+**BRAVO !** ... LET'S THEN MOVE FORWARD. (note : Again, this exercice has NO RELATION our ratings-api and ratings-web containers)
+
 
 #### Verify the images
 
