@@ -241,10 +241,23 @@ Now, by browsing the Azure GUI, you should see your container image :
 
 ![Containers](/images/mfe/contain4.png?classes=border,shadow)
 
-4 - We will now create a MVC policy for Vulnerable Container images - First, let's connect and authenticate to https://http://auth.ui.mcafee.com/, then browse **POLICIES > VULNERABILITIES**. Then create a policy called “Azure-Workshop“ with the following settings :
+4 - We will now **create a MVC policy** for Vulnerable Container images - First, let's connect and authenticate to https://http://auth.ui.mcafee.com/, then browse **POLICIES > VULNERABILITIES**. Then create a policy called “Azure-Workshop“ with the following settings :
 
 ![Containers](/images/mfe/contain5.png?classes=border,shadow)
 
+5 - Let's now create an ODS configuration - in the MVC Dashboard, browse **POLICY > ON-DEMAND SCAN** then apply the following settings :
+
+a. **Scan Type** : Vulnerability
+b. **Name** : Azure-Workshop
+c. **Instance** : You Azure Instance
+d. **Select Policy** : Azure Workshop
+e. **Data Scope** : Full
+f. **Scan Dates** : All
+g. **Repositories to Scan** : All Repositories
+h. **Subscriptions** : All Subscriptions
+i. **Frequency** : Nonce (On-Demand Only)
+
+![Containers](/images/mfe/contain6.png?classes=border,shadow)
 
 #### Verify the images
 
