@@ -10,8 +10,6 @@ MVISION Cloud utilizes MS Azure' comprehensive set of APIs to provide security f
 
 ### MVISION Cloud Azure Integration ###
 
-![MVISION Azure](/images/mfe/MVC-azure2.png?classes=border,shadow)
-
 In order to provide this security, your MVISION Cloud tenant will need access to various components of your Azure environment. 
 
 ### MVISION Cloud URL ###
