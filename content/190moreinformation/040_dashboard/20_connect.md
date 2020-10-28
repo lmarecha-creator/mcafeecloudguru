@@ -31,4 +31,8 @@ tags:
 
 6- Extract the files and upload them to your repository: ***Deployment-Windows-VM***
 
-5- Repeat the same and click the “Create repository” button for the second repository and give it a name : Deployment-app-SQL
+7- Repeat the same and click the “Create repository” button for the second repository and give it a name : Deployment-app-SQL
+
+8- Download deployment files of a Windows VM from this link :  https://github.com/MVCEBC/SQL-with-violation/blob/main/SQL-with-violation.zip
+
+9- Extract the files and upload them to your repository: ***Deployment-app-SQL***
