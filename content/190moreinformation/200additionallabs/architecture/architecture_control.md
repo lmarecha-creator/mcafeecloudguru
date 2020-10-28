@@ -136,6 +136,10 @@ Error from server (Forbidden): error when creating "nginx-privileged.yaml": pods
 
 Create a file named nginx-unprivileged.yaml. We are going to use Azure Cloud Shell editor:
 
+```
+code ginx-unprivileged.yaml
+```
+
 Paste the following YAML manifest
 
 ```
@@ -146,25 +150,19 @@ metadata:
 spec:
   containers:
     - name: nginx-unprivileged
-      image: nginx:1.14.2
+      image: mcr.microsoft.com/oss/nginx/nginx:1.14.2-alpine
 
 ```
 
-Create the pod using the kubectl apply command and specify the name of your YAML manifest:
-
-#### Create a custom pod security policy
-
-```
-kubectl-nonadminuser apply -f nginx-unprivileged.yaml
-
-```
 The pod fails to be scheduled, as shown in the following example output:
+
 ```
 $ kubectl-nonadminuser apply -f nginx-unprivileged.yaml
 
 Error from server (Forbidden): error when creating "nginx-unprivileged.yaml": pods "nginx-unprivileged" is forbidden: unable to validate against any pod security policy: []
 
 ```
+#### Create a custom pod security policy
 
 Now that you've seen the behavior of the default pod security policies, let's provide a way for the nonadmin-user to successfully schedule pods.
 
