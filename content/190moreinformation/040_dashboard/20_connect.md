@@ -12,7 +12,7 @@ tags:
 
 ***Repositoy 1, name : Deployment-Windows-VM***
 
-***Repositry 2, name : Deployment of app with SQL***
+***Repositry 2, name : Deployment-app-SQL***
 
 
 1- Go to github https://github.com/
@@ -23,7 +23,7 @@ tags:
 
 ![Git](/images/mfe/create-git-repo.png?classes=border,shadow)
 
-4- Click the “Create repository” button. Give a name: Deployment of a Windows VM
+4- Click the “Create repository” button. Give a name: ***Deployment-Windows-VM***
 
 ![Git](/images/mfe/git-repo-public.png?classes=border,shadow)
 
@@ -31,4 +31,4 @@ tags:
 
 6- Extract the files and upload them to your repository: ***Deployment-Windows-VM***
 
-5- Repeat the same and click the “Create repository” button for the second repository and give it a name : Deployment of app with SQL.
+5- Repeat the same and click the “Create repository” button for the second repository and give it a name : Deployment-app-SQL
