@@ -37,7 +37,7 @@ tags:
 
 ![Azuredevops](/images/mfe/gitcode.png?classes=border,shadow)
 
-8- Select Github ***Deployment of a Windows VM*** repositry you have created in the previous lab
+8- Select Github ***Deployment-Windows-VM*** repositry you have created in the previous lab
 
 ![Azuredevops](/images/mfe/selectrepo.png?classes=border,shadow)
 
