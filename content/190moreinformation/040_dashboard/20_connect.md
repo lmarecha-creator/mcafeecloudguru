@@ -10,7 +10,7 @@ tags:
 
 ### Lab objectives: create two repositories in Github that we are going to use for our next DevOps labs.
 
-***Repositoy 1, name : Deployment of a Windows VM***
+***Repositoy 1, name : Deployment-Windows-VM***
 
 ***Repositry 2, name : Deployment of app with SQL***
 
@@ -26,5 +26,9 @@ tags:
 4- Click the “Create repository” button. Give a name: Deployment of a Windows VM
 
 ![Git](/images/mfe/git-repo-public.png?classes=border,shadow)
+
+5- Download deployment files of a Windows VM from this link :  https://github.com/MVCEBC/ARM-Windows-VM-/blob/main/101-vm-simple-windows.zip
+
+6- Extract the files and upload them to your repository: ***Deployment-Windows-VM***
 
 5- Repeat the same and click the “Create repository” button for the second repository and give it a name : Deployment of app with SQL.
