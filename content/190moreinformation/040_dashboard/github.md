@@ -17,7 +17,7 @@ tags:
 
 ![Azuredevops](/images/mfe/gitcode.png?classes=border,shadow)
 
-4 - Select Github ***Deployment of app with SQL*** repositry you have created in the previous lab
+4 - Select Github ***Deployment-app-SQL*** repositry you have created in the previous lab
 
 ![Azuredevops](/images/mfe/selectrepo.png?classes=border,shadow)
 
