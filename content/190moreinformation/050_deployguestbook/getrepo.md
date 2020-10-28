@@ -14,7 +14,7 @@ We're going to start with VM ARM based template
 
 1. Log into your Github and select the repository you have created in the previous lab : https://github.com/
 
-2. Extract the files and upload them to your repository. Make sure you have all files inclding “azure-mvc-shiftleft-pipeline.yml”
+2. Make sure you have all files including “azure-mvc-shiftleft-pipeline.yml”
 
   ![Build Project 1](/images/mfe/arm-vm.png?classes=border,shadow)
   
