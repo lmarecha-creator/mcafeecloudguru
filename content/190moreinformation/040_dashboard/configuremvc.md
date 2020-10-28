@@ -14,6 +14,6 @@ From the Policy menu, select "Configuration Audit"
 
 Select the following policies and enable them through the actions menu:
 
-![Configuration Audit](/images/mfe/mvc-policy-devops2.png?classes=border,shadow)
+![Configuration Audit](/images/mfe/mvc-policy-devops3.png?classes=border,shadow)
 
 #### Congratulations, MVISION Cloud is ready to start protecting Azure from insecure infrastructure-as-code.  It's time to test your skills in the shoes of an application developer writing infrastructure-as-code!
